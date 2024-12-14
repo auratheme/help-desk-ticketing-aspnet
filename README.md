@@ -20,10 +20,12 @@ Follow these steps to set up and run the project on your local machine:
 2. Configure the Connection String
     - Open the appsettings.json file located in the root of the project.
     - Replace the DefaultConnection value in the ConnectionStrings section with your SQL Server connection string.
+    - You can also refer to this video: https://youtu.be/WjLV5ccuzaU?si=vxUw21FNxlWFDDoc&t=172 (From 2.52 to 3.47)
 3. Create the Database
    - In Visual Studio, click Tools > NuGet Package Manager > Package Manager Console.
    - Run the following command:
         - Update-Database
+    - You can also refer to this video: https://youtu.be/WjLV5ccuzaU?si=vrtD40cNlk4vO3U6&t=228 (From 3.48 to 4.55)
 4. Run the Project
    - Press CTRL + F5 to run the project. Click the sign-up button at the top right corner. Register the first admin account.
 
