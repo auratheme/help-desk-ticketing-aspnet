@@ -1,0 +1,1623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>拒绝访问</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="ActiveCustomersByMonth" xml:space="preserve">
+    <value>按月划分的活跃客户</value>
+  </data>
+  <data name="ActiveTickets" xml:space="preserve">
+    <value>活跃票证</value>
+  </data>
+  <data name="AddAllPossibleTagsEachSeparatedByAComma" xml:space="preserve">
+    <value>添加所有可能的标签，每个标签之间用逗号分隔。标签将用于知识库的搜索引擎。</value>
+  </data>
+  <data name="AdditionalInfo" xml:space="preserve">
+    <value>附加信息</value>
+  </data>
+  <data name="AdditionalInfoUpdated" xml:space="preserve">
+    <value>附加信息已成功更新！</value>
+  </data>
+  <data name="AddMore" xml:space="preserve">
+    <value>添加更多</value>
+  </data>
+  <data name="AddNewArticle" xml:space="preserve">
+    <value>添加新文章</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="AdminActions" xml:space="preserve">
+    <value>管理员操作</value>
+  </data>
+  <data name="AdminCanSeeAllTheAIChatbotsChatHistories" xml:space="preserve">
+    <value>管理员可以查看所有 AI 聊天机器人的聊天历史记录。</value>
+  </data>
+  <data name="AdminsCanAddTagsToAnAIChatbotsChatThread" xml:space="preserve">
+    <value>管理员可以向 AI 聊天机器人的聊天线程添加标签。</value>
+  </data>
+  <data name="AdminsCanEasilyAssignATicketToAnAgent" xml:space="preserve">
+    <value>管理员可以轻松地将票证分配给代理。</value>
+  </data>
+  <data name="AdminSettings" xml:space="preserve">
+    <value>管理员设置</value>
+  </data>
+  <data name="AdminView" xml:space="preserve">
+    <value>管理员视图</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>代理</value>
+  </data>
+  <data name="AIAnswer" xml:space="preserve">
+    <value>AI 答案</value>
+  </data>
+  <data name="AIChatbot" xml:space="preserve">
+    <value>AI 聊天机器人</value>
+  </data>
+  <data name="AIChatbotAvatar" xml:space="preserve">
+    <value>AI 聊天机器人头像</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>保留所有权利。</value>
+  </data>
+  <data name="AnAdminAccountWasAddedSuccessfully" xml:space="preserve">
+    <value>管理员帐户已成功添加！</value>
+  </data>
+  <data name="AnAgentAccountWasAddedSuccessfully" xml:space="preserve">
+    <value>代理帐户已成功添加！</value>
+  </data>
+  <data name="AnEmailSentPleaseClickLinkToConfirmYourEmail" xml:space="preserve">
+    <value>我们已向您的注册电子邮件地址发送了一封确认电子邮件。请单击电子邮件中的链接以验证您的帐户。如果您在收件箱中没有看到它，请务必检查您的垃圾邮件或垃圾文件夹，并将我们的电子邮件地址添加到您的安全发件人列表中。</value>
+  </data>
+  <data name="AnEmailWasSentToYourRegisteredEmailAddress" xml:space="preserve">
+    <value>电子邮件已发送到您的注册电子邮件地址。请单击链接确认您的电子邮件。</value>
+  </data>
+  <data name="AppendASavedReplyToTheMessageBoxAbove" xml:space="preserve">
+    <value>将已保存的回复附加到上面的消息框。</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>阿拉伯</value>
+  </data>
+  <data name="AreThereAnySelfHelpResourcesAvailableFor" xml:space="preserve">
+    <value>是否有任何自助资源可用于解决常见问题？</value>
+  </data>
+  <data name="AreYouSureToCloseTheTicket" xml:space="preserve">
+    <value>您确定要关闭工单吗？</value>
+  </data>
+  <data name="AreYouSureToDeleteThisRecord" xml:space="preserve">
+    <value>您确定要删除此记录吗？</value>
+  </data>
+  <data name="Arrange" xml:space="preserve">
+    <value>排列</value>
+  </data>
+  <data name="Article" xml:space="preserve">
+    <value>文章</value>
+  </data>
+  <data name="ArticlesInThisCategory" xml:space="preserve">
+    <value>此类别中的文章</value>
+  </data>
+  <data name="ArticlesWithoutACategory" xml:space="preserve">
+    <value>无类别的文章</value>
+  </data>
+  <data name="AssignedAgentSuccessfully" xml:space="preserve">
+    <value>已成功分配代理！</value>
+  </data>
+  <data name="AssignedTickets" xml:space="preserve">
+    <value>已分配工单</value>
+  </data>
+  <data name="AssignedTo" xml:space="preserve">
+    <value>已分配给</value>
+  </data>
+  <data name="AssignTo" xml:space="preserve">
+    <value>分配给</value>
+  </data>
+  <data name="AutoDetectedInfo" xml:space="preserve">
+    <value>自动检测到的信息</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>正文</value>
+  </data>
+  <data name="ByAdmin" xml:space="preserve">
+    <value>按管理员</value>
+  </data>
+  <data name="ByAgent" xml:space="preserve">
+    <value>按代理</value>
+  </data>
+  <data name="ByPriority" xml:space="preserve">
+    <value>按优先级</value>
+  </data>
+  <data name="ByTicketSubmitter" xml:space="preserve">
+    <value>按工单提交者</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CancelNewReply" xml:space="preserve">
+    <value>取消新回复</value>
+  </data>
+  <data name="CanCopyPasteImagesInTheTextEditor" xml:space="preserve">
+    <value>可以在发表评论时在文本编辑器中复制和粘贴图像。</value>
+  </data>
+  <data name="CanITrackTheStatusOfMySupportTicket" xml:space="preserve">
+    <value>我可以跟踪我的支持工单的状态吗？</value>
+  </data>
+  <data name="CanViewTheEmailLogsAndErrorLogsEasily" xml:space="preserve">
+    <value>可以轻松查看电子邮件日志和错误日志。</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+  <data name="ChangeProfilePicture" xml:space="preserve">
+    <value>更改个人资料图片</value>
+  </data>
+  <data name="ChangesWasNotSavedPleaseMakeSure" xml:space="preserve">
+    <value>更改未保存。请确保所有字段都填写了有效值。</value>
+  </data>
+  <data name="ChangesWereSavedSuccessfully" xml:space="preserve">
+    <value>更改已成功保存！</value>
+  </data>
+  <data name="ChatbotDefault" xml:space="preserve">
+    <value>聊天机器人默认</value>
+  </data>
+  <data name="ChatbotSetting" xml:space="preserve">
+    <value>聊天机器人设置</value>
+  </data>
+  <data name="ChatDeletedSuccessfully" xml:space="preserve">
+    <value>聊天已成功删除！</value>
+  </data>
+  <data name="ChatSessionsAdminView" xml:space="preserve">
+    <value>聊天会话（管理员视图）</value>
+  </data>
+  <data name="ChatView" xml:space="preserve">
+    <value>聊天视图</value>
+  </data>
+  <data name="ChiefExecutiveOfficerCEO" xml:space="preserve">
+    <value>首席执行官 (CEO)</value>
+  </data>
+  <data name="ChineseSimplified" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="ChineseTraditional" xml:space="preserve">
+    <value>繁体中文</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>单击此处</value>
+  </data>
+  <data name="ClickToAutoGenerateBodyUsingAI" xml:space="preserve">
+    <value>单击以使用 AI 自动生成正文。</value>
+  </data>
+  <data name="ClickToAutoGenerateTagsUsingAI" xml:space="preserve">
+    <value>单击以使用 AI 自动生成标签。</value>
+  </data>
+  <data name="ClickToCheckOutTheErrorDetail" xml:space="preserve">
+    <value>单击以查看错误详细信息</value>
+  </data>
+  <data name="ClickToCopy" xml:space="preserve">
+    <value>单击以复制</value>
+  </data>
+  <data name="ClickToCopyTheRegistrationLinkAndShareWithAdmin" xml:space="preserve">
+    <value>单击以复制注册链接并将其与您的管理员共享，以便他们可以自行注册。</value>
+  </data>
+  <data name="ClickToCopyTheRegistrationLinkAndShareWithAgents" xml:space="preserve">
+    <value>单击以复制注册链接并将其与您的代理共享，以便他们可以自行注册。</value>
+  </data>
+  <data name="ClickToCopyTheRegistrationLinkAndShareWithCustomer" xml:space="preserve">
+    <value>单击以复制注册链接并将其与您的客户共享，以便他们可以自行注册。</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ClosedBy" xml:space="preserve">
+    <value>关闭者</value>
+  </data>
+  <data name="ClosedOn" xml:space="preserve">
+    <value>关闭日期</value>
+  </data>
+  <data name="ClosedStatusName" xml:space="preserve">
+    <value>关闭状态名称</value>
+  </data>
+  <data name="ClosedTickets" xml:space="preserve">
+    <value>关闭的票证</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>折叠</value>
+  </data>
+  <data name="Column0NotFound" xml:space="preserve">
+    <value>未找到列 {0}。</value>
+  </data>
+  <data name="ComingUpInTheNextUpdate" xml:space="preserve">
+    <value>即将在下一次更新中推出！</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="CommunicationSkills" xml:space="preserve">
+    <value>沟通技巧</value>
+  </data>
+  <data name="ConfirmedEmail" xml:space="preserve">
+    <value>已确认电子邮件</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>确认电子邮件</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>确认新密码</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>确认密码</value>
+  </data>
+  <data name="Conversation" xml:space="preserve">
+    <value>对话</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>版权</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="CreateANew" xml:space="preserve">
+    <value>创建新的</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>创建者</value>
+  </data>
+  <data name="CreatedOn" xml:space="preserve">
+    <value>创建于</value>
+  </data>
+  <data name="CreateNew" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="CreateNewArticle" xml:space="preserve">
+    <value>创建新文章</value>
+  </data>
+  <data name="CreateNewChat" xml:space="preserve">
+    <value>创建新聊天</value>
+  </data>
+  <data name="CreateNewTicket" xml:space="preserve">
+    <value>创建新票据</value>
+  </data>
+  <data name="CreatingANewSupportTicket" xml:space="preserve">
+    <value>创建新支持票据</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>当前密码</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>仪表板</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>生日</value>
+  </data>
+  <data name="DavidPatel" xml:space="preserve">
+    <value>David Patel</value>
+  </data>
+  <data name="DedicatedSystemToHelpAndSupportYou" xml:space="preserve">
+    <value>专用系统为您提供帮助和支持</value>
+  </data>
+  <data name="DefaultQuestionSetting" xml:space="preserve">
+    <value>默认问题设置</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DeleteCategory" xml:space="preserve">
+    <value>删除类别</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>已删除</value>
+  </data>
+  <data name="DeleteThisArticle" xml:space="preserve">
+    <value>删除此文章</value>
+  </data>
+  <data name="DeletingIsPermanentAndCantBeUndone" xml:space="preserve">
+    <value>删除是永久性的，无法撤消。您确定要继续吗？</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="DidThisArticleHelpYou" xml:space="preserve">
+    <value>这篇文章对您有帮助吗？</value>
+  </data>
+  <data name="DirectorOfCustomerExperience" xml:space="preserve">
+    <value>客户体验总监</value>
+  </data>
+  <data name="DownloadRecentProjects" xml:space="preserve">
+    <value>下载最近的项目</value>
+  </data>
+  <data name="DragAndDropToRearrangeTheList" xml:space="preserve">
+    <value>拖放以重新排列列表。</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="Edit category" xml:space="preserve">
+    <value>编辑类别</value>
+  </data>
+  <data name="EditableByAdminAgent" xml:space="preserve">
+    <value>可由管理员/代理编辑</value>
+  </data>
+  <data name="EditArticle" xml:space="preserve">
+    <value>编辑文章</value>
+  </data>
+  <data name="EditATicket" xml:space="preserve">
+    <value>编辑票据</value>
+  </data>
+  <data name="EditCategory" xml:space="preserve">
+    <value>编辑类别</value>
+  </data>
+  <data name="EditTags" xml:space="preserve">
+    <value>编辑标签</value>
+  </data>
+  <data name="EditThisArticle" xml:space="preserve">
+    <value>编辑此文章</value>
+  </data>
+  <data name="EditTitle" xml:space="preserve">
+    <value>编辑标题</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>电子邮件地址</value>
+  </data>
+  <data name="EmailAddressHasBeenTaken" xml:space="preserve">
+    <value>电子邮件地址已被占用。</value>
+  </data>
+  <data name="EmailConfirmationRequired" xml:space="preserve">
+    <value>需要电子邮件确认</value>
+  </data>
+  <data name="EmailConfirmationTokenExpired" xml:space="preserve">
+    <value>您的电子邮件确认令牌已过期。我们已向您发送了一封新的确认电子邮件。请点击最新电子邮件中的链接完成注册。</value>
+  </data>
+  <data name="EmailLog" xml:space="preserve">
+    <value>电子邮件日志</value>
+  </data>
+  <data name="EmbedAnAIChatbotOnMultipleWebsites" xml:space="preserve">
+    <value>在多个网站上嵌入 AI 聊天机器人。</value>
+  </data>
+  <data name="EmbedChatbot" xml:space="preserve">
+    <value>嵌入聊天机器人</value>
+  </data>
+  <data name="EmilyJohnson" xml:space="preserve">
+    <value>Emily Johnson</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英语</value>
+  </data>
+  <data name="EnterTagsForThisChat" xml:space="preserve">
+    <value>输入此聊天的标签</value>
+  </data>
+  <data name="EnterTheDetails" xml:space="preserve">
+    <value>输入详细信息。</value>
+  </data>
+  <data name="EnterYour" xml:space="preserve">
+    <value>输入您的</value>
+  </data>
+  <data name="EnterYourPreferredTicketStatusName" xml:space="preserve">
+    <value>输入您喜欢的排队票、未结票和已结票的票证状态名称。例如，您可以更改为待处理、进行中、已解决或任何其他首选名称。</value>
+  </data>
+  <data name="ErrorDate" xml:space="preserve">
+    <value>错误日期</value>
+  </data>
+  <data name="ErrorDetail" xml:space="preserve">
+    <value>错误详细信息</value>
+  </data>
+  <data name="ErrorLog" xml:space="preserve">
+    <value>错误日志</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>错误消息</value>
+  </data>
+  <data name="Expand" xml:space="preserve">
+    <value>展开</value>
+  </data>
+  <data name="ExploreOurComprehensiveKnowledgeBaseResources" xml:space="preserve">
+    <value>探索我们全面的知识库资源，这些资源涵盖一系列问题，以找到您需要的解决方案。如果没有帮助，请提交支持票，我们会尽快回复您。您的满意是我们的首要任务，我们致力于确保您在我们的产品和服务中获得无缝的体验。</value>
+  </data>
+  <data name="ExploreOurKnowledgeBaseArticles" xml:space="preserve">
+    <value>浏览我们的知识库文章，了解常见问题的详细解决方案。</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="ExportArticle" xml:space="preserve">
+    <value>导出文章</value>
+  </data>
+  <data name="ExportCategory" xml:space="preserve">
+    <value>导出类别</value>
+  </data>
+  <data name="ExportChatToCsv" xml:space="preserve">
+    <value>将聊天导出到 csv</value>
+  </data>
+  <data name="ExportChatToExcel" xml:space="preserve">
+    <value>将聊天导出到 excel</value>
+  </data>
+  <data name="ExportChatToPdf" xml:space="preserve">
+    <value>将聊天导出到 pdf</value>
+  </data>
+  <data name="ExportChatToWord" xml:space="preserve">
+    <value>将聊天导出到 word</value>
+  </data>
+  <data name="ExportTheChatHistories" xml:space="preserve">
+    <value>导出聊天历史记录。</value>
+  </data>
+  <data name="ExportTickets" xml:space="preserve">
+    <value>导出票证</value>
+  </data>
+  <data name="ExportToCsv" xml:space="preserve">
+    <value>导出至 csv</value>
+  </data>
+  <data name="ExportToDocx" xml:space="preserve">
+    <value>导出至 docx</value>
+  </data>
+  <data name="ExportToExcel" xml:space="preserve">
+    <value>导出至 excel</value>
+  </data>
+  <data name="ExportToPdf" xml:space="preserve">
+    <value>导出至 pdf</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="FailedToResetPasswordPleaseTryAgainLater" xml:space="preserve">
+    <value>重置密码失败。请稍后重试。</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>常见问题</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>反馈</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="FilledByAdminAgent" xml:space="preserve">
+    <value>由管理员/代理填写</value>
+  </data>
+  <data name="FilledByCustomer" xml:space="preserve">
+    <value>由客户填写</value>
+  </data>
+  <data name="FillInTheEmailAddressAndWeWillSendYouAResetPasswordLink" xml:space="preserve">
+    <value>填写电子邮件地址，我们将向您发送重置密码链接。</value>
+  </data>
+  <data name="FillInTheFollowingToRegister" xml:space="preserve">
+    <value>填写以下内容以注册。</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>筛选</value>
+  </data>
+  <data name="FilterMonth" xml:space="preserve">
+    <value>筛选月份</value>
+  </data>
+  <data name="FilterRole" xml:space="preserve">
+    <value>筛选角色</value>
+  </data>
+  <data name="FilterYear" xml:space="preserve">
+    <value>筛选年份</value>
+  </data>
+  <data name="FindTheSolutionIn3Steps" xml:space="preserve">
+    <value>通过 3 个步骤找到解决方案</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="FollowUs" xml:space="preserve">
+    <value>关注我们</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>忘记密码</value>
+  </data>
+  <data name="ForgotYourPassword" xml:space="preserve">
+    <value>忘记密码？</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>法语</value>
+  </data>
+  <data name="FrequentlyAskedQuestions" xml:space="preserve">
+    <value>常见问题</value>
+  </data>
+  <data name="Full Name" xml:space="preserve">
+    <value>全名</value>
+  </data>
+  <data name="FullAddress" xml:space="preserve">
+    <value>完整地址</value>
+  </data>
+  <data name="FullList" xml:space="preserve">
+    <value>完整列表</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>全名</value>
+  </data>
+  <data name="FunAndUsefulTips" xml:space="preserve">
+    <value>有趣且实用的提示</value>
+  </data>
+  <data name="GeneralSetting" xml:space="preserve">
+    <value>常规设置</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>德语</value>
+  </data>
+  <data name="HasBeenAssignedTo" xml:space="preserve">
+    <value>已分配给</value>
+  </data>
+  <data name="HasBeenAssignedToAnotherAgent" xml:space="preserve">
+    <value>已分配给其他代理</value>
+  </data>
+  <data name="HasBeenClosedByTheCustomer" xml:space="preserve">
+    <value>已被客户关闭</value>
+  </data>
+  <data name="HasBeenClosedByTheSupportAgent" xml:space="preserve">
+    <value>已被支持代理关闭</value>
+  </data>
+  <data name="HeadOfOperations" xml:space="preserve">
+    <value>运营主管</value>
+  </data>
+  <data name="Here" xml:space="preserve">
+    <value>此处</value>
+  </data>
+  <data name="Hindi" xml:space="preserve">
+    <value>印地语</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="HowCanIHelpYouToday" xml:space="preserve">
+    <value>我今天能为您提供什么帮助？</value>
+  </data>
+  <data name="HowCanIResetMyPassword" xml:space="preserve">
+    <value>我如何重置密码？</value>
+  </data>
+  <data name="HowItWorks" xml:space="preserve">
+    <value>工作原理</value>
+  </data>
+  <data name="HowLongDoesItUsuallyTakeToReceiveAResponse" xml:space="preserve">
+    <value>通常需要多长时间才能收到支持团队的回复？</value>
+  </data>
+  <data name="HurrayTheTicketWasClosedThankYou" xml:space="preserve">
+    <value>万岁！票已关闭。谢谢！</value>
+  </data>
+  <data name="Icon" xml:space="preserve">
+    <value>图标</value>
+  </data>
+  <data name="IDCardNumber" xml:space="preserve">
+    <value>身份证号码</value>
+  </data>
+  <data name="IfYouEncounterAnErrorMessagePleaseTakeNote" xml:space="preserve">
+    <value>如果您遇到错误消息，请记下错误消息以及发生错误时您正在采取的任何步骤。然后，向我们的支持团队提交支持票以寻求帮助。</value>
+  </data>
+  <data name="IfYoureNotSatisfiedWithTheResolutionProvided" xml:space="preserve">
+    <value>如果您对我们的支持团队提供的解决方案不满意，请告诉我们，我们将尽最大努力解决您的问题并找到令人满意的解决方案。</value>
+  </data>
+  <data name="IfYourProblemPersists" xml:space="preserve">
+    <value>如果问题仍然存在，请继续打开支持单以获得个性化帮助。</value>
+  </data>
+  <data name="IfYouveFoundASolutionYouCanCloseThisTicket" xml:space="preserve">
+    <value>如果您找到了解决方案，您可以关闭此单，以便将其从队列中删除。非常感谢您的合作！</value>
+  </data>
+  <data name="ImmediatelyReceivingAnEmailABell" xml:space="preserve">
+    <value>立即收到电子邮件、铃声和提示通知。</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>影响</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="ImportantNote" xml:space="preserve">
+    <value>重要提示</value>
+  </data>
+  <data name="ImportArticle" xml:space="preserve">
+    <value>导入文章</value>
+  </data>
+  <data name="ImportCategories" xml:space="preserve">
+    <value>导入类别</value>
+  </data>
+  <data name="ImportCategory" xml:space="preserve">
+    <value>导入类别</value>
+  </data>
+  <data name="ImportingDataFromExcelPleaseWait" xml:space="preserve">
+    <value>从 Excel 导入数据。请稍候...</value>
+  </data>
+  <data name="InitiatedBy" xml:space="preserve">
+    <value>发起人</value>
+  </data>
+  <data name="InitiatedOn" xml:space="preserve">
+    <value>发起时间</value>
+  </data>
+  <data name="InstantEmailBellAndToastNotifications" xml:space="preserve">
+    <value>即时电子邮件、铃声和提示通知。</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>电子邮件地址无效。</value>
+  </data>
+  <data name="InvalidLoginAttempt" xml:space="preserve">
+    <value>登录尝试无效</value>
+  </data>
+  <data name="InvalidPasswordError" xml:space="preserve">
+    <value>密码必须至少为 6 个字符，至少包含一个数字、一个大写字母、一个小写字母和一个非字母数字字符。</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>角色无效。请在下拉列表中选择角色。</value>
+  </data>
+  <data name="InvalidUsername" xml:space="preserve">
+    <value>用户名无效。</value>
+  </data>
+  <data name="IsHelpful" xml:space="preserve">
+    <value>有帮助吗？</value>
+  </data>
+  <data name="IsThereAnyFeedbackYouWantToSubmitToUs" xml:space="preserve">
+    <value>您是否有任何反馈要提交给我们？</value>
+  </data>
+  <data name="KnowledgeAndCompetence" xml:space="preserve">
+    <value>知识和能力</value>
+  </data>
+  <data name="KnowledgeBase" xml:space="preserve">
+    <value>知识库</value>
+  </data>
+  <data name="Last30Days" xml:space="preserve">
+    <value>最近 30 天</value>
+  </data>
+  <data name="Last60Days" xml:space="preserve">
+    <value>最近 60 天</value>
+  </data>
+  <data name="Last7Days" xml:space="preserve">
+    <value>最近 7 天</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>姓氏</value>
+  </data>
+  <data name="LastRepliedBy" xml:space="preserve">
+    <value>最后回复者</value>
+  </data>
+  <data name="LastRepliedOn" xml:space="preserve">
+    <value>最后回复日期</value>
+  </data>
+  <data name="LatestLoginDateAndTime" xml:space="preserve">
+    <value>最新登录日期和时间</value>
+  </data>
+  <data name="Lifetime" xml:space="preserve">
+    <value>终身</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>加载中</value>
+  </data>
+  <data name="LoadingAIAnswer" xml:space="preserve">
+    <value>加载 AI 答案</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LoginDateAndTime" xml:space="preserve">
+    <value>登录日期和时间</value>
+  </data>
+  <data name="LoginHistory" xml:space="preserve">
+    <value>登录历史</value>
+  </data>
+  <data name="LoginTo" xml:space="preserve">
+    <value>登录至</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>徽标</value>
+  </data>
+  <data name="LotsOfUsefulFeatures" xml:space="preserve">
+    <value>大量实用功能</value>
+  </data>
+  <data name="Malay" xml:space="preserve">
+    <value>马来语</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="ManageYourKnowledgeBaseArticles" xml:space="preserve">
+    <value>管理您的知识库文章。</value>
+  </data>
+  <data name="ManageYourKnowledgeBaseCategories" xml:space="preserve">
+    <value>管理您的知识库类别。</value>
+  </data>
+  <data name="MarkAllAsRead" xml:space="preserve">
+    <value>全部标记为已读</value>
+  </data>
+  <data name="MarkedAsRead" xml:space="preserve">
+    <value>标记为已读</value>
+  </data>
+  <data name="MeetOurTeam" xml:space="preserve">
+    <value>认识我们的团队</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>消息</value>
+  </data>
+  <data name="MichaelChen" xml:space="preserve">
+    <value>Michael Chen</value>
+  </data>
+  <data name="ModifiedBy" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="ModifiedOn" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="MoreFeatures" xml:space="preserve">
+    <value>更多功能</value>
+  </data>
+  <data name="MoreUsefulFeaturesIn" xml:space="preserve">
+    <value>更多实用功能</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>我的个人资料</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新</value>
+  </data>
+  <data name="NewArticle" xml:space="preserve">
+    <value>新文章</value>
+  </data>
+  <data name="NewCategory" xml:space="preserve">
+    <value>新类别</value>
+  </data>
+  <data name="NewChat" xml:space="preserve">
+    <value>新聊天</value>
+  </data>
+  <data name="NewConfirmationEmailSent" xml:space="preserve">
+    <value>新的确认电子邮件已发送到您的邮箱。</value>
+  </data>
+  <data name="NewCustomersByAutoDetectedCountry" xml:space="preserve">
+    <value>按自动检测到的国家/地区划分的新客户</value>
+  </data>
+  <data name="NewCustomersByAutoDetectedRegion" xml:space="preserve">
+    <value>按自动检测到的地区划分的新客户</value>
+  </data>
+  <data name="NewCustomersByAutoDetectedTimezone" xml:space="preserve">
+    <value>按自动检测到的时区划分的新客户</value>
+  </data>
+  <data name="NewCustomersByMonth" xml:space="preserve">
+    <value>按月份划分的新客户</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>新密码</value>
+  </data>
+  <data name="NewReply" xml:space="preserve">
+    <value>新回复</value>
+  </data>
+  <data name="NewTicket" xml:space="preserve">
+    <value>新票证</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="NoChatHistoriesAreFound" xml:space="preserve">
+    <value>未找到聊天记录。</value>
+  </data>
+  <data name="NoDataAvailable" xml:space="preserve">
+    <value>无可用数据</value>
+  </data>
+  <data name="NoNotificationFound" xml:space="preserve">
+    <value>未找到通知</value>
+  </data>
+  <data name="NoteUsernameAndEmailAddressCannotBeChanged" xml:space="preserve">
+    <value>注意：用户名和电子邮件地址无法更改。如果您想使用其他电子邮件地址，可以注册一个新帐户。</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="NotifitionLog" xml:space="preserve">
+    <value>通知日志</value>
+  </data>
+  <data name="NumberOfActiveCustomers" xml:space="preserve">
+    <value>活跃客户数量</value>
+  </data>
+  <data name="NumberOfCustomers" xml:space="preserve">
+    <value>客户数量</value>
+  </data>
+  <data name="NumberOfNewCustomers" xml:space="preserve">
+    <value>新客户数量</value>
+  </data>
+  <data name="NumberOfTickets" xml:space="preserve">
+    <value>票证数量</value>
+  </data>
+  <data name="OnceDeletedArticlesInThisCategoryWillNoLonger" xml:space="preserve">
+    <value>删除后，此类别中的文章将不再显示，因为类别将变为空。您需要为这些文章分配一个新类别。您确定要继续吗？</value>
+  </data>
+  <data name="OnlyAdministratorsHaveAccessToThisSection" xml:space="preserve">
+    <value>只有管理员才能访问此部分，该部分专门用于管理由于删除其原始关联类别而缺少类别的文章。管理员可以为文章重新选择另一个类别。</value>
+  </data>
+  <data name="OnlyImagesAreAllowed" xml:space="preserve">
+    <value>只允许使用图像。</value>
+  </data>
+  <data name="OopsTheActionCouldntBeCompletedDueToAnError" xml:space="preserve">
+    <value>糟糕！由于错误，无法完成操作。如果问题仍然存在，请重试或联系支持人员。</value>
+  </data>
+  <data name="OopsYouDontHavePermissionToAccessThisPage" xml:space="preserve">
+    <value>糟糕！您无权访问此页面。</value>
+  </data>
+  <data name="OpenStatusName" xml:space="preserve">
+    <value>开放状态名称</value>
+  </data>
+  <data name="OpenTickets" xml:space="preserve">
+    <value>开放票证</value>
+  </data>
+  <data name="OptionalFields" xml:space="preserve">
+    <value>可选字段</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>订单</value>
+  </data>
+  <data name="OrderReference" xml:space="preserve">
+    <value>订单参考</value>
+  </data>
+  <data name="OtherProjects" xml:space="preserve">
+    <value>其他项目</value>
+  </data>
+  <data name="OurCustomerSupportTeamIsAvailableFrom" xml:space="preserve">
+    <value>我们的客户支持团队的工作时间为周一至周五，太平洋标准时间上午 9:00 至下午 6:00。在此时间以外收到的任何票证（包括周六或周日提交的票证）将在下周一的正常工作时间内得到答复。</value>
+  </data>
+  <data name="OurSupportTeamCanAssistWithTechnicalIssues" xml:space="preserve">
+    <value>我们的支持团队可以协助解决技术问题、帐户相关查询、故障排除以及您可能对我们的产品或服务有的任何其他问题。</value>
+  </data>
+  <data name="OurTeam" xml:space="preserve">
+    <value>我们的团队</value>
+  </data>
+  <data name="OverallSatisfaction" xml:space="preserve">
+    <value>总体满意度</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>页面未找到 (404)</value>
+  </data>
+  <data name="PageNotFoundDescription" xml:space="preserve">
+    <value>找不到您要查找的页面。它可能已被移动、重命名或不再存在。请点击下面的按钮返回主页。</value>
+  </data>
+  <data name="PageNotFoundEnsureUrlCorrect" xml:space="preserve">
+    <value>页面未找到。请确保 URL 正确。</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="PasswordChangedSuccessfully" xml:space="preserve">
+    <value>密码更改成功！</value>
+  </data>
+  <data name="PasswordNotMatchWithConfirmPasswordField" xml:space="preserve">
+    <value>密码与确认密码字段不匹配。</value>
+  </data>
+  <data name="PasswordRequirementTooltip" xml:space="preserve">
+    <value>至少 6 个字符。至少需要一个大写字母、一个小写字母、一个数字和一个符号。</value>
+  </data>
+  <data name="PermanentlyDeleteThisRecord" xml:space="preserve">
+    <value>永久删除此记录？</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="PleaseCheckMailbox" xml:space="preserve">
+    <value>请检查您的邮箱</value>
+  </data>
+  <data name="PleaseClick" xml:space="preserve">
+    <value>请点击</value>
+  </data>
+  <data name="PleaseConfirmYourEmailBeforeSigningIn" xml:space="preserve">
+    <value>请在登录前确认您的电子邮件。</value>
+  </data>
+  <data name="PleaseDownloadTheExcelFileBelowAnd" xml:space="preserve">
+    <value>请下载下面的 Excel 文件并填写各栏。标有星号 (*) 的栏为必填字段。修改 Excel 文件后，请在下面的上传部分上传。</value>
+  </data>
+  <data name="PleaseDownloadTheExcelFileBelowAndFillUpAllTheseColumns" xml:space="preserve">
+    <value>请下载下面的 Excel 文件并填写所有这些列</value>
+  </data>
+  <data name="PleaseEnterATitleSoThatAICanUseIt" xml:space="preserve">
+    <value>请输入标题，以便 AI 可以使用它来生成</value>
+  </data>
+  <data name="PleaseSelectAnExcelFile" xml:space="preserve">
+    <value>请选择一个 excel 文件</value>
+  </data>
+  <data name="PortalName" xml:space="preserve">
+    <value>网站名称</value>
+  </data>
+  <data name="PossibleReasonsYouReNotLoggedIn" xml:space="preserve">
+    <value>可能的原因：您尚未登录。或者，您没有此资源所需的访问权限。</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>邮政编码</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="ProductManager" xml:space="preserve">
+    <value>产品经理</value>
+  </data>
+  <data name="ProfilePicture" xml:space="preserve">
+    <value>个人资料图片</value>
+  </data>
+  <data name="ProvideSeamlessAndReliableSupport" xml:space="preserve">
+    <value>无论客户身在何处，都能为他们提供无缝可靠的支持。我们的帮助台系统可确保在不同时区、语言和渠道提供及时的帮助，让您能够在全球范围内建立信任并提供卓越的服务。</value>
+  </data>
+  <data name="PublishedArticles" xml:space="preserve">
+    <value>已发布文章</value>
+  </data>
+  <data name="PublishOrUnpublishAnArticle" xml:space="preserve">
+    <value>发布或取消发布文章。</value>
+  </data>
+  <data name="PublishToKnowledgeBase" xml:space="preserve">
+    <value>发布到知识库</value>
+  </data>
+  <data name="QueueingStatusName" xml:space="preserve">
+    <value>排队状态名称</value>
+  </data>
+  <data name="QueueingTickets" xml:space="preserve">
+    <value>排队票证</value>
+  </data>
+  <data name="QueuingAndGetReply" xml:space="preserve">
+    <value>排队并获得回复</value>
+  </data>
+  <data name="RateThisSupportSession" xml:space="preserve">
+    <value>给此支持会话评分</value>
+  </data>
+  <data name="ReadAll" xml:space="preserve">
+    <value>全部阅读</value>
+  </data>
+  <data name="ReadingKnowledgeBaseArticle" xml:space="preserve">
+    <value>阅读知识库文章</value>
+  </data>
+  <data name="RecipientsEmail" xml:space="preserve">
+    <value>收件人的电子邮件</value>
+  </data>
+  <data name="RecordNow" xml:space="preserve">
+    <value>现在记录</value>
+  </data>
+  <data name="Records" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="RecordsImportedSuccessfully" xml:space="preserve">
+    <value>记录导入成功</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>地区</value>
+  </data>
+  <data name="RegisterACustomerAccount" xml:space="preserve">
+    <value>注册客户帐户</value>
+  </data>
+  <data name="RegisterAnAdminAccount" xml:space="preserve">
+    <value>注册管理员帐户</value>
+  </data>
+  <data name="RegisterAnAgentAccount" xml:space="preserve">
+    <value>注册代理帐户</value>
+  </data>
+  <data name="RegisteredOn" xml:space="preserve">
+    <value>注册于</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>注册成功！</value>
+  </data>
+  <data name="RegisterSuccessLoginNow" xml:space="preserve">
+    <value>注册成功！立即登录。</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="RemoveSelectedFile" xml:space="preserve">
+    <value>移除选定文件</value>
+  </data>
+  <data name="RequestType" xml:space="preserve">
+    <value>请求类型</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>*必填字段</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>重置密码</value>
+  </data>
+  <data name="ResetPasswordEmailSent" xml:space="preserve">
+    <value>重置密码电子邮件已发送</value>
+  </data>
+  <data name="ResolvedAndClose" xml:space="preserve">
+    <value>已解决并关闭</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="SarahRodriguez" xml:space="preserve">
+    <value>Sarah Rodriguez</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SavedReplies" xml:space="preserve">
+    <value>已保存回复</value>
+  </data>
+  <data name="SavedSuccessfully" xml:space="preserve">
+    <value>已成功保存</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchFor" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchForAnArticle" xml:space="preserve">
+    <value>搜索文章</value>
+  </data>
+  <data name="SelectAnIcon" xml:space="preserve">
+    <value>选择一个图标</value>
+  </data>
+  <data name="SelectedIcon" xml:space="preserve">
+    <value>选定图标</value>
+  </data>
+  <data name="SendEmailToNotifyTheCustomer" xml:space="preserve">
+    <value>发送电子邮件通知客户？</value>
+  </data>
+  <data name="SentSuccessfully" xml:space="preserve">
+    <value>已成功发送</value>
+  </data>
+  <data name="Sequence" xml:space="preserve">
+    <value>序列</value>
+  </data>
+  <data name="SetAnArticleAsTheDataUsedByTheAIChatbot" xml:space="preserve">
+    <value>将文章设置为 AI 聊天机器人使用的数据。</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SetupTheArticlesURLSoThatItIsSEOFriendly" xml:space="preserve">
+    <value>设置文章的 URL，使其有利于 SEO。</value>
+  </data>
+  <data name="SetUpTheDefaultQuestionsShownOnTheAIChatbot" xml:space="preserve">
+    <value>设置 AI 聊天机器人上显示的默认问题。</value>
+  </data>
+  <data name="SetUpTheTicketsDropDownListOptionsSuchAsPriorityUrgencyImpactAndMore" xml:space="preserve">
+    <value>设置工单的下拉列表选项，例如优先级、紧急程度、影响等。</value>
+  </data>
+  <data name="SetUpTheTicketStatusDisplayName" xml:space="preserve">
+    <value>设置工单状态显示名称。</value>
+  </data>
+  <data name="SetUpTheWebsiteNameAndLogoCanViewAllTheUsers" xml:space="preserve">
+    <value>设置网站名称和徽标。可以查看所有用户。</value>
+  </data>
+  <data name="SetYourDesiredTextToAppearInTheURL" xml:space="preserve">
+    <value>为了 SEO，设置您想要的文本显示在 URL 中。</value>
+  </data>
+  <data name="ShareAIChatbot" xml:space="preserve">
+    <value>分享 AI 聊天机器人</value>
+  </data>
+  <data name="ShareThisArticle" xml:space="preserve">
+    <value>分享这篇文章</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="SMTPHost" xml:space="preserve">
+    <value>SMTP 主机</value>
+  </data>
+  <data name="SMTPPassword" xml:space="preserve">
+    <value>SMTP 密码</value>
+  </data>
+  <data name="SMTPPort" xml:space="preserve">
+    <value>SMTP 端口</value>
+  </data>
+  <data name="SMTPUsername" xml:space="preserve">
+    <value>SMTP 用户名</value>
+  </data>
+  <data name="SomeRequiredFieldsAreEmpty" xml:space="preserve">
+    <value>一些必填字段为空。</value>
+  </data>
+  <data name="SomethingIsWrongPleaseTryAgainLater" xml:space="preserve">
+    <value>出现错误。请稍后重试。</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>西班牙语</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>立即记录</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="SubmitReply" xml:space="preserve">
+    <value>提交回复</value>
+  </data>
+  <data name="SubmitSupportTicketsFindAnswers" xml:space="preserve">
+    <value>提交支持票，从知识库文章中查找答案，与 AI 聊天机器人聊天等。</value>
+  </data>
+  <data name="SubmittedSuccessfully" xml:space="preserve">
+    <value>已成功提交！</value>
+  </data>
+  <data name="SubmittedTickets" xml:space="preserve">
+    <value>已提交的票</value>
+  </data>
+  <data name="SubmitTheSupportTicketForm" xml:space="preserve">
+    <value>提交支持票表格并等待我们的回复以进一步协助您。</value>
+  </data>
+  <data name="SupportAroundTheWorld" xml:space="preserve">
+    <value>全球支持</value>
+  </data>
+  <data name="SupportTickets" xml:space="preserve">
+    <value>支持票</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="TagsAreUpdated" xml:space="preserve">
+    <value>标签已更新！</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>团队</value>
+  </data>
+  <data name="ThankYouForConfirmingYourEmail" xml:space="preserve">
+    <value>感谢您确认您的电子邮件。</value>
+  </data>
+  <data name="TheAIChatbotCanReplyWithRelatedClickableLinks" xml:space="preserve">
+    <value>AI 聊天机器人可以使用相关的可点击链接回复。</value>
+  </data>
+  <data name="TheChatbotsQuestionOrderingAdheresToThisConfiguration" xml:space="preserve">
+    <value>聊天机器人的问题排序遵循此配置。请按照您希望它们出现的顺序排列问题。</value>
+  </data>
+  <data name="TheDefaultQuestionsForTheAIChatbotAreUpdated" xml:space="preserve">
+    <value>AI聊天机器人的默认问题已更新！</value>
+  </data>
+  <data name="TheErrorsAreAsBelow" xml:space="preserve">
+    <value>错误如下</value>
+  </data>
+  <data name="TheFieldMustBeAtMost100CharactersLong" xml:space="preserve">
+    <value>字段长度最多为100个字符。</value>
+  </data>
+  <data name="TheFieldMustBeAtMost256CharactersLong" xml:space="preserve">
+    <value>字段长度最多为256个字符。</value>
+  </data>
+  <data name="TheFieldMustMatchTheNewPassword" xml:space="preserve">
+    <value>字段必须与新密码匹配。</value>
+  </data>
+  <data name="TheFieldMustMatchThePassword" xml:space="preserve">
+    <value>字段必须与密码匹配。</value>
+  </data>
+  <data name="TheFollowingTicketsAreAwaitingYourAction" xml:space="preserve">
+    <value>以下工单正在等待您的操作以将其分配给代理。</value>
+  </data>
+  <data name="TheLayoutOfTicketConversationMakesItEasyToRead" xml:space="preserve">
+    <value>工单对话的布局使其易于阅读。</value>
+  </data>
+  <data name="TheNumberOfActiveCustomersWhoWereLoggedInEachMonth" xml:space="preserve">
+    <value>在指定年份内每月登录的活跃客户数量。</value>
+  </data>
+  <data name="TheNumberOfColumnsIsMismatchedWithTheTemplate" xml:space="preserve">
+    <value>列数与模板不匹配。</value>
+  </data>
+  <data name="TheNumberOfCustomersWhoAreNewlyRegisteredInEachMonth" xml:space="preserve">
+    <value>在指定年份内每月新注册的客户数量。</value>
+  </data>
+  <data name="ThenUploadTheExcelFileInTheUploadSectionBelow" xml:space="preserve">
+    <value>然后，在下面的上传部分上传Excel文件。</value>
+  </data>
+  <data name="ThereIsNoRecordToArrange" xml:space="preserve">
+    <value>没有要安排的记录。</value>
+  </data>
+  <data name="TheSupportTicketsThatHaveYetToBeClosedAreListedHere" xml:space="preserve">
+    <value>尚未关闭的支持工单在此处列出。</value>
+  </data>
+  <data name="TheTicket" xml:space="preserve">
+    <value>工单</value>
+  </data>
+  <data name="TheUrlCanOnlyContain" xml:space="preserve">
+    <value>URL只能包含字母，数字和破折号，不能有空格。</value>
+  </data>
+  <data name="TheUsernameMustStartWithALetterAndCanOnly" xml:space="preserve">
+    <value>用户名必须以字母开头，并且只能包含字母，数字或下划线。它的长度应在4到30个字符之间。</value>
+  </data>
+  <data name="ThisCannotBeUndone" xml:space="preserve">
+    <value>此操作无法撤消。</value>
+  </data>
+  <data name="ThisExistsTryWithAnother" xml:space="preserve">
+    <value>这已经存在。请尝试使用其他名称。</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>本月</value>
+  </data>
+  <data name="ThisTicketIsAlreadyClosed" xml:space="preserve">
+    <value>此票证已关闭。</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>今年</value>
+  </data>
+  <data name="TicketCategory" xml:space="preserve">
+    <value>票证类别</value>
+  </data>
+  <data name="TicketCode" xml:space="preserve">
+    <value>票证代码</value>
+  </data>
+  <data name="TicketDetail" xml:space="preserve">
+    <value>票证详细信息</value>
+  </data>
+  <data name="Tickets" xml:space="preserve">
+    <value>票证</value>
+  </data>
+  <data name="TicketStatus" xml:space="preserve">
+    <value>票证状态</value>
+  </data>
+  <data name="TicketStatusListing" xml:space="preserve">
+    <value>票证状态列表</value>
+  </data>
+  <data name="TicketsThatCustomersHaveSubmittedAndAreStillAwaitingAResponse" xml:space="preserve">
+    <value>客户已提交且仍在等待回复的票证。</value>
+  </data>
+  <data name="TicketsThatHaveBeenClosedByTheCustomersOrAgents" xml:space="preserve">
+    <value>客户或代理已关闭的票证。</value>
+  </data>
+  <data name="TicketsThatHaveGottenRepliesFromTheAgentsButHaveNotYetClosed" xml:space="preserve">
+    <value>已收到代理回复但尚未关闭的票证。</value>
+  </data>
+  <data name="TicketSubmittedInQueueNow" xml:space="preserve">
+    <value>您的支持票证已提交。票证现在在队列中，轮到您时您将得到回复。谢谢！</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>时区</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="ToArticle" xml:space="preserve">
+    <value>文章</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="ToLogin" xml:space="preserve">
+    <value>登录。</value>
+  </data>
+  <data name="Top10" xml:space="preserve">
+    <value>前 10 名</value>
+  </data>
+  <data name="Top15" xml:space="preserve">
+    <value>前 15 名</value>
+  </data>
+  <data name="Top20" xml:space="preserve">
+    <value>前 20 名</value>
+  </data>
+  <data name="Top25" xml:space="preserve">
+    <value>前 25 名</value>
+  </data>
+  <data name="Top30" xml:space="preserve">
+    <value>前 30 名</value>
+  </data>
+  <data name="TopAgentsByClosedTickets" xml:space="preserve">
+    <value>按已关闭票证排名的顶级代理</value>
+  </data>
+  <data name="ToResetYourPasswordYouCanVisitOurWebsite" xml:space="preserve">
+    <value>要重置密码，您可以访问我们的网站并单击登录页面上的“忘记密码”链接。按照说明重置密码。</value>
+  </data>
+  <data name="ToSelectAnIcon" xml:space="preserve">
+    <value>选择图标</value>
+  </data>
+  <data name="TotalAdmins" xml:space="preserve">
+    <value>管理员总数</value>
+  </data>
+  <data name="TotalAgents" xml:space="preserve">
+    <value>代理总数</value>
+  </data>
+  <data name="TotalAIChatbotsByUserRole" xml:space="preserve">
+    <value>按用户角色划分的 AI 聊天机器人总数</value>
+  </data>
+  <data name="TotalClosedTickets" xml:space="preserve">
+    <value>已关闭工单总数</value>
+  </data>
+  <data name="TotalCustomers" xml:space="preserve">
+    <value>客户总数</value>
+  </data>
+  <data name="TotalOpenTickets" xml:space="preserve">
+    <value>未打开工单总数</value>
+  </data>
+  <data name="TotalQueueingTickets" xml:space="preserve">
+    <value>排队工单总数</value>
+  </data>
+  <data name="TotalTickets" xml:space="preserve">
+    <value>工单总数</value>
+  </data>
+  <data name="TotalTicketsByAgents" xml:space="preserve">
+    <value>按代理划分的工单总数</value>
+  </data>
+  <data name="TotalTicketsByCustomers" xml:space="preserve">
+    <value>按客户划分的工单总数</value>
+  </data>
+  <data name="TotalTicketsByStatus" xml:space="preserve">
+    <value>按状态划分的工单总数</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>用户总数</value>
+  </data>
+  <data name="Turkish" xml:space="preserve">
+    <value>土耳其</value>
+  </data>
+  <data name="TutorialVideos" xml:space="preserve">
+    <value>教程视频</value>
+  </data>
+  <data name="UnassignedTickets" xml:space="preserve">
+    <value>未分配的工单</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>已更新</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="UploadedImage" xml:space="preserve">
+    <value>已上传的图片</value>
+  </data>
+  <data name="UploadExcel" xml:space="preserve">
+    <value>上传 Excel</value>
+  </data>
+  <data name="Urgency" xml:space="preserve">
+    <value>紧急程度</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="UrlTaken" xml:space="preserve">
+    <value>该 URL 已被占用。</value>
+  </data>
+  <data name="UsefulLinks" xml:space="preserve">
+    <value>有用的链接</value>
+  </data>
+  <data name="UseInAIChatbot" xml:space="preserve">
+    <value>在 AI 聊天机器人中使用</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>用户管理</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="UsernameHasBeenTaken" xml:space="preserve">
+    <value>用户名已被占用。</value>
+  </data>
+  <data name="UsernameOrEmail" xml:space="preserve">
+    <value>用户名或电子邮件</value>
+  </data>
+  <data name="UsernameOrEmailHasBeenTaken" xml:space="preserve">
+    <value>用户名或电子邮件地址已被占用。</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>用户个人资料</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="ViewArticle" xml:space="preserve">
+    <value>查看文章</value>
+  </data>
+  <data name="WeAimToRespondToAllInquiriesWithin25BusinessDays" xml:space="preserve">
+    <value>我们的目标是在 2-5 个工作日内回复所有咨询，但响应时间可能因咨询量而异。</value>
+  </data>
+  <data name="WeDiscoveredThatTheSystemHasNoUsersAsOfNow" xml:space="preserve">
+    <value>我们发现系统目前没有用户。请注意，现在注册的第一个用户将自动被分配管理员角色。我们假设管理员是第一个有权访问此系统的用户。</value>
+  </data>
+  <data name="WelcomeToHelpDeskSystem" xml:space="preserve">
+    <value>欢迎使用 {0} 帮助台系统！</value>
+  </data>
+  <data name="WelcomeToOurDedicatedHelpAndSupportSystem" xml:space="preserve">
+    <value>欢迎使用我们专门的帮助和支持系统，该系统旨在帮助您完成每一步。无论您对我们的产品有疑问、需要技术帮助，还是想要指导如何充分利用我们的服务，我们都会为您提供帮助。</value>
+  </data>
+  <data name="WereSorryButItSeemsLikeYouReTryingToAccess" xml:space="preserve">
+    <value>很抱歉，但您似乎正在尝试访问您无权访问的页面或资源。</value>
+  </data>
+  <data name="WeveSentAPasswordResetLink" xml:space="preserve">
+    <value>我们已向您的注册电子邮件地址发送了密码重置链接。请点击电子邮件中的链接重置您的密码。如果您在收件箱中没有看到它，请务必检查您的垃圾邮件或垃圾文件夹，并将我们的电子邮件地址添加到您的安全发件人列表中。</value>
+  </data>
+  <data name="WhatAreTheFeaturesIn" xml:space="preserve">
+    <value>{0} 中有哪些功能？</value>
+  </data>
+  <data name="WhatAreYourOperatingHoursForCustomerSupport" xml:space="preserve">
+    <value>你们的客户支持工作时间是几点？</value>
+  </data>
+  <data name="WhatCanYouDoLoginWithTheCorrectCredentials" xml:space="preserve">
+    <value>你们能做什么？使用正确的凭据登录以获取访问权限。或者，联系支持人员或本网站的管理员授予您访问权限。</value>
+  </data>
+  <data name="WhatShouldIDoIfIEncounterAnErrorMessage" xml:space="preserve">
+    <value>如果我在使用你们的服务时遇到错误消息，该怎么办？</value>
+  </data>
+  <data name="WhatShouldIDoIfImNotSatisfiedWithTheResolution" xml:space="preserve">
+    <value>如果我对你们支持团队提供的解决方案不满意，该怎么办？</value>
+  </data>
+  <data name="WhatTypesOfIssuesCanYourSupportTeamAssistWith" xml:space="preserve">
+    <value>你们的支持团队可以协助解决哪些类型的问题？</value>
+  </data>
+  <data name="WhileWaitingForTheAgentsResponse" xml:space="preserve">
+    <value>在等待客服人员回复时，如果客户自己解决了问题，他们可以关闭工单。</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="YesCloseNow" xml:space="preserve">
+    <value>是的，立即关闭</value>
+  </data>
+  <data name="YesDeleteIt" xml:space="preserve">
+    <value>是的，删除它</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>昨天</value>
+  </data>
+  <data name="YesWeHaveKnowledgeBaseArticlesThatHelpYou" xml:space="preserve">
+    <value>是的，我们有知识库文章可以帮助您找到常见问题的答案和故障排除技巧。</value>
+  </data>
+  <data name="YesYouCanTrackTheStatusOfYourSupportTicket" xml:space="preserve">
+    <value>是的，您可以通过登录我们网站上的帐户并访问支持票证门户来跟踪支持票证的状态。</value>
+  </data>
+  <data name="YouAreNotPermittedToViewTheTicketConversation" xml:space="preserve">
+    <value>您无权查看票证对话。对话仅对票证发起人、管理员和负责人（当前代理）可见。</value>
+  </data>
+  <data name="YouAreUnableToReopenAClosedTicket" xml:space="preserve">
+    <value>一旦关闭了工单，您就无法重新打开它。您确定要继续吗？</value>
+  </data>
+  <data name="YouMayOnlyAttachOneFileIfYouWouldLike" xml:space="preserve">
+    <value>您只能附加一个文件。如果您想上传多个文件，请将它们合并为一个 zip 文件并上传该 zip 文件。</value>
+  </data>
+  <data name="YourPasswordResetSuccessfully" xml:space="preserve">
+    <value>您的密码重置成功！</value>
+  </data>
+  <data name="YourTicket" xml:space="preserve">
+    <value>您的票证</value>
+  </data>
+  <data name="YouveBeenAssignedANewTicket" xml:space="preserve">
+    <value>您已被分配了一张新票证</value>
+  </data>
+  <data name="YouVeGotARatingFor" xml:space="preserve">
+    <value>您收到了来自 {1} 的 {0} 评级更新！</value>
+  </data>
+</root>

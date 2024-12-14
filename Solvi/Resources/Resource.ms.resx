@@ -1,0 +1,1623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>Akses Ditolak</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Tindakan</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Tindakan</value>
+  </data>
+  <data name="ActiveCustomersByMonth" xml:space="preserve">
+    <value>Pelanggan aktif mengikut bulan</value>
+  </data>
+  <data name="ActiveTickets" xml:space="preserve">
+    <value>Tiket aktif</value>
+  </data>
+  <data name="AddAllPossibleTagsEachSeparatedByAComma" xml:space="preserve">
+    <value>Tambahkan semua teg yang mungkin, setiap satu dipisahkan dengan koma. Teg akan digunakan dalam enjin carian pangkalan pengetahuan.</value>
+  </data>
+  <data name="AdditionalInfo" xml:space="preserve">
+    <value>Maklumat Tambahan</value>
+  </data>
+  <data name="AdditionalInfoUpdated" xml:space="preserve">
+    <value>Maklumat tambahan telah berjaya dikemas kini!</value>
+  </data>
+  <data name="AddMore" xml:space="preserve">
+    <value>Tambah Lagi</value>
+  </data>
+  <data name="AddNewArticle" xml:space="preserve">
+    <value>Tambah artikel baharu</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="AdminActions" xml:space="preserve">
+    <value>Tindakan pentadbir</value>
+  </data>
+  <data name="AdminCanSeeAllTheAIChatbotsChatHistories" xml:space="preserve">
+    <value>Pentadbir boleh melihat semua sejarah sembang AI chatbot.</value>
+  </data>
+  <data name="AdminsCanAddTagsToAnAIChatbotsChatThread" xml:space="preserve">
+    <value>Pentadbir boleh menambah tag pada urutan sembang AI chatbot.</value>
+  </data>
+  <data name="AdminsCanEasilyAssignATicketToAnAgent" xml:space="preserve">
+    <value>Pentadbir boleh memberikan tiket dengan mudah kepada ejen.</value>
+  </data>
+  <data name="AdminSettings" xml:space="preserve">
+    <value>Tetapan Pentadbir</value>
+  </data>
+  <data name="AdminView" xml:space="preserve">
+    <value>Paparan admin</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>ejen</value>
+  </data>
+  <data name="AIAnswer" xml:space="preserve">
+    <value>Jawapan AI</value>
+  </data>
+  <data name="AIChatbot" xml:space="preserve">
+    <value>AI chatbot</value>
+  </data>
+  <data name="AIChatbotAvatar" xml:space="preserve">
+    <value>Avatar AI Chatbot</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Semua</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>Hak Cipta Terpelihara.</value>
+  </data>
+  <data name="AnAdminAccountWasAddedSuccessfully" xml:space="preserve">
+    <value>Akaun pentadbir telah berjaya ditambahkan!</value>
+  </data>
+  <data name="AnAgentAccountWasAddedSuccessfully" xml:space="preserve">
+    <value>Akaun ejen telah berjaya ditambahkan!</value>
+  </data>
+  <data name="AnEmailSentPleaseClickLinkToConfirmYourEmail" xml:space="preserve">
+    <value>Kami telah menghantar e-mel pengesahan ke alamat e-mel berdaftar anda. Sila klik pautan dalam e-mel untuk mengesahkan akaun anda. Jika anda tidak melihatnya dalam peti masuk anda, pastikan anda menyemak folder spam atau sampah anda dan tambahkan alamat e-mel kami pada senarai penghantar selamat anda.</value>
+  </data>
+  <data name="AnEmailWasSentToYourRegisteredEmailAddress" xml:space="preserve">
+    <value>E-mel telah dihantar ke alamat e-mel berdaftar anda. Sila klik pada pautan untuk mengesahkan e-mel anda.</value>
+  </data>
+  <data name="AppendASavedReplyToTheMessageBoxAbove" xml:space="preserve">
+    <value>Tambahkan balasan yang disimpan pada kotak mesej di atas.</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>Bahasa Arab</value>
+  </data>
+  <data name="AreThereAnySelfHelpResourcesAvailableFor" xml:space="preserve">
+    <value>Adakah terdapat sebarang sumber bantuan diri yang tersedia untuk menyelesaikan masalah biasa?</value>
+  </data>
+  <data name="AreYouSureToCloseTheTicket" xml:space="preserve">
+    <value>Adakah anda pasti untuk menutup tiket?</value>
+  </data>
+  <data name="AreYouSureToDeleteThisRecord" xml:space="preserve">
+    <value>Adakah Anda Pasti Akan Memadam Rekod Ini?</value>
+  </data>
+  <data name="Arrange" xml:space="preserve">
+    <value>susun</value>
+  </data>
+  <data name="Article" xml:space="preserve">
+    <value>Artikel</value>
+  </data>
+  <data name="ArticlesInThisCategory" xml:space="preserve">
+    <value>Artikel dalam kategori ini</value>
+  </data>
+  <data name="ArticlesWithoutACategory" xml:space="preserve">
+    <value>Artikel tanpa kategori</value>
+  </data>
+  <data name="AssignedAgentSuccessfully" xml:space="preserve">
+    <value>Ejen ditetapkan dengan jayanya!</value>
+  </data>
+  <data name="AssignedTickets" xml:space="preserve">
+    <value>Tiket yang diberikan</value>
+  </data>
+  <data name="AssignedTo" xml:space="preserve">
+    <value>Ditugaskan untuk</value>
+  </data>
+  <data name="AssignTo" xml:space="preserve">
+    <value>Tugaskan Kepada</value>
+  </data>
+  <data name="AutoDetectedInfo" xml:space="preserve">
+    <value>Maklumat Auto Dikesan</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>belakang</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>Badan</value>
+  </data>
+  <data name="ByAdmin" xml:space="preserve">
+    <value>Oleh Admin</value>
+  </data>
+  <data name="ByAgent" xml:space="preserve">
+    <value>Oleh Ejen</value>
+  </data>
+  <data name="ByPriority" xml:space="preserve">
+    <value>Mengikut Keutamaan</value>
+  </data>
+  <data name="ByTicketSubmitter" xml:space="preserve">
+    <value>Oleh Pengirim Tiket</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Batal</value>
+  </data>
+  <data name="CancelNewReply" xml:space="preserve">
+    <value>Batalkan Balasan Baharu</value>
+  </data>
+  <data name="CanCopyPasteImagesInTheTextEditor" xml:space="preserve">
+    <value>Boleh menyalin &amp; menampal imej dalam editor teks semasa menyiarkan ulasan.</value>
+  </data>
+  <data name="CanITrackTheStatusOfMySupportTicket" xml:space="preserve">
+    <value>Bolehkah saya menjejaki status tiket sokongan saya?</value>
+  </data>
+  <data name="CanViewTheEmailLogsAndErrorLogsEasily" xml:space="preserve">
+    <value>Boleh melihat log e-mel dan log ralat dengan mudah.</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>kategori</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Tukar Kata Laluan</value>
+  </data>
+  <data name="ChangeProfilePicture" xml:space="preserve">
+    <value>Tukar gambar profil</value>
+  </data>
+  <data name="ChangesWasNotSavedPleaseMakeSure" xml:space="preserve">
+    <value>Perubahan tidak disimpan. Sila pastikan semua medan diisi dengan nilai yang sah.</value>
+  </data>
+  <data name="ChangesWereSavedSuccessfully" xml:space="preserve">
+    <value>Perubahan telah berjaya disimpan!</value>
+  </data>
+  <data name="ChatbotDefault" xml:space="preserve">
+    <value>Chatbot Lalai</value>
+  </data>
+  <data name="ChatbotSetting" xml:space="preserve">
+    <value>Tetapan Chatbot</value>
+  </data>
+  <data name="ChatDeletedSuccessfully" xml:space="preserve">
+    <value>Sembang berjaya dipadamkan!</value>
+  </data>
+  <data name="ChatSessionsAdminView" xml:space="preserve">
+    <value>Sesi Sembang (Paparan Pentadbir)</value>
+  </data>
+  <data name="ChatView" xml:space="preserve">
+    <value>Pandangan Sembang</value>
+  </data>
+  <data name="ChiefExecutiveOfficerCEO" xml:space="preserve">
+    <value>Ketua Pegawai Eksekutif (CEO)</value>
+  </data>
+  <data name="ChineseSimplified" xml:space="preserve">
+    <value>Cina (Mudah)</value>
+  </data>
+  <data name="ChineseTraditional" xml:space="preserve">
+    <value>Cina (Tradisional)</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Jelas</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Klik di sini</value>
+  </data>
+  <data name="ClickToAutoGenerateBodyUsingAI" xml:space="preserve">
+    <value>Klik untuk menjana auto badan menggunakan AI.</value>
+  </data>
+  <data name="ClickToAutoGenerateTagsUsingAI" xml:space="preserve">
+    <value>Klik untuk menjana teg secara automatik menggunakan AI.</value>
+  </data>
+  <data name="ClickToCheckOutTheErrorDetail" xml:space="preserve">
+    <value>Klik untuk menyemak butiran ralat</value>
+  </data>
+  <data name="ClickToCopy" xml:space="preserve">
+    <value>Klik untuk menyalin</value>
+  </data>
+  <data name="ClickToCopyTheRegistrationLinkAndShareWithAdmin" xml:space="preserve">
+    <value>Klik untuk menyalin pautan pendaftaran dan kongsikannya dengan pentadbir anda supaya mereka boleh mendaftar sendiri.</value>
+  </data>
+  <data name="ClickToCopyTheRegistrationLinkAndShareWithAgents" xml:space="preserve">
+    <value>Klik untuk menyalin pautan pendaftaran dan kongsi dengan ejen anda supaya mereka boleh mendaftar sendiri.</value>
+  </data>
+  <data name="ClickToCopyTheRegistrationLinkAndShareWithCustomer" xml:space="preserve">
+    <value>Klik untuk menyalin pautan pendaftaran dan kongsikannya dengan pelanggan anda supaya mereka boleh mendaftar sendiri.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>tutup</value>
+  </data>
+  <data name="ClosedBy" xml:space="preserve">
+    <value>Ditutup Oleh</value>
+  </data>
+  <data name="ClosedOn" xml:space="preserve">
+    <value>Ditutup Pada</value>
+  </data>
+  <data name="ClosedStatusName" xml:space="preserve">
+    <value>Nama Status Tertutup</value>
+  </data>
+  <data name="ClosedTickets" xml:space="preserve">
+    <value>Tiket Tertutup</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>Runtuh</value>
+  </data>
+  <data name="Column0NotFound" xml:space="preserve">
+    <value>Lajur {0} tidak ditemui.</value>
+  </data>
+  <data name="ComingUpInTheNextUpdate" xml:space="preserve">
+    <value>Akan datang dalam kemas kini seterusnya!</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Komen</value>
+  </data>
+  <data name="CommunicationSkills" xml:space="preserve">
+    <value>Kemahiran Komunikasi</value>
+  </data>
+  <data name="ConfirmedEmail" xml:space="preserve">
+    <value>E-mel Disahkan</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Sahkan E-mel</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>Sahkan Kata Laluan Baharu</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Sahkan Kata Laluan</value>
+  </data>
+  <data name="Conversation" xml:space="preserve">
+    <value>Perbualan</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>salin</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Hak Cipta</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Negara</value>
+  </data>
+  <data name="CreateANew" xml:space="preserve">
+    <value>Buat yang baru</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Dicipta Oleh</value>
+  </data>
+  <data name="CreatedOn" xml:space="preserve">
+    <value>Dicipta Pada</value>
+  </data>
+  <data name="CreateNew" xml:space="preserve">
+    <value>Buat Baharu</value>
+  </data>
+  <data name="CreateNewArticle" xml:space="preserve">
+    <value>Cipta Artikel Baru</value>
+  </data>
+  <data name="CreateNewChat" xml:space="preserve">
+    <value>Cipta Sembang Baharu</value>
+  </data>
+  <data name="CreateNewTicket" xml:space="preserve">
+    <value>Buat tiket baharu</value>
+  </data>
+  <data name="CreatingANewSupportTicket" xml:space="preserve">
+    <value>Mencipta tiket sokongan baharu</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Kata Laluan Semasa</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Pelanggan</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Papan pemuka</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Tarikh Lahir</value>
+  </data>
+  <data name="DavidPatel" xml:space="preserve">
+    <value>David Patel</value>
+  </data>
+  <data name="DedicatedSystemToHelpAndSupportYou" xml:space="preserve">
+    <value>Sistem Khusus untuk Membantu &amp; Menyokong Anda</value>
+  </data>
+  <data name="DefaultQuestionSetting" xml:space="preserve">
+    <value>Tetapan Soalan Lalai</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Padam</value>
+  </data>
+  <data name="DeleteCategory" xml:space="preserve">
+    <value>Padamkan kategori</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Dipadamkan</value>
+  </data>
+  <data name="DeleteThisArticle" xml:space="preserve">
+    <value>Padamkan artikel ini</value>
+  </data>
+  <data name="DeletingIsPermanentAndCantBeUndone" xml:space="preserve">
+    <value>Pemadaman adalah kekal dan tidak boleh dibuat asal. Adakah anda pasti untuk meneruskan?</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Penerangan</value>
+  </data>
+  <data name="DidThisArticleHelpYou" xml:space="preserve">
+    <value>Adakah artikel ini membantu anda?</value>
+  </data>
+  <data name="DirectorOfCustomerExperience" xml:space="preserve">
+    <value>Pengarah Pengalaman Pelanggan</value>
+  </data>
+  <data name="DownloadRecentProjects" xml:space="preserve">
+    <value>Muat turun projek terbaharu</value>
+  </data>
+  <data name="DragAndDropToRearrangeTheList" xml:space="preserve">
+    <value>Seret dan lepas untuk menyusun semula senarai.</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Sunting</value>
+  </data>
+  <data name="Edit category" xml:space="preserve">
+    <value>Edit kategori</value>
+  </data>
+  <data name="EditableByAdminAgent" xml:space="preserve">
+    <value>boleh diedit oleh pentadbir/ejen</value>
+  </data>
+  <data name="EditArticle" xml:space="preserve">
+    <value>Edit artikel</value>
+  </data>
+  <data name="EditATicket" xml:space="preserve">
+    <value>Edit tiket</value>
+  </data>
+  <data name="EditCategory" xml:space="preserve">
+    <value>Edit kategori</value>
+  </data>
+  <data name="EditTags" xml:space="preserve">
+    <value>Edit tag</value>
+  </data>
+  <data name="EditThisArticle" xml:space="preserve">
+    <value>Edit artikel ini</value>
+  </data>
+  <data name="EditTitle" xml:space="preserve">
+    <value>Edit Tajuk</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mel</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Alamat E-mel</value>
+  </data>
+  <data name="EmailAddressHasBeenTaken" xml:space="preserve">
+    <value>Alamat e-mel telah diambil.</value>
+  </data>
+  <data name="EmailConfirmationRequired" xml:space="preserve">
+    <value>Pengesahan e-mel diperlukan</value>
+  </data>
+  <data name="EmailConfirmationTokenExpired" xml:space="preserve">
+    <value>Token pengesahan e-mel anda telah tamat tempoh. Kami telah menghantar e-mel pengesahan baharu kepada anda. Sila klik pautan dalam e-mel terkini untuk melengkapkan pendaftaran anda.</value>
+  </data>
+  <data name="EmailLog" xml:space="preserve">
+    <value>Log E-mel</value>
+  </data>
+  <data name="EmbedAnAIChatbotOnMultipleWebsites" xml:space="preserve">
+    <value>Benamkan bot sembang AI pada berbilang tapak web.</value>
+  </data>
+  <data name="EmbedChatbot" xml:space="preserve">
+    <value>Benamkan chatbot</value>
+  </data>
+  <data name="EmilyJohnson" xml:space="preserve">
+    <value>Emily Johnson</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Inggeris</value>
+  </data>
+  <data name="EnterTagsForThisChat" xml:space="preserve">
+    <value>Masukkan tag untuk sembang ini</value>
+  </data>
+  <data name="EnterTheDetails" xml:space="preserve">
+    <value>Masukkan butiran.</value>
+  </data>
+  <data name="EnterYour" xml:space="preserve">
+    <value>Masukkan anda</value>
+  </data>
+  <data name="EnterYourPreferredTicketStatusName" xml:space="preserve">
+    <value>Masukkan nama status tiket pilihan anda untuk tiket beratur, tiket terbuka dan tiket tertutup. Sebagai contoh, anda boleh menukar kepada belum selesai, sedang berjalan, diselesaikan atau mana-mana nama pilihan lain.</value>
+  </data>
+  <data name="ErrorDate" xml:space="preserve">
+    <value>Tarikh Ralat</value>
+  </data>
+  <data name="ErrorDetail" xml:space="preserve">
+    <value>Butiran Ralat</value>
+  </data>
+  <data name="ErrorLog" xml:space="preserve">
+    <value>Log Ralat</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Mesej Ralat</value>
+  </data>
+  <data name="Expand" xml:space="preserve">
+    <value>Kembangkan</value>
+  </data>
+  <data name="ExploreOurComprehensiveKnowledgeBaseResources" xml:space="preserve">
+    <value>Terokai sumber asas pengetahuan komprehensif kami yang merangkumi pelbagai soalan untuk mencari penyelesaian yang anda perlukan. Jika ia tidak membantu, serahkan tiket sokongan dan kami akan membalas anda secepat mungkin. Kepuasan anda adalah keutamaan kami, dan kami komited untuk memastikan anda mendapat pengalaman yang lancar dengan produk dan perkhidmatan kami.</value>
+  </data>
+  <data name="ExploreOurKnowledgeBaseArticles" xml:space="preserve">
+    <value>Terokai artikel Pangkalan Pengetahuan kami untuk penyelesaian terperinci kepada isu biasa.</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Eksport</value>
+  </data>
+  <data name="ExportArticle" xml:space="preserve">
+    <value>Artikel Eksport</value>
+  </data>
+  <data name="ExportCategory" xml:space="preserve">
+    <value>Kategori Eksport</value>
+  </data>
+  <data name="ExportChatToCsv" xml:space="preserve">
+    <value>Eksport sembang ke csv</value>
+  </data>
+  <data name="ExportChatToExcel" xml:space="preserve">
+    <value>Eksport sembang ke cemerlang</value>
+  </data>
+  <data name="ExportChatToPdf" xml:space="preserve">
+    <value>Eksport sembang ke pdf</value>
+  </data>
+  <data name="ExportChatToWord" xml:space="preserve">
+    <value>Eksport sembang ke perkataan</value>
+  </data>
+  <data name="ExportTheChatHistories" xml:space="preserve">
+    <value>Eksport sejarah sembang.</value>
+  </data>
+  <data name="ExportTickets" xml:space="preserve">
+    <value>Eksport tiket</value>
+  </data>
+  <data name="ExportToCsv" xml:space="preserve">
+    <value>Eksport ke csv</value>
+  </data>
+  <data name="ExportToDocx" xml:space="preserve">
+    <value>Eksport ke docx</value>
+  </data>
+  <data name="ExportToExcel" xml:space="preserve">
+    <value>Eksport ke cemerlang</value>
+  </data>
+  <data name="ExportToPdf" xml:space="preserve">
+    <value>Eksport ke pdf</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>gagal</value>
+  </data>
+  <data name="FailedToResetPasswordPleaseTryAgainLater" xml:space="preserve">
+    <value>Gagal menetapkan semula kata laluan. Sila cuba lagi kemudian.</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Soalan Lazim</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Maklum balas</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="FilledByAdminAgent" xml:space="preserve">
+    <value>Diisi oleh Admin/Agen</value>
+  </data>
+  <data name="FilledByCustomer" xml:space="preserve">
+    <value>Diisi oleh Pelanggan</value>
+  </data>
+  <data name="FillInTheEmailAddressAndWeWillSendYouAResetPasswordLink" xml:space="preserve">
+    <value>Isikan alamat e-mel dan kami akan menghantar pautan set semula kata laluan kepada anda.</value>
+  </data>
+  <data name="FillInTheFollowingToRegister" xml:space="preserve">
+    <value>Isikan perkara berikut untuk mendaftar.</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Penapis</value>
+  </data>
+  <data name="FilterMonth" xml:space="preserve">
+    <value>Bulan penapis</value>
+  </data>
+  <data name="FilterRole" xml:space="preserve">
+    <value>Peranan penapis</value>
+  </data>
+  <data name="FilterYear" xml:space="preserve">
+    <value>Tahun penapis</value>
+  </data>
+  <data name="FindTheSolutionIn3Steps" xml:space="preserve">
+    <value>Cari Penyelesaian dalam 3 Langkah</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Nama Pertama</value>
+  </data>
+  <data name="FollowUs" xml:space="preserve">
+    <value>Ikuti Kami</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Terlupa Kata Laluan</value>
+  </data>
+  <data name="ForgotYourPassword" xml:space="preserve">
+    <value>Lupa Kata Laluan Anda?</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>Perancis</value>
+  </data>
+  <data name="FrequentlyAskedQuestions" xml:space="preserve">
+    <value>Soalan Lazim</value>
+  </data>
+  <data name="Full Name" xml:space="preserve">
+    <value>Nama Penuh</value>
+  </data>
+  <data name="FullAddress" xml:space="preserve">
+    <value>Alamat Penuh</value>
+  </data>
+  <data name="FullList" xml:space="preserve">
+    <value>Senarai Penuh</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Nama Penuh</value>
+  </data>
+  <data name="FunAndUsefulTips" xml:space="preserve">
+    <value>Petua yang menyeronokkan &amp; berguna</value>
+  </data>
+  <data name="GeneralSetting" xml:space="preserve">
+    <value>Tetapan Umum</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>Jerman</value>
+  </data>
+  <data name="HasBeenAssignedTo" xml:space="preserve">
+    <value>telah ditugaskan untuk</value>
+  </data>
+  <data name="HasBeenAssignedToAnotherAgent" xml:space="preserve">
+    <value>telah ditugaskan kepada ejen lain</value>
+  </data>
+  <data name="HasBeenClosedByTheCustomer" xml:space="preserve">
+    <value>telah ditutup oleh pelanggan</value>
+  </data>
+  <data name="HasBeenClosedByTheSupportAgent" xml:space="preserve">
+    <value>telah ditutup oleh ejen sokongan</value>
+  </data>
+  <data name="HeadOfOperations" xml:space="preserve">
+    <value>Ketua Operasi</value>
+  </data>
+  <data name="Here" xml:space="preserve">
+    <value>di sini</value>
+  </data>
+  <data name="Hindi" xml:space="preserve">
+    <value>Hindi</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Rumah</value>
+  </data>
+  <data name="HowCanIHelpYouToday" xml:space="preserve">
+    <value>Bagaimana saya boleh membantu anda hari ini?</value>
+  </data>
+  <data name="HowCanIResetMyPassword" xml:space="preserve">
+    <value>Bagaimanakah saya boleh menetapkan semula kata laluan saya?</value>
+  </data>
+  <data name="HowItWorks" xml:space="preserve">
+    <value>Bagaimana ia berfungsi</value>
+  </data>
+  <data name="HowLongDoesItUsuallyTakeToReceiveAResponse" xml:space="preserve">
+    <value>Berapa lama masa yang biasanya diambil untuk menerima respons daripada pasukan sokongan anda?</value>
+  </data>
+  <data name="HurrayTheTicketWasClosedThankYou" xml:space="preserve">
+    <value>Hore! Tiket telah ditutup. terima kasih!</value>
+  </data>
+  <data name="Icon" xml:space="preserve">
+    <value>ikon</value>
+  </data>
+  <data name="IDCardNumber" xml:space="preserve">
+    <value>Nombor Kad Pengenalan</value>
+  </data>
+  <data name="IfYouEncounterAnErrorMessagePleaseTakeNote" xml:space="preserve">
+    <value>Jika anda menemui mesej ralat, sila ambil perhatian tentang mesej ralat dan sebarang langkah yang anda ambil semasa ralat itu berlaku. Kemudian, serahkan tiket sokongan kepada pasukan sokongan kami untuk mendapatkan bantuan.</value>
+  </data>
+  <data name="IfYoureNotSatisfiedWithTheResolutionProvided" xml:space="preserve">
+    <value>Jika anda tidak berpuas hati dengan resolusi yang diberikan oleh pasukan sokongan kami, sila maklumkan kepada kami dan kami akan melakukan yang terbaik untuk menangani kebimbangan anda dan mencari penyelesaian yang memuaskan.</value>
+  </data>
+  <data name="IfYourProblemPersists" xml:space="preserve">
+    <value>Jika masalah anda berterusan, teruskan membuka tiket sokongan untuk bantuan diperibadikan.</value>
+  </data>
+  <data name="IfYouveFoundASolutionYouCanCloseThisTicket" xml:space="preserve">
+    <value>Jika anda telah menemui penyelesaian, anda boleh menutup tiket ini supaya ia akan dialih keluar daripada baris gilir. Terima kasih banyak atas kerjasama!</value>
+  </data>
+  <data name="ImmediatelyReceivingAnEmailABell" xml:space="preserve">
+    <value>Terus menerima e-mel, loceng dan pemberitahuan roti bakar.</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>Kesan</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="ImportantNote" xml:space="preserve">
+    <value>Nota Penting</value>
+  </data>
+  <data name="ImportArticle" xml:space="preserve">
+    <value>Import Artikel</value>
+  </data>
+  <data name="ImportCategories" xml:space="preserve">
+    <value>Import Kategori</value>
+  </data>
+  <data name="ImportCategory" xml:space="preserve">
+    <value>Kategori Import</value>
+  </data>
+  <data name="ImportingDataFromExcelPleaseWait" xml:space="preserve">
+    <value>Mengimport Data daripada Excel. Sila Tunggu...</value>
+  </data>
+  <data name="InitiatedBy" xml:space="preserve">
+    <value>Dimulakan Oleh</value>
+  </data>
+  <data name="InitiatedOn" xml:space="preserve">
+    <value>Dimulakan Pada</value>
+  </data>
+  <data name="InstantEmailBellAndToastNotifications" xml:space="preserve">
+    <value>Pemberitahuan e-mel, loceng dan roti bakar segera.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Alamat E-mel Tidak Sah.</value>
+  </data>
+  <data name="InvalidLoginAttempt" xml:space="preserve">
+    <value>Percubaan Log Masuk Tidak Sah</value>
+  </data>
+  <data name="InvalidPasswordError" xml:space="preserve">
+    <value>Kata laluan mestilah sekurang-kurangnya 6 aksara, termasuk sekurang-kurangnya satu digit, satu huruf besar, satu huruf kecil dan satu aksara bukan abjad.</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Peranan tidak sah. Sila pilih peranan dalam senarai juntai bawah.</value>
+  </data>
+  <data name="InvalidUsername" xml:space="preserve">
+    <value>Nama Pengguna Tidak Sah.</value>
+  </data>
+  <data name="IsHelpful" xml:space="preserve">
+    <value>Adakah Bermanfaat?</value>
+  </data>
+  <data name="IsThereAnyFeedbackYouWantToSubmitToUs" xml:space="preserve">
+    <value>Adakah terdapat sebarang maklum balas yang ingin anda serahkan kepada kami?</value>
+  </data>
+  <data name="KnowledgeAndCompetence" xml:space="preserve">
+    <value>Pengetahuan dan Kecekapan</value>
+  </data>
+  <data name="KnowledgeBase" xml:space="preserve">
+    <value>Pangkalan Pengetahuan</value>
+  </data>
+  <data name="Last30Days" xml:space="preserve">
+    <value>30 Hari Terakhir</value>
+  </data>
+  <data name="Last60Days" xml:space="preserve">
+    <value>60 Hari Terakhir</value>
+  </data>
+  <data name="Last7Days" xml:space="preserve">
+    <value>7 Hari Terakhir</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Nama Akhir</value>
+  </data>
+  <data name="LastRepliedBy" xml:space="preserve">
+    <value>Terakhir Dibalas Oleh</value>
+  </data>
+  <data name="LastRepliedOn" xml:space="preserve">
+    <value>Terakhir Dibalas Pada</value>
+  </data>
+  <data name="LatestLoginDateAndTime" xml:space="preserve">
+    <value>Tarikh &amp; Masa Log Masuk Terkini</value>
+  </data>
+  <data name="Lifetime" xml:space="preserve">
+    <value>seumur hidup</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Memuatkan</value>
+  </data>
+  <data name="LoadingAIAnswer" xml:space="preserve">
+    <value>Memuatkan Jawapan AI</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Log masuk</value>
+  </data>
+  <data name="LoginDateAndTime" xml:space="preserve">
+    <value>Tarikh &amp; Masa Log Masuk</value>
+  </data>
+  <data name="LoginHistory" xml:space="preserve">
+    <value>Sejarah Log Masuk</value>
+  </data>
+  <data name="LoginTo" xml:space="preserve">
+    <value>Log masuk ke</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="LotsOfUsefulFeatures" xml:space="preserve">
+    <value>Banyak Ciri Berguna</value>
+  </data>
+  <data name="Malay" xml:space="preserve">
+    <value>Melayu</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Urus</value>
+  </data>
+  <data name="ManageYourKnowledgeBaseArticles" xml:space="preserve">
+    <value>Urus artikel asas pengetahuan anda.</value>
+  </data>
+  <data name="ManageYourKnowledgeBaseCategories" xml:space="preserve">
+    <value>Uruskan kategori asas pengetahuan anda.</value>
+  </data>
+  <data name="MarkAllAsRead" xml:space="preserve">
+    <value>Tandai semua sebagai dibaca</value>
+  </data>
+  <data name="MarkedAsRead" xml:space="preserve">
+    <value>Ditandai Sebagai Dibaca</value>
+  </data>
+  <data name="MeetOurTeam" xml:space="preserve">
+    <value>Temui Pasukan Kami</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Mesej</value>
+  </data>
+  <data name="MichaelChen" xml:space="preserve">
+    <value>Michael Chen</value>
+  </data>
+  <data name="ModifiedBy" xml:space="preserve">
+    <value>Diubahsuai Oleh</value>
+  </data>
+  <data name="ModifiedOn" xml:space="preserve">
+    <value>Diubah suai Pada</value>
+  </data>
+  <data name="MoreFeatures" xml:space="preserve">
+    <value>Lebih Banyak Ciri</value>
+  </data>
+  <data name="MoreUsefulFeaturesIn" xml:space="preserve">
+    <value>Lebih Banyak Ciri Berguna dalam</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>Profil Saya</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>baru</value>
+  </data>
+  <data name="NewArticle" xml:space="preserve">
+    <value>Artikel baru</value>
+  </data>
+  <data name="NewCategory" xml:space="preserve">
+    <value>Kategori Baharu</value>
+  </data>
+  <data name="NewChat" xml:space="preserve">
+    <value>Sembang baharu</value>
+  </data>
+  <data name="NewConfirmationEmailSent" xml:space="preserve">
+    <value>E-mel pengesahan baharu telah dihantar ke peti mel anda.</value>
+  </data>
+  <data name="NewCustomersByAutoDetectedCountry" xml:space="preserve">
+    <value>Pelanggan baharu mengikut negara yang dikesan secara automatik</value>
+  </data>
+  <data name="NewCustomersByAutoDetectedRegion" xml:space="preserve">
+    <value>Pelanggan baharu mengikut wilayah yang dikesan secara automatik</value>
+  </data>
+  <data name="NewCustomersByAutoDetectedTimezone" xml:space="preserve">
+    <value>Pelanggan baharu mengikut zon waktu yang dikesan secara automatik</value>
+  </data>
+  <data name="NewCustomersByMonth" xml:space="preserve">
+    <value>Pelanggan baharu mengikut bulan</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Kata Laluan Baharu</value>
+  </data>
+  <data name="NewReply" xml:space="preserve">
+    <value>Balasan Baru</value>
+  </data>
+  <data name="NewTicket" xml:space="preserve">
+    <value>Tiket Baru</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Halaman seterusnya</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Tidak</value>
+  </data>
+  <data name="NoChatHistoriesAreFound" xml:space="preserve">
+    <value>Tiada sejarah sembang ditemui.</value>
+  </data>
+  <data name="NoDataAvailable" xml:space="preserve">
+    <value>Tiada Data Tersedia</value>
+  </data>
+  <data name="NoNotificationFound" xml:space="preserve">
+    <value>Tiada pemberitahuan ditemui</value>
+  </data>
+  <data name="NoteUsernameAndEmailAddressCannotBeChanged" xml:space="preserve">
+    <value>Nota: Nama pengguna dan alamat e-mel tidak boleh ditukar. Anda boleh mendaftar akaun baharu jika anda ingin menggunakan alamat e-mel lain.</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Pemberitahuan</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>Pemberitahuan</value>
+  </data>
+  <data name="NotifitionLog" xml:space="preserve">
+    <value>Log Pemberitahuan</value>
+  </data>
+  <data name="NumberOfActiveCustomers" xml:space="preserve">
+    <value>Bilangan pelanggan aktif</value>
+  </data>
+  <data name="NumberOfCustomers" xml:space="preserve">
+    <value>Bilangan pelanggan</value>
+  </data>
+  <data name="NumberOfNewCustomers" xml:space="preserve">
+    <value>Bilangan pelanggan baharu</value>
+  </data>
+  <data name="NumberOfTickets" xml:space="preserve">
+    <value>Bilangan tiket</value>
+  </data>
+  <data name="OnceDeletedArticlesInThisCategoryWillNoLonger" xml:space="preserve">
+    <value>Setelah dipadamkan, artikel dalam kategori ini tidak akan dipaparkan lagi kerana kategori akan menjadi kosong. Anda perlu menetapkan kategori baharu untuk artikel ini. Adakah anda pasti untuk meneruskan?</value>
+  </data>
+  <data name="OnlyAdministratorsHaveAccessToThisSection" xml:space="preserve">
+    <value>Hanya pentadbir mempunyai akses kepada bahagian ini, yang dikhususkan untuk mengurus artikel yang tidak mempunyai kategori kerana pemadaman kategori asalnya yang berkaitan. Pentadbir boleh memilih semula kategori lain untuk artikel tersebut.</value>
+  </data>
+  <data name="OnlyImagesAreAllowed" xml:space="preserve">
+    <value>Hanya imej dibenarkan.</value>
+  </data>
+  <data name="OopsTheActionCouldntBeCompletedDueToAnError" xml:space="preserve">
+    <value>Aduh! Tindakan itu tidak dapat diselesaikan kerana ralat. Sila cuba lagi atau hubungi sokongan jika isu itu berterusan.</value>
+  </data>
+  <data name="OopsYouDontHavePermissionToAccessThisPage" xml:space="preserve">
+    <value>Aduh! Anda tidak mempunyai kebenaran untuk mengakses halaman ini.</value>
+  </data>
+  <data name="OpenStatusName" xml:space="preserve">
+    <value>Buka Nama Status</value>
+  </data>
+  <data name="OpenTickets" xml:space="preserve">
+    <value>Buka Tiket</value>
+  </data>
+  <data name="OptionalFields" xml:space="preserve">
+    <value>Medan pilihan</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Pesanan</value>
+  </data>
+  <data name="OrderReference" xml:space="preserve">
+    <value>Rujukan Pesanan</value>
+  </data>
+  <data name="OtherProjects" xml:space="preserve">
+    <value>Projek lain</value>
+  </data>
+  <data name="OurCustomerSupportTeamIsAvailableFrom" xml:space="preserve">
+    <value>Pasukan sokongan pelanggan kami tersedia dari Isnin hingga Jumaat, dari 9:00 PG hingga 6:00 PTG PST. Sebarang tiket yang diterima di luar waktu ini, termasuk yang diserahkan pada hari Sabtu atau Ahad, akan dibalas pada hari Isnin berikutnya semasa waktu operasi biasa kami.</value>
+  </data>
+  <data name="OurSupportTeamCanAssistWithTechnicalIssues" xml:space="preserve">
+    <value>Pasukan sokongan kami boleh membantu dengan isu teknikal, pertanyaan berkaitan akaun, penyelesaian masalah dan sebarang soalan lain yang mungkin anda ada tentang produk atau perkhidmatan kami.</value>
+  </data>
+  <data name="OurTeam" xml:space="preserve">
+    <value>Pasukan kami</value>
+  </data>
+  <data name="OverallSatisfaction" xml:space="preserve">
+    <value>Keseluruhan Kepuasan</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>Halaman Tidak Ditemui (404)</value>
+  </data>
+  <data name="PageNotFoundDescription" xml:space="preserve">
+    <value>Halaman yang anda cari tidak ditemui. Ia mungkin telah dialihkan, dinamakan semula atau tidak lagi wujud. Sila klik butang di bawah untuk kembali ke halaman utama.</value>
+  </data>
+  <data name="PageNotFoundEnsureUrlCorrect" xml:space="preserve">
+    <value>Halaman tidak ditemui. Sila pastikan bahawa URL adalah betul.</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Kata laluan</value>
+  </data>
+  <data name="PasswordChangedSuccessfully" xml:space="preserve">
+    <value>Kata laluan berjaya ditukar!</value>
+  </data>
+  <data name="PasswordNotMatchWithConfirmPasswordField" xml:space="preserve">
+    <value>Kata laluan tidak sepadan dengan medan pengesahan kata laluan.</value>
+  </data>
+  <data name="PasswordRequirementTooltip" xml:space="preserve">
+    <value>Sekurang-kurangnya 6 aksara. Memerlukan sekurang-kurangnya satu huruf Besar, satu huruf kecil, satu Digit dan satu Simbol.</value>
+  </data>
+  <data name="PermanentlyDeleteThisRecord" xml:space="preserve">
+    <value>Padamkan rekod ini secara kekal?</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Nombor Telefon</value>
+  </data>
+  <data name="PleaseCheckMailbox" xml:space="preserve">
+    <value>Sila semak peti mel anda</value>
+  </data>
+  <data name="PleaseClick" xml:space="preserve">
+    <value>Sila klik</value>
+  </data>
+  <data name="PleaseConfirmYourEmailBeforeSigningIn" xml:space="preserve">
+    <value>Sila sahkan e-mel anda sebelum melog masuk.</value>
+  </data>
+  <data name="PleaseDownloadTheExcelFileBelowAnd" xml:space="preserve">
+    <value>Sila muat turun fail Excel di bawah dan isikan lajur. Lajur dengan asterisk (*) adalah medan yang diperlukan. Selepas anda mengubah suai fail Excel, muat naik dalam bahagian muat naik di bawah.</value>
+  </data>
+  <data name="PleaseDownloadTheExcelFileBelowAndFillUpAllTheseColumns" xml:space="preserve">
+    <value>Sila muat turun fail Excel di bawah dan isi semua lajur ini</value>
+  </data>
+  <data name="PleaseEnterATitleSoThatAICanUseIt" xml:space="preserve">
+    <value>Sila masukkan tajuk supaya AI boleh menggunakannya untuk menjana</value>
+  </data>
+  <data name="PleaseSelectAnExcelFile" xml:space="preserve">
+    <value>Sila pilih fail excel</value>
+  </data>
+  <data name="PortalName" xml:space="preserve">
+    <value>Nama Portal</value>
+  </data>
+  <data name="PossibleReasonsYouReNotLoggedIn" xml:space="preserve">
+    <value>Sebab yang mungkin: Anda tidak log masuk. Atau, anda tidak mempunyai tahap akses yang diperlukan untuk sumber ini.</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Poskod</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>Halaman sebelumnya</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Cetak</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Keutamaan</value>
+  </data>
+  <data name="ProductManager" xml:space="preserve">
+    <value>Pengurus Produk</value>
+  </data>
+  <data name="ProfilePicture" xml:space="preserve">
+    <value>Gambar Profil</value>
+  </data>
+  <data name="ProvideSeamlessAndReliableSupport" xml:space="preserve">
+    <value>Sediakan sokongan yang lancar dan boleh dipercayai kepada pelanggan anda tidak kira di mana mereka berada. Sistem meja bantuan kami memastikan bantuan tepat pada masanya merentas zon waktu, bahasa dan saluran yang berbeza, supaya anda boleh membina kepercayaan dan menyampaikan perkhidmatan yang luar biasa di seluruh dunia.</value>
+  </data>
+  <data name="PublishedArticles" xml:space="preserve">
+    <value>Artikel yang Diterbitkan</value>
+  </data>
+  <data name="PublishOrUnpublishAnArticle" xml:space="preserve">
+    <value>Terbitkan atau nyahterbitkan artikel.</value>
+  </data>
+  <data name="PublishToKnowledgeBase" xml:space="preserve">
+    <value>Terbitkan ke pangkalan pengetahuan</value>
+  </data>
+  <data name="QueueingStatusName" xml:space="preserve">
+    <value>Nama Status Beratur</value>
+  </data>
+  <data name="QueueingTickets" xml:space="preserve">
+    <value>Tiket Beratur</value>
+  </data>
+  <data name="QueuingAndGetReply" xml:space="preserve">
+    <value>Beratur dan mendapat balasan</value>
+  </data>
+  <data name="RateThisSupportSession" xml:space="preserve">
+    <value>Nilaikan sesi sokongan ini</value>
+  </data>
+  <data name="ReadAll" xml:space="preserve">
+    <value>Baca Semua</value>
+  </data>
+  <data name="ReadingKnowledgeBaseArticle" xml:space="preserve">
+    <value>Membaca artikel asas pengetahuan</value>
+  </data>
+  <data name="RecipientsEmail" xml:space="preserve">
+    <value>E-mel Penerima</value>
+  </data>
+  <data name="RecordNow" xml:space="preserve">
+    <value>rekod sekarang</value>
+  </data>
+  <data name="Records" xml:space="preserve">
+    <value>Rekod</value>
+  </data>
+  <data name="RecordsImportedSuccessfully" xml:space="preserve">
+    <value>Rekod Diimport Berjaya</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Wilayah</value>
+  </data>
+  <data name="RegisterACustomerAccount" xml:space="preserve">
+    <value>Daftar akaun pelanggan</value>
+  </data>
+  <data name="RegisterAnAdminAccount" xml:space="preserve">
+    <value>Daftar Akaun Pentadbir</value>
+  </data>
+  <data name="RegisterAnAgentAccount" xml:space="preserve">
+    <value>Daftar Akaun Ejen</value>
+  </data>
+  <data name="RegisteredOn" xml:space="preserve">
+    <value>Berdaftar Pada</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>Daftar kejayaan!</value>
+  </data>
+  <data name="RegisterSuccessLoginNow" xml:space="preserve">
+    <value>Daftar kejayaan! Log masuk sekarang.</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Alih keluar</value>
+  </data>
+  <data name="RemoveSelectedFile" xml:space="preserve">
+    <value>Alih Keluar Fail yang Dipilih</value>
+  </data>
+  <data name="RequestType" xml:space="preserve">
+    <value>Jenis Permintaan</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>* Medan Diperlukan</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>Tetapkan Semula Kata Laluan</value>
+  </data>
+  <data name="ResetPasswordEmailSent" xml:space="preserve">
+    <value>Tetapkan semula kata laluan e-mel yang dihantar</value>
+  </data>
+  <data name="ResolvedAndClose" xml:space="preserve">
+    <value>Selesai &amp; Tutup</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Peranan</value>
+  </data>
+  <data name="SarahRodriguez" xml:space="preserve">
+    <value>Sarah Rodriguez</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Jimat</value>
+  </data>
+  <data name="SavedReplies" xml:space="preserve">
+    <value>Balasan Disimpan</value>
+  </data>
+  <data name="SavedSuccessfully" xml:space="preserve">
+    <value>Berjaya disimpan</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Cari</value>
+  </data>
+  <data name="SearchFor" xml:space="preserve">
+    <value>Cari</value>
+  </data>
+  <data name="SearchForAnArticle" xml:space="preserve">
+    <value>Cari artikel</value>
+  </data>
+  <data name="SelectAnIcon" xml:space="preserve">
+    <value>Pilih ikon</value>
+  </data>
+  <data name="SelectedIcon" xml:space="preserve">
+    <value>Ikon yang dipilih</value>
+  </data>
+  <data name="SendEmailToNotifyTheCustomer" xml:space="preserve">
+    <value>Hantar e-mel untuk memberitahu pelanggan?</value>
+  </data>
+  <data name="SentSuccessfully" xml:space="preserve">
+    <value>Berjaya dihantar</value>
+  </data>
+  <data name="Sequence" xml:space="preserve">
+    <value>Urutan</value>
+  </data>
+  <data name="SetAnArticleAsTheDataUsedByTheAIChatbot" xml:space="preserve">
+    <value>Tetapkan artikel sebagai data yang digunakan oleh AI chatbot.</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Tetapan</value>
+  </data>
+  <data name="SetupTheArticlesURLSoThatItIsSEOFriendly" xml:space="preserve">
+    <value>Sediakan URL artikel supaya ia mesra SEO.</value>
+  </data>
+  <data name="SetUpTheDefaultQuestionsShownOnTheAIChatbot" xml:space="preserve">
+    <value>Sediakan soalan lalai yang ditunjukkan pada chatbot AI.</value>
+  </data>
+  <data name="SetUpTheTicketsDropDownListOptionsSuchAsPriorityUrgencyImpactAndMore" xml:space="preserve">
+    <value>Sediakan pilihan senarai lungsur turun tiket, seperti keutamaan, kesegeraan, impak dan banyak lagi.</value>
+  </data>
+  <data name="SetUpTheTicketStatusDisplayName" xml:space="preserve">
+    <value>Sediakan nama paparan status tiket.</value>
+  </data>
+  <data name="SetUpTheWebsiteNameAndLogoCanViewAllTheUsers" xml:space="preserve">
+    <value>Sediakan nama dan logo tapak web. Boleh melihat semua pengguna.</value>
+  </data>
+  <data name="SetYourDesiredTextToAppearInTheURL" xml:space="preserve">
+    <value>Tetapkan teks yang anda inginkan untuk muncul dalam URL demi SEO.</value>
+  </data>
+  <data name="ShareAIChatbot" xml:space="preserve">
+    <value>Kongsi AI chatbot</value>
+  </data>
+  <data name="ShareThisArticle" xml:space="preserve">
+    <value>Kongsi artikel ini</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Daftar</value>
+  </data>
+  <data name="SMTPHost" xml:space="preserve">
+    <value>Hos SMTP</value>
+  </data>
+  <data name="SMTPPassword" xml:space="preserve">
+    <value>Kata Laluan SMTP</value>
+  </data>
+  <data name="SMTPPort" xml:space="preserve">
+    <value>Pelabuhan SMTP</value>
+  </data>
+  <data name="SMTPUsername" xml:space="preserve">
+    <value>Nama Pengguna SMTP</value>
+  </data>
+  <data name="SomeRequiredFieldsAreEmpty" xml:space="preserve">
+    <value>Beberapa medan yang diperlukan kosong.</value>
+  </data>
+  <data name="SomethingIsWrongPleaseTryAgainLater" xml:space="preserve">
+    <value>Ada yang tak kena. Sila cuba lagi kemudian.</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>Bahasa Sepanyol</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>rekod sekarang</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subjek</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Hantar</value>
+  </data>
+  <data name="SubmitReply" xml:space="preserve">
+    <value>Hantar Balasan</value>
+  </data>
+  <data name="SubmitSupportTicketsFindAnswers" xml:space="preserve">
+    <value>Serahkan tiket sokongan, cari jawapan daripada artikel pangkalan pengetahuan, sembang dengan AI chatbot dan banyak lagi.</value>
+  </data>
+  <data name="SubmittedSuccessfully" xml:space="preserve">
+    <value>Dihantar dengan jayanya!</value>
+  </data>
+  <data name="SubmittedTickets" xml:space="preserve">
+    <value>Tiket diserahkan</value>
+  </data>
+  <data name="SubmitTheSupportTicketForm" xml:space="preserve">
+    <value>Serahkan borang tiket sokongan dan tunggu jawapan kami untuk membantu anda dengan lebih lanjut.</value>
+  </data>
+  <data name="SupportAroundTheWorld" xml:space="preserve">
+    <value>Sokongan Di Seluruh Dunia</value>
+  </data>
+  <data name="SupportTickets" xml:space="preserve">
+    <value>Tiket Sokongan</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="TagsAreUpdated" xml:space="preserve">
+    <value>Tag telah dikemas kini!</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Pasukan</value>
+  </data>
+  <data name="ThankYouForConfirmingYourEmail" xml:space="preserve">
+    <value>Terima kasih kerana mengesahkan e-mel anda.</value>
+  </data>
+  <data name="TheAIChatbotCanReplyWithRelatedClickableLinks" xml:space="preserve">
+    <value>Chatbot AI boleh membalas dengan pautan boleh klik yang berkaitan.</value>
+  </data>
+  <data name="TheChatbotsQuestionOrderingAdheresToThisConfiguration" xml:space="preserve">
+    <value>Pesanan soalan chatbot mematuhi konfigurasi ini. Sila susun soalan mengikut susunan yang anda mahu soalan itu dipaparkan.</value>
+  </data>
+  <data name="TheDefaultQuestionsForTheAIChatbotAreUpdated" xml:space="preserve">
+    <value>Soalan lalai untuk chatbot AI dikemas kini!</value>
+  </data>
+  <data name="TheErrorsAreAsBelow" xml:space="preserve">
+    <value>Kesilapan adalah seperti di bawah</value>
+  </data>
+  <data name="TheFieldMustBeAtMost100CharactersLong" xml:space="preserve">
+    <value>Panjang medan mestilah paling banyak 100 aksara.</value>
+  </data>
+  <data name="TheFieldMustBeAtMost256CharactersLong" xml:space="preserve">
+    <value>Panjang medan mestilah paling banyak 256 aksara.</value>
+  </data>
+  <data name="TheFieldMustMatchTheNewPassword" xml:space="preserve">
+    <value>Medan mesti sepadan dengan kata laluan baharu.</value>
+  </data>
+  <data name="TheFieldMustMatchThePassword" xml:space="preserve">
+    <value>Medan mesti sepadan dengan kata laluan.</value>
+  </data>
+  <data name="TheFollowingTicketsAreAwaitingYourAction" xml:space="preserve">
+    <value>Tiket berikut sedang menunggu tindakan anda untuk menyerahkannya kepada ejen.</value>
+  </data>
+  <data name="TheLayoutOfTicketConversationMakesItEasyToRead" xml:space="preserve">
+    <value>Susun atur perbualan tiket menjadikannya mudah dibaca.</value>
+  </data>
+  <data name="TheNumberOfActiveCustomersWhoWereLoggedInEachMonth" xml:space="preserve">
+    <value>Bilangan pelanggan aktif yang dilog masuk setiap bulan sepanjang tahun yang dinyatakan.</value>
+  </data>
+  <data name="TheNumberOfColumnsIsMismatchedWithTheTemplate" xml:space="preserve">
+    <value>Bilangan lajur tidak sepadan dengan templat.</value>
+  </data>
+  <data name="TheNumberOfCustomersWhoAreNewlyRegisteredInEachMonth" xml:space="preserve">
+    <value>Bilangan pelanggan yang baru didaftarkan pada setiap bulan sepanjang tahun yang ditetapkan.</value>
+  </data>
+  <data name="ThenUploadTheExcelFileInTheUploadSectionBelow" xml:space="preserve">
+    <value>Kemudian, muat naik fail Excel di bahagian muat naik di bawah.</value>
+  </data>
+  <data name="ThereIsNoRecordToArrange" xml:space="preserve">
+    <value>Tiada rekod untuk diatur.</value>
+  </data>
+  <data name="TheSupportTicketsThatHaveYetToBeClosedAreListedHere" xml:space="preserve">
+    <value>Tiket sokongan yang masih belum ditutup disenaraikan di sini.</value>
+  </data>
+  <data name="TheTicket" xml:space="preserve">
+    <value>tiket itu</value>
+  </data>
+  <data name="TheUrlCanOnlyContain" xml:space="preserve">
+    <value>URL hanya boleh mengandungi huruf, nombor dan sempang serta tidak boleh mempunyai ruang kosong.</value>
+  </data>
+  <data name="TheUsernameMustStartWithALetterAndCanOnly" xml:space="preserve">
+    <value>Nama Pengguna mesti bermula dengan huruf dan hanya boleh mengandungi huruf, nombor atau garis bawah. Panjangnya hendaklah antara 4 hingga 30 aksara.</value>
+  </data>
+  <data name="ThisCannotBeUndone" xml:space="preserve">
+    <value>Ini tidak boleh dibuat asal.</value>
+  </data>
+  <data name="ThisExistsTryWithAnother" xml:space="preserve">
+    <value>Ini sudah wujud. Sila cuba dengan nama lain.</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>Bulan ini</value>
+  </data>
+  <data name="ThisTicketIsAlreadyClosed" xml:space="preserve">
+    <value>Tiket ini sudah ditutup.</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>Tahun ini</value>
+  </data>
+  <data name="TicketCategory" xml:space="preserve">
+    <value>Kategori Tiket</value>
+  </data>
+  <data name="TicketCode" xml:space="preserve">
+    <value>Kod Tiket</value>
+  </data>
+  <data name="TicketDetail" xml:space="preserve">
+    <value>Butiran Tiket</value>
+  </data>
+  <data name="Tickets" xml:space="preserve">
+    <value>tiket</value>
+  </data>
+  <data name="TicketStatus" xml:space="preserve">
+    <value>Status Tiket</value>
+  </data>
+  <data name="TicketStatusListing" xml:space="preserve">
+    <value>Penyenaraian Status Tiket</value>
+  </data>
+  <data name="TicketsThatCustomersHaveSubmittedAndAreStillAwaitingAResponse" xml:space="preserve">
+    <value>Tiket yang telah diserahkan oleh pelanggan dan masih menunggu jawapan.</value>
+  </data>
+  <data name="TicketsThatHaveBeenClosedByTheCustomersOrAgents" xml:space="preserve">
+    <value>Tiket yang telah ditutup oleh pelanggan atau ejen.</value>
+  </data>
+  <data name="TicketsThatHaveGottenRepliesFromTheAgentsButHaveNotYetClosed" xml:space="preserve">
+    <value>Tiket yang telah mendapat balasan daripada ejen tetapi masih belum ditutup.</value>
+  </data>
+  <data name="TicketSubmittedInQueueNow" xml:space="preserve">
+    <value>Tiket sokongan anda telah diserahkan. Tiket berada dalam baris gilir sekarang, dan anda akan mendapat balasan apabila tiba giliran anda. terima kasih!</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>Zon Masa</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Tajuk</value>
+  </data>
+  <data name="ToArticle" xml:space="preserve">
+    <value>Kepada Artikel</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Hari ini</value>
+  </data>
+  <data name="ToLogin" xml:space="preserve">
+    <value>untuk log masuk.</value>
+  </data>
+  <data name="Top10" xml:space="preserve">
+    <value>10 teratas</value>
+  </data>
+  <data name="Top15" xml:space="preserve">
+    <value>15 teratas</value>
+  </data>
+  <data name="Top20" xml:space="preserve">
+    <value>20 teratas</value>
+  </data>
+  <data name="Top25" xml:space="preserve">
+    <value>25 teratas</value>
+  </data>
+  <data name="Top30" xml:space="preserve">
+    <value>30 teratas</value>
+  </data>
+  <data name="TopAgentsByClosedTickets" xml:space="preserve">
+    <value>Ejen Teratas Mengikut Tiket Tertutup</value>
+  </data>
+  <data name="ToResetYourPasswordYouCanVisitOurWebsite" xml:space="preserve">
+    <value>Untuk menetapkan semula kata laluan anda, anda boleh melawati laman web kami dan klik pada pautan "Lupa Kata Laluan" pada halaman log masuk. Ikut arahan untuk menetapkan semula kata laluan anda.</value>
+  </data>
+  <data name="ToSelectAnIcon" xml:space="preserve">
+    <value>untuk memilih ikon</value>
+  </data>
+  <data name="TotalAdmins" xml:space="preserve">
+    <value>Jumlah pentadbir</value>
+  </data>
+  <data name="TotalAgents" xml:space="preserve">
+    <value>Jumlah ejen</value>
+  </data>
+  <data name="TotalAIChatbotsByUserRole" xml:space="preserve">
+    <value>Jumlah chatbot AI mengikut peranan pengguna</value>
+  </data>
+  <data name="TotalClosedTickets" xml:space="preserve">
+    <value>Jumlah tiket yang ditutup</value>
+  </data>
+  <data name="TotalCustomers" xml:space="preserve">
+    <value>Jumlah pelanggan</value>
+  </data>
+  <data name="TotalOpenTickets" xml:space="preserve">
+    <value>Jumlah tiket terbuka</value>
+  </data>
+  <data name="TotalQueueingTickets" xml:space="preserve">
+    <value>Jumlah tiket Beratur</value>
+  </data>
+  <data name="TotalTickets" xml:space="preserve">
+    <value>Jumlah tiket</value>
+  </data>
+  <data name="TotalTicketsByAgents" xml:space="preserve">
+    <value>Jumlah tiket oleh ejen</value>
+  </data>
+  <data name="TotalTicketsByCustomers" xml:space="preserve">
+    <value>Jumlah tiket mengikut pelanggan</value>
+  </data>
+  <data name="TotalTicketsByStatus" xml:space="preserve">
+    <value>Jumlah tiket mengikut status</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>Jumlah pengguna</value>
+  </data>
+  <data name="Turkish" xml:space="preserve">
+    <value>Bahasa Turki</value>
+  </data>
+  <data name="TutorialVideos" xml:space="preserve">
+    <value>Video tutorial</value>
+  </data>
+  <data name="UnassignedTickets" xml:space="preserve">
+    <value>Tiket yang tidak ditetapkan</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>dikemas kini</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Muat naik</value>
+  </data>
+  <data name="UploadedImage" xml:space="preserve">
+    <value>Imej yang dimuat naik</value>
+  </data>
+  <data name="UploadExcel" xml:space="preserve">
+    <value>Muat naik Excel</value>
+  </data>
+  <data name="Urgency" xml:space="preserve">
+    <value>Terdesak</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="UrlTaken" xml:space="preserve">
+    <value>Url telah diambil.</value>
+  </data>
+  <data name="UsefulLinks" xml:space="preserve">
+    <value>Pautan Berguna</value>
+  </data>
+  <data name="UseInAIChatbot" xml:space="preserve">
+    <value>Gunakan dalam AI chatbot</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>pengguna</value>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>Pengurusan Pengguna</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Nama pengguna</value>
+  </data>
+  <data name="UsernameHasBeenTaken" xml:space="preserve">
+    <value>Nama pengguna telah diambil.</value>
+  </data>
+  <data name="UsernameOrEmail" xml:space="preserve">
+    <value>Nama pengguna atau E-mel</value>
+  </data>
+  <data name="UsernameOrEmailHasBeenTaken" xml:space="preserve">
+    <value>Nama pengguna atau alamat e-mel telah diambil.</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>Profil Pengguna</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Pengguna</value>
+  </data>
+  <data name="ViewArticle" xml:space="preserve">
+    <value>Lihat Artikel</value>
+  </data>
+  <data name="WeAimToRespondToAllInquiriesWithin25BusinessDays" xml:space="preserve">
+    <value>Kami berhasrat untuk menjawab semua pertanyaan dalam masa 2-5 hari perniagaan, tetapi masa respons mungkin berbeza-beza bergantung pada jumlah pertanyaan.</value>
+  </data>
+  <data name="WeDiscoveredThatTheSystemHasNoUsersAsOfNow" xml:space="preserve">
+    <value>Kami mendapati bahawa sistem itu tidak mempunyai pengguna setakat ini. Sila ambil perhatian bahawa pengguna pertama yang mendaftar sekarang secara automatik akan diberikan peranan Pentadbir. Kami menganggap Admin ialah pengguna pertama yang mempunyai akses kepada sistem ini.</value>
+  </data>
+  <data name="WelcomeToHelpDeskSystem" xml:space="preserve">
+    <value>Selamat datang ke {0} Sistem Meja Bantuan!</value>
+  </data>
+  <data name="WelcomeToOurDedicatedHelpAndSupportSystem" xml:space="preserve">
+    <value>Selamat datang ke sistem bantuan dan sokongan kami yang berdedikasi, yang direka untuk membantu anda setiap langkah. Sama ada anda mempunyai soalan tentang produk kami, memerlukan bantuan teknikal atau inginkan panduan tentang cara memanfaatkan perkhidmatan kami sepenuhnya, kami sedia membantu.</value>
+  </data>
+  <data name="WereSorryButItSeemsLikeYouReTryingToAccess" xml:space="preserve">
+    <value>Kami memohon maaf, tetapi nampaknya anda cuba mengakses halaman atau sumber yang anda tidak mempunyai kebenaran.</value>
+  </data>
+  <data name="WeveSentAPasswordResetLink" xml:space="preserve">
+    <value>Kami telah menghantar pautan tetapan semula kata laluan ke alamat e-mel berdaftar anda. Sila klik pautan dalam e-mel untuk menetapkan semula kata laluan anda. Jika anda tidak melihatnya dalam peti masuk anda, pastikan anda menyemak folder spam atau sampah anda dan tambahkan alamat e-mel kami pada senarai penghantar selamat anda.</value>
+  </data>
+  <data name="WhatAreTheFeaturesIn" xml:space="preserve">
+    <value>Apakah ciri dalam {0}?</value>
+  </data>
+  <data name="WhatAreYourOperatingHoursForCustomerSupport" xml:space="preserve">
+    <value>Apakah waktu operasi anda untuk sokongan pelanggan?</value>
+  </data>
+  <data name="WhatCanYouDoLoginWithTheCorrectCredentials" xml:space="preserve">
+    <value>Apa yang boleh anda lakukan? Log masuk dengan kelayakan yang betul untuk mendapatkan akses. Atau, hubungi sokongan atau pentadbir tapak web ini untuk memberi anda akses.</value>
+  </data>
+  <data name="WhatShouldIDoIfIEncounterAnErrorMessage" xml:space="preserve">
+    <value>Apakah yang perlu saya lakukan jika saya menghadapi mesej ralat semasa menggunakan perkhidmatan anda?</value>
+  </data>
+  <data name="WhatShouldIDoIfImNotSatisfiedWithTheResolution" xml:space="preserve">
+    <value>Apakah yang perlu saya lakukan jika saya tidak berpuas hati dengan resolusi yang diberikan oleh pasukan sokongan anda?</value>
+  </data>
+  <data name="WhatTypesOfIssuesCanYourSupportTeamAssistWith" xml:space="preserve">
+    <value>Apakah jenis isu yang boleh dibantu oleh pasukan sokongan anda?</value>
+  </data>
+  <data name="WhileWaitingForTheAgentsResponse" xml:space="preserve">
+    <value>Sementara menunggu maklum balas ejen, pelanggan boleh menutup tiket jika mereka menyelesaikan sendiri masalah tersebut.</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ya</value>
+  </data>
+  <data name="YesCloseNow" xml:space="preserve">
+    <value>Ya, Tutup Sekarang</value>
+  </data>
+  <data name="YesDeleteIt" xml:space="preserve">
+    <value>Ya, Padamkannya</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>Semalam</value>
+  </data>
+  <data name="YesWeHaveKnowledgeBaseArticlesThatHelpYou" xml:space="preserve">
+    <value>Ya, kami mempunyai artikel asas pengetahuan yang membantu anda mencari jawapan kepada soalan biasa dan petua penyelesaian masalah.</value>
+  </data>
+  <data name="YesYouCanTrackTheStatusOfYourSupportTicket" xml:space="preserve">
+    <value>Ya, anda boleh menjejaki status tiket sokongan anda dengan melog masuk ke akaun anda di tapak web kami dan mengakses portal tiket sokongan.</value>
+  </data>
+  <data name="YouAreNotPermittedToViewTheTicketConversation" xml:space="preserve">
+    <value>Anda tidak dibenarkan melihat perbualan tiket. Perbualan hanya boleh dilihat oleh pemula tiket, pentadbir dan orang yang bertanggungjawab (ejen semasa).</value>
+  </data>
+  <data name="YouAreUnableToReopenAClosedTicket" xml:space="preserve">
+    <value>Anda tidak boleh membuka semula tiket yang ditutup setelah ia ditutup. Adakah anda pasti untuk meneruskan?</value>
+  </data>
+  <data name="YouMayOnlyAttachOneFileIfYouWouldLike" xml:space="preserve">
+    <value>Anda hanya boleh melampirkan satu fail. Jika anda ingin memuat naik berbilang fail, sila gabungkan mereka ke dalam fail zip dan muat naik fail zip.</value>
+  </data>
+  <data name="YourPasswordResetSuccessfully" xml:space="preserve">
+    <value>Tetapan semula kata laluan anda berjaya!</value>
+  </data>
+  <data name="YourTicket" xml:space="preserve">
+    <value>tiket awak</value>
+  </data>
+  <data name="YouveBeenAssignedANewTicket" xml:space="preserve">
+    <value>Anda telah diberikan tiket baharu</value>
+  </data>
+  <data name="YouVeGotARatingFor" xml:space="preserve">
+    <value>Anda mendapat kemas kini penilaian untuk {0} daripada {1}!</value>
+  </data>
+</root>

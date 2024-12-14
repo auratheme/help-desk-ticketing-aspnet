@@ -1,0 +1,1623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>تم الرفض</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>فعل</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>الإجراءات</value>
+  </data>
+  <data name="ActiveCustomersByMonth" xml:space="preserve">
+    <value>العملاء النشطين حسب الشهر</value>
+  </data>
+  <data name="ActiveTickets" xml:space="preserve">
+    <value>التذاكر النشطة</value>
+  </data>
+  <data name="AddAllPossibleTagsEachSeparatedByAComma" xml:space="preserve">
+    <value>أضف كل العلامات الممكنة، مع الفصل بينها بفاصلة. سيتم استخدام العلامات في محرك البحث الخاص بقاعدة المعرفة.</value>
+  </data>
+  <data name="AdditionalInfo" xml:space="preserve">
+    <value>معلومات إضافية</value>
+  </data>
+  <data name="AdditionalInfoUpdated" xml:space="preserve">
+    <value>تم تحديث المعلومات الإضافية بنجاح!</value>
+  </data>
+  <data name="AddMore" xml:space="preserve">
+    <value>أضف المزيد</value>
+  </data>
+  <data name="AddNewArticle" xml:space="preserve">
+    <value>إضافة مقال جديد</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>مسؤل</value>
+  </data>
+  <data name="AdminActions" xml:space="preserve">
+    <value>إجراءات الإدارة</value>
+  </data>
+  <data name="AdminCanSeeAllTheAIChatbotsChatHistories" xml:space="preserve">
+    <value>يمكن للمسؤول رؤية جميع سجلات الدردشة الخاصة ببرنامج الدردشة الآلي AI.</value>
+  </data>
+  <data name="AdminsCanAddTagsToAnAIChatbotsChatThread" xml:space="preserve">
+    <value>يمكن للمسؤولين إضافة علامات إلى سلسلة الدردشة الخاصة بروبوت الذكاء الاصطناعي.</value>
+  </data>
+  <data name="AdminsCanEasilyAssignATicketToAnAgent" xml:space="preserve">
+    <value>يمكن للمسؤولين تخصيص تذكرة لوكيل بسهولة.</value>
+  </data>
+  <data name="AdminSettings" xml:space="preserve">
+    <value>إعدادات المسؤول</value>
+  </data>
+  <data name="AdminView" xml:space="preserve">
+    <value>عرض المشرف</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>عامل</value>
+  </data>
+  <data name="AIAnswer" xml:space="preserve">
+    <value>إجابة الذكاء الاصطناعي</value>
+  </data>
+  <data name="AIChatbot" xml:space="preserve">
+    <value>روبوت المحادثة بالذكاء الاصطناعي</value>
+  </data>
+  <data name="AIChatbotAvatar" xml:space="preserve">
+    <value>رمز الدردشة الآلية بالذكاء الاصطناعي</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>الجميع</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>جميع الحقوق محفوظة.</value>
+  </data>
+  <data name="AnAdminAccountWasAddedSuccessfully" xml:space="preserve">
+    <value>تمت إضافة حساب المسؤول بنجاح!</value>
+  </data>
+  <data name="AnAgentAccountWasAddedSuccessfully" xml:space="preserve">
+    <value>تمت إضافة حساب الوكيل بنجاح!</value>
+  </data>
+  <data name="AnEmailSentPleaseClickLinkToConfirmYourEmail" xml:space="preserve">
+    <value>لقد أرسلنا لك رسالة تأكيد عبر البريد الإلكتروني إلى عنوان بريدك الإلكتروني المسجل. يرجى النقر فوق الرابط الموجود في البريد الإلكتروني للتحقق من حسابك. إذا لم تجده في صندوق الوارد الخاص بك، فتأكد من التحقق من مجلد البريد العشوائي وإضافة عنوان بريدنا الإلكتروني إلى قائمة المرسلين الآمنين.</value>
+  </data>
+  <data name="AnEmailWasSentToYourRegisteredEmailAddress" xml:space="preserve">
+    <value>لقد تم إرسال بريد إلكتروني إلى عنوان بريدك الإلكتروني المسجل. يرجى النقر فوق الرابط لتأكيد بريدك الإلكتروني.</value>
+  </data>
+  <data name="AppendASavedReplyToTheMessageBoxAbove" xml:space="preserve">
+    <value>أضف ردًا محفوظًا إلى مربع الرسالة أعلاه.</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>عربي</value>
+  </data>
+  <data name="AreThereAnySelfHelpResourcesAvailableFor" xml:space="preserve">
+    <value>هل تتوفر أي مصادر مساعدة ذاتية لاستكشاف الأخطاء وإصلاحها للمشكلات الشائعة؟</value>
+  </data>
+  <data name="AreYouSureToCloseTheTicket" xml:space="preserve">
+    <value>هل أنت متأكد من إغلاق التذكرة؟</value>
+  </data>
+  <data name="AreYouSureToDeleteThisRecord" xml:space="preserve">
+    <value>هل أنت متأكد من حذف هذا السجل؟</value>
+  </data>
+  <data name="Arrange" xml:space="preserve">
+    <value>يرتب</value>
+  </data>
+  <data name="Article" xml:space="preserve">
+    <value>شرط</value>
+  </data>
+  <data name="ArticlesInThisCategory" xml:space="preserve">
+    <value>المقالات في هذه الفئة</value>
+  </data>
+  <data name="ArticlesWithoutACategory" xml:space="preserve">
+    <value>مقالات بدون تصنيف</value>
+  </data>
+  <data name="AssignedAgentSuccessfully" xml:space="preserve">
+    <value>تم تعيين الوكيل بنجاح!</value>
+  </data>
+  <data name="AssignedTickets" xml:space="preserve">
+    <value>التذاكر المخصصة</value>
+  </data>
+  <data name="AssignedTo" xml:space="preserve">
+    <value>مُخصص لـ</value>
+  </data>
+  <data name="AssignTo" xml:space="preserve">
+    <value>تعيين إلى</value>
+  </data>
+  <data name="AutoDetectedInfo" xml:space="preserve">
+    <value>معلومات تم اكتشافها تلقائيًا</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>خلف</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>جسم</value>
+  </data>
+  <data name="ByAdmin" xml:space="preserve">
+    <value>بواسطة المشرف</value>
+  </data>
+  <data name="ByAgent" xml:space="preserve">
+    <value>بواسطة الوكيل</value>
+  </data>
+  <data name="ByPriority" xml:space="preserve">
+    <value>حسب الأولوية</value>
+  </data>
+  <data name="ByTicketSubmitter" xml:space="preserve">
+    <value>بواسطة مقدم التذكرة</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>يلغي</value>
+  </data>
+  <data name="CancelNewReply" xml:space="preserve">
+    <value>إلغاء الرد الجديد</value>
+  </data>
+  <data name="CanCopyPasteImagesInTheTextEditor" xml:space="preserve">
+    <value>إمكانية نسخ ولصق الصور في محرر النصوص أثناء نشر تعليق.</value>
+  </data>
+  <data name="CanITrackTheStatusOfMySupportTicket" xml:space="preserve">
+    <value>هل يمكنني متابعة حالة تذكرة الدعم الخاصة بي؟</value>
+  </data>
+  <data name="CanViewTheEmailLogsAndErrorLogsEasily" xml:space="preserve">
+    <value>يمكنك عرض سجلات البريد الإلكتروني وسجلات الأخطاء بسهولة.</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>فئة</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="ChangeProfilePicture" xml:space="preserve">
+    <value>تغيير صورة الملف الشخصي</value>
+  </data>
+  <data name="ChangesWasNotSavedPleaseMakeSure" xml:space="preserve">
+    <value>لم يتم حفظ التغييرات. يرجى التأكد من ملء جميع الحقول بقيم صالحة.</value>
+  </data>
+  <data name="ChangesWereSavedSuccessfully" xml:space="preserve">
+    <value>تم حفظ التغييرات بنجاح!</value>
+  </data>
+  <data name="ChatbotDefault" xml:space="preserve">
+    <value>الدردشة الافتراضية</value>
+  </data>
+  <data name="ChatbotSetting" xml:space="preserve">
+    <value>إعدادات الدردشة الآلية</value>
+  </data>
+  <data name="ChatDeletedSuccessfully" xml:space="preserve">
+    <value>تم حذف الدردشة بنجاح!</value>
+  </data>
+  <data name="ChatSessionsAdminView" xml:space="preserve">
+    <value>جلسات الدردشة (عرض المشرف)</value>
+  </data>
+  <data name="ChatView" xml:space="preserve">
+    <value>عرض الدردشة</value>
+  </data>
+  <data name="ChiefExecutiveOfficerCEO" xml:space="preserve">
+    <value>الرئيس التنفيذي</value>
+  </data>
+  <data name="ChineseSimplified" xml:space="preserve">
+    <value>الصينية (المبسطة)</value>
+  </data>
+  <data name="ChineseTraditional" xml:space="preserve">
+    <value>الصينية (التقليدية)</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>واضح</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>انقر هنا</value>
+  </data>
+  <data name="ClickToAutoGenerateBodyUsingAI" xml:space="preserve">
+    <value>انقر هنا لإنشاء الجسم تلقائيًا باستخدام الذكاء الاصطناعي.</value>
+  </data>
+  <data name="ClickToAutoGenerateTagsUsingAI" xml:space="preserve">
+    <value>انقر هنا لإنشاء العلامات تلقائيًا باستخدام الذكاء الاصطناعي.</value>
+  </data>
+  <data name="ClickToCheckOutTheErrorDetail" xml:space="preserve">
+    <value>انقر هنا للتحقق من تفاصيل الخطأ</value>
+  </data>
+  <data name="ClickToCopy" xml:space="preserve">
+    <value>انقر للنسخ</value>
+  </data>
+  <data name="ClickToCopyTheRegistrationLinkAndShareWithAdmin" xml:space="preserve">
+    <value>انقر هنا لنسخ رابط التسجيل ومشاركته مع المسؤولين لديك حتى يتمكنوا من تسجيل أنفسهم.</value>
+  </data>
+  <data name="ClickToCopyTheRegistrationLinkAndShareWithAgents" xml:space="preserve">
+    <value>انقر هنا لنسخ رابط التسجيل ومشاركته مع وكلائك حتى يتمكنوا من تسجيل أنفسهم.</value>
+  </data>
+  <data name="ClickToCopyTheRegistrationLinkAndShareWithCustomer" xml:space="preserve">
+    <value>انقر هنا لنسخ رابط التسجيل ومشاركته مع عملائك حتى يتمكنوا من تسجيل أنفسهم.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>يغلق</value>
+  </data>
+  <data name="ClosedBy" xml:space="preserve">
+    <value>تم إغلاقه بواسطة</value>
+  </data>
+  <data name="ClosedOn" xml:space="preserve">
+    <value>مغلق في</value>
+  </data>
+  <data name="ClosedStatusName" xml:space="preserve">
+    <value>اسم الحالة مغلقة</value>
+  </data>
+  <data name="ClosedTickets" xml:space="preserve">
+    <value>تذاكر مغلقة</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>ينهار</value>
+  </data>
+  <data name="Column0NotFound" xml:space="preserve">
+    <value>لم يتم العثور على العمود {0}.</value>
+  </data>
+  <data name="ComingUpInTheNextUpdate" xml:space="preserve">
+    <value>قادم في التحديث القادم!</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>تعليق</value>
+  </data>
+  <data name="CommunicationSkills" xml:space="preserve">
+    <value>مهارات التواصل</value>
+  </data>
+  <data name="ConfirmedEmail" xml:space="preserve">
+    <value>تم تأكيد البريد الإلكتروني</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>.تأكيد عنوان البريد الإلكتروني</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور الجديدة</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="Conversation" xml:space="preserve">
+    <value>محادثة</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>ينسخ</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>حقوق الطبع والنشر</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>دولة</value>
+  </data>
+  <data name="CreateANew" xml:space="preserve">
+    <value>إنشاء جديد</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>تم الإنشاء بواسطة</value>
+  </data>
+  <data name="CreatedOn" xml:space="preserve">
+    <value>تم الإنشاء في</value>
+  </data>
+  <data name="CreateNew" xml:space="preserve">
+    <value>إنشاء جديد</value>
+  </data>
+  <data name="CreateNewArticle" xml:space="preserve">
+    <value>إنشاء مقالة جديدة</value>
+  </data>
+  <data name="CreateNewChat" xml:space="preserve">
+    <value>إنشاء دردشة جديدة</value>
+  </data>
+  <data name="CreateNewTicket" xml:space="preserve">
+    <value>إنشاء تذكرة جديدة</value>
+  </data>
+  <data name="CreatingANewSupportTicket" xml:space="preserve">
+    <value>إنشاء تذكرة دعم جديدة</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>كلمة المرور الحالية</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>عميل</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>لوحة القيادة</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="DavidPatel" xml:space="preserve">
+    <value>ديفيد باتيل</value>
+  </data>
+  <data name="DedicatedSystemToHelpAndSupportYou" xml:space="preserve">
+    <value>نظام مخصص لمساعدتك ودعمك</value>
+  </data>
+  <data name="DefaultQuestionSetting" xml:space="preserve">
+    <value>إعداد السؤال الافتراضي</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>يمسح</value>
+  </data>
+  <data name="DeleteCategory" xml:space="preserve">
+    <value>حذف الفئة</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>تم الحذف</value>
+  </data>
+  <data name="DeleteThisArticle" xml:space="preserve">
+    <value>حذف هذه المقالة</value>
+  </data>
+  <data name="DeletingIsPermanentAndCantBeUndone" xml:space="preserve">
+    <value>الحذف نهائي ولا يمكن التراجع عنه. هل أنت متأكد من أنك تريد المتابعة؟</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>وصف</value>
+  </data>
+  <data name="DidThisArticleHelpYou" xml:space="preserve">
+    <value>هل ساعدك هذا المقال؟</value>
+  </data>
+  <data name="DirectorOfCustomerExperience" xml:space="preserve">
+    <value>مدير تجربة العملاء</value>
+  </data>
+  <data name="DownloadRecentProjects" xml:space="preserve">
+    <value>تنزيل المشاريع الحديثة</value>
+  </data>
+  <data name="DragAndDropToRearrangeTheList" xml:space="preserve">
+    <value>اسحب وأفلِت لإعادة ترتيب القائمة.</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>يحرر</value>
+  </data>
+  <data name="Edit category" xml:space="preserve">
+    <value>تعديل الفئة</value>
+  </data>
+  <data name="EditableByAdminAgent" xml:space="preserve">
+    <value>قابلة للتعديل بواسطة المسؤول/الوكيل</value>
+  </data>
+  <data name="EditArticle" xml:space="preserve">
+    <value>تعديل المقال</value>
+  </data>
+  <data name="EditATicket" xml:space="preserve">
+    <value>تعديل التذكرة</value>
+  </data>
+  <data name="EditCategory" xml:space="preserve">
+    <value>تعديل الفئة</value>
+  </data>
+  <data name="EditTags" xml:space="preserve">
+    <value>تعديل العلامات</value>
+  </data>
+  <data name="EditThisArticle" xml:space="preserve">
+    <value>تعديل هذه المقالة</value>
+  </data>
+  <data name="EditTitle" xml:space="preserve">
+    <value>تعديل العنوان</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>بريد إلكتروني</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>عنوان البريد الإلكتروني</value>
+  </data>
+  <data name="EmailAddressHasBeenTaken" xml:space="preserve">
+    <value>تم أخذ عنوان البريد الإلكتروني.</value>
+  </data>
+  <data name="EmailConfirmationRequired" xml:space="preserve">
+    <value>مطلوب تأكيد البريد الإلكتروني</value>
+  </data>
+  <data name="EmailConfirmationTokenExpired" xml:space="preserve">
+    <value>انتهت صلاحية رمز تأكيد البريد الإلكتروني الخاص بك. لقد أرسلنا إليك رسالة تأكيد جديدة. يرجى النقر فوق الرابط الموجود في البريد الإلكتروني الأخير لإكمال التسجيل.</value>
+  </data>
+  <data name="EmailLog" xml:space="preserve">
+    <value>سجل البريد الإلكتروني</value>
+  </data>
+  <data name="EmbedAnAIChatbotOnMultipleWebsites" xml:space="preserve">
+    <value>قم بتضمين روبوت المحادثة AI على مواقع ويب متعددة.</value>
+  </data>
+  <data name="EmbedChatbot" xml:space="preserve">
+    <value>تضمين روبوت المحادثة</value>
+  </data>
+  <data name="EmilyJohnson" xml:space="preserve">
+    <value>إميلي جونسون</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>إنجليزي</value>
+  </data>
+  <data name="EnterTagsForThisChat" xml:space="preserve">
+    <value>أدخل العلامات لهذه الدردشة</value>
+  </data>
+  <data name="EnterTheDetails" xml:space="preserve">
+    <value>أدخل التفاصيل.</value>
+  </data>
+  <data name="EnterYour" xml:space="preserve">
+    <value>أدخل بياناتك</value>
+  </data>
+  <data name="EnterYourPreferredTicketStatusName" xml:space="preserve">
+    <value>أدخل اسم حالة التذكرة المفضل لديك لتذاكر الانتظار والتذاكر المفتوحة والتذاكر المغلقة. على سبيل المثال، يمكنك تغيير الاسم إلى معلق أو قيد التنفيذ أو محلول أو أي اسم مفضل آخر.</value>
+  </data>
+  <data name="ErrorDate" xml:space="preserve">
+    <value>خطأ في التاريخ</value>
+  </data>
+  <data name="ErrorDetail" xml:space="preserve">
+    <value>تفاصيل الخطأ</value>
+  </data>
+  <data name="ErrorLog" xml:space="preserve">
+    <value>سجل الأخطاء</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>رسالة الخطأ</value>
+  </data>
+  <data name="Expand" xml:space="preserve">
+    <value>يوسع</value>
+  </data>
+  <data name="ExploreOurComprehensiveKnowledgeBaseResources" xml:space="preserve">
+    <value>استكشف موارد قاعدة المعرفة الشاملة لدينا والتي تغطي مجموعة من الأسئلة للعثور على الحلول التي تحتاجها. إذا لم يساعدك ذلك، فأرسل تذكرة دعم وسنرد عليك في أقرب وقت ممكن. رضاك هو أولويتنا، ونحن ملتزمون بضمان حصولك على تجربة سلسة مع منتجاتنا وخدماتنا.</value>
+  </data>
+  <data name="ExploreOurKnowledgeBaseArticles" xml:space="preserve">
+    <value>استكشف مقالات قاعدة المعرفة لدينا للحصول على حلول مفصلة للمشكلات الشائعة.</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>يصدّر</value>
+  </data>
+  <data name="ExportArticle" xml:space="preserve">
+    <value>تصدير المقال</value>
+  </data>
+  <data name="ExportCategory" xml:space="preserve">
+    <value>فئة التصدير</value>
+  </data>
+  <data name="ExportChatToCsv" xml:space="preserve">
+    <value>تصدير الدردشة إلى ملف csv</value>
+  </data>
+  <data name="ExportChatToExcel" xml:space="preserve">
+    <value>تصدير الدردشة إلى Excel</value>
+  </data>
+  <data name="ExportChatToPdf" xml:space="preserve">
+    <value>تصدير الدردشة إلى ملف pdf</value>
+  </data>
+  <data name="ExportChatToWord" xml:space="preserve">
+    <value>تصدير الدردشة إلى كلمة</value>
+  </data>
+  <data name="ExportTheChatHistories" xml:space="preserve">
+    <value>تصدير سجلات الدردشة.</value>
+  </data>
+  <data name="ExportTickets" xml:space="preserve">
+    <value>تصدير التذاكر</value>
+  </data>
+  <data name="ExportToCsv" xml:space="preserve">
+    <value>تصدير إلى csv</value>
+  </data>
+  <data name="ExportToDocx" xml:space="preserve">
+    <value>تصدير إلى docx</value>
+  </data>
+  <data name="ExportToExcel" xml:space="preserve">
+    <value>تصدير إلى إكسل</value>
+  </data>
+  <data name="ExportToPdf" xml:space="preserve">
+    <value>تصدير إلى ملف pdf</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>فشل</value>
+  </data>
+  <data name="FailedToResetPasswordPleaseTryAgainLater" xml:space="preserve">
+    <value>فشلت عملية إعادة تعيين كلمة المرور. يرجى المحاولة مرة أخرى لاحقًا.</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>التعليمات</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>تعليق</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>ملف</value>
+  </data>
+  <data name="FilledByAdminAgent" xml:space="preserve">
+    <value>تم ملؤها بواسطة المسؤول/الوكيل</value>
+  </data>
+  <data name="FilledByCustomer" xml:space="preserve">
+    <value>تم ملؤها من قبل العميل</value>
+  </data>
+  <data name="FillInTheEmailAddressAndWeWillSendYouAResetPasswordLink" xml:space="preserve">
+    <value>أدخل عنوان البريد الإلكتروني وسوف نرسل لك رابط إعادة تعيين كلمة المرور.</value>
+  </data>
+  <data name="FillInTheFollowingToRegister" xml:space="preserve">
+    <value>قم بملء البيانات التالية للتسجيل.</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>فلتر</value>
+  </data>
+  <data name="FilterMonth" xml:space="preserve">
+    <value>تصفية الشهر</value>
+  </data>
+  <data name="FilterRole" xml:space="preserve">
+    <value>دور الفلتر</value>
+  </data>
+  <data name="FilterYear" xml:space="preserve">
+    <value>تصفية السنة</value>
+  </data>
+  <data name="FindTheSolutionIn3Steps" xml:space="preserve">
+    <value>ابحث عن الحل في 3 خطوات</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+  <data name="FollowUs" xml:space="preserve">
+    <value>تابعنا</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>هل نسيت كلمة السر</value>
+  </data>
+  <data name="ForgotYourPassword" xml:space="preserve">
+    <value>نسيت كلمة السر؟</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>فرنسي</value>
+  </data>
+  <data name="FrequentlyAskedQuestions" xml:space="preserve">
+    <value>الأسئلة الشائعة</value>
+  </data>
+  <data name="Full Name" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+  <data name="FullAddress" xml:space="preserve">
+    <value>العنوان الكامل</value>
+  </data>
+  <data name="FullList" xml:space="preserve">
+    <value>القائمة الكاملة</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+  <data name="FunAndUsefulTips" xml:space="preserve">
+    <value>نصائح ممتعة ومفيدة</value>
+  </data>
+  <data name="GeneralSetting" xml:space="preserve">
+    <value>الإعدادات العامة</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>الألمانية</value>
+  </data>
+  <data name="HasBeenAssignedTo" xml:space="preserve">
+    <value>لقد تم تعيينه إلى</value>
+  </data>
+  <data name="HasBeenAssignedToAnotherAgent" xml:space="preserve">
+    <value>تم تعيينه إلى وكيل آخر</value>
+  </data>
+  <data name="HasBeenClosedByTheCustomer" xml:space="preserve">
+    <value>تم إغلاقه من قبل العميل</value>
+  </data>
+  <data name="HasBeenClosedByTheSupportAgent" xml:space="preserve">
+    <value>تم إغلاقه بواسطة وكيل الدعم</value>
+  </data>
+  <data name="HeadOfOperations" xml:space="preserve">
+    <value>رئيس العمليات</value>
+  </data>
+  <data name="Here" xml:space="preserve">
+    <value>هنا</value>
+  </data>
+  <data name="Hindi" xml:space="preserve">
+    <value>الهندية</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>بيت</value>
+  </data>
+  <data name="HowCanIHelpYouToday" xml:space="preserve">
+    <value>كيف يمكنني مساعدتك اليوم؟</value>
+  </data>
+  <data name="HowCanIResetMyPassword" xml:space="preserve">
+    <value>كيف يمكنني إعادة تعيين كلمة المرور الخاصة بي؟</value>
+  </data>
+  <data name="HowItWorks" xml:space="preserve">
+    <value>كيف يعمل</value>
+  </data>
+  <data name="HowLongDoesItUsuallyTakeToReceiveAResponse" xml:space="preserve">
+    <value>كم من الوقت يستغرق عادةً لتلقي رد من فريق الدعم الخاص بك؟</value>
+  </data>
+  <data name="HurrayTheTicketWasClosedThankYou" xml:space="preserve">
+    <value>يا هلا! لقد تم إغلاق التذكرة. شكرًا لك!</value>
+  </data>
+  <data name="Icon" xml:space="preserve">
+    <value>رمز</value>
+  </data>
+  <data name="IDCardNumber" xml:space="preserve">
+    <value>رقم بطاقة الهوية</value>
+  </data>
+  <data name="IfYouEncounterAnErrorMessagePleaseTakeNote" xml:space="preserve">
+    <value>إذا واجهت رسالة خطأ، فيرجى ملاحظة رسالة الخطأ وأي خطوات اتخذتها عند حدوث الخطأ. ثم قم بإرسال تذكرة دعم إلى فريق الدعم لدينا للحصول على المساعدة.</value>
+  </data>
+  <data name="IfYoureNotSatisfiedWithTheResolutionProvided" xml:space="preserve">
+    <value>إذا لم تكن راضيًا عن الحل الذي قدمه فريق الدعم لدينا، فيرجى إخبارنا وسنبذل قصارى جهدنا لمعالجة مخاوفك وإيجاد حل مرضٍ.</value>
+  </data>
+  <data name="IfYourProblemPersists" xml:space="preserve">
+    <value>إذا استمرت المشكلة، انتقل إلى فتح تذكرة دعم للحصول على مساعدة شخصية.</value>
+  </data>
+  <data name="IfYouveFoundASolutionYouCanCloseThisTicket" xml:space="preserve">
+    <value>إذا وجدت حلاً، يمكنك إغلاق هذه التذكرة حتى يتم إزالتها من قائمة الانتظار. شكرًا جزيلاً على تعاونك!</value>
+  </data>
+  <data name="ImmediatelyReceivingAnEmailABell" xml:space="preserve">
+    <value>استلام بريد إلكتروني وجرس وإشعار على الفور.</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>تأثير</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>يستورد</value>
+  </data>
+  <data name="ImportantNote" xml:space="preserve">
+    <value>ملاحظة هامة</value>
+  </data>
+  <data name="ImportArticle" xml:space="preserve">
+    <value>استيراد المادة</value>
+  </data>
+  <data name="ImportCategories" xml:space="preserve">
+    <value>استيراد الفئات</value>
+  </data>
+  <data name="ImportCategory" xml:space="preserve">
+    <value>فئة الاستيراد</value>
+  </data>
+  <data name="ImportingDataFromExcelPleaseWait" xml:space="preserve">
+    <value>استيراد البيانات من Excel. الرجاء الانتظار...</value>
+  </data>
+  <data name="InitiatedBy" xml:space="preserve">
+    <value>تم البدء بواسطة</value>
+  </data>
+  <data name="InitiatedOn" xml:space="preserve">
+    <value>تم البدء في</value>
+  </data>
+  <data name="InstantEmailBellAndToastNotifications" xml:space="preserve">
+    <value>إشعارات فورية بالبريد الإلكتروني والجرس والإشعارات.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>عنوان البريد الإلكتروني غير صالح.</value>
+  </data>
+  <data name="InvalidLoginAttempt" xml:space="preserve">
+    <value>محاولة تسجيل دخول غير صالحة</value>
+  </data>
+  <data name="InvalidPasswordError" xml:space="preserve">
+    <value>يجب أن تتكون كلمة المرور من 6 أحرف على الأقل، وتتضمن رقمًا واحدًا على الأقل، وحرفًا كبيرًا واحدًا، وحرفًا صغيرًا واحدًا، وحرفًا غير أبجدي رقمي واحد.</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>الدور غير صالح. الرجاء تحديد الدور من القائمة المنسدلة.</value>
+  </data>
+  <data name="InvalidUsername" xml:space="preserve">
+    <value>اسم المستخدم غير صالح.</value>
+  </data>
+  <data name="IsHelpful" xml:space="preserve">
+    <value>هل هذا مفيد؟</value>
+  </data>
+  <data name="IsThereAnyFeedbackYouWantToSubmitToUs" xml:space="preserve">
+    <value>هل هناك أي تعليق تريد إرساله إلينا؟</value>
+  </data>
+  <data name="KnowledgeAndCompetence" xml:space="preserve">
+    <value>المعرفة والكفاءة</value>
+  </data>
+  <data name="KnowledgeBase" xml:space="preserve">
+    <value>قاعدة المعرفة</value>
+  </data>
+  <data name="Last30Days" xml:space="preserve">
+    <value>آخر 30 يوما</value>
+  </data>
+  <data name="Last60Days" xml:space="preserve">
+    <value>آخر 60 يومًا</value>
+  </data>
+  <data name="Last7Days" xml:space="preserve">
+    <value>آخر 7 أيام</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="LastRepliedBy" xml:space="preserve">
+    <value>آخر رد بواسطة</value>
+  </data>
+  <data name="LastRepliedOn" xml:space="preserve">
+    <value>تم الرد آخر مرة في</value>
+  </data>
+  <data name="LatestLoginDateAndTime" xml:space="preserve">
+    <value>أحدث تاريخ ووقت لتسجيل الدخول</value>
+  </data>
+  <data name="Lifetime" xml:space="preserve">
+    <value>حياة</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>تحميل</value>
+  </data>
+  <data name="LoadingAIAnswer" xml:space="preserve">
+    <value>تحميل إجابة الذكاء الاصطناعي</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="LoginDateAndTime" xml:space="preserve">
+    <value>تاريخ ووقت تسجيل الدخول</value>
+  </data>
+  <data name="LoginHistory" xml:space="preserve">
+    <value>سجل تسجيل الدخول</value>
+  </data>
+  <data name="LoginTo" xml:space="preserve">
+    <value>تسجيل الدخول إلى</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>الشعار</value>
+  </data>
+  <data name="LotsOfUsefulFeatures" xml:space="preserve">
+    <value>الكثير من الميزات المفيدة</value>
+  </data>
+  <data name="Malay" xml:space="preserve">
+    <value>الملايو</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>يدير</value>
+  </data>
+  <data name="ManageYourKnowledgeBaseArticles" xml:space="preserve">
+    <value>إدارة مقالات قاعدة المعرفة الخاصة بك.</value>
+  </data>
+  <data name="ManageYourKnowledgeBaseCategories" xml:space="preserve">
+    <value>إدارة فئات قاعدة المعرفة الخاصة بك.</value>
+  </data>
+  <data name="MarkAllAsRead" xml:space="preserve">
+    <value>وضع علامة على الكل كمقروء</value>
+  </data>
+  <data name="MarkedAsRead" xml:space="preserve">
+    <value>تم وضع علامة على القراءة</value>
+  </data>
+  <data name="MeetOurTeam" xml:space="preserve">
+    <value>تعرف على فريقنا</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>رسالة</value>
+  </data>
+  <data name="MichaelChen" xml:space="preserve">
+    <value>مايكل تشين</value>
+  </data>
+  <data name="ModifiedBy" xml:space="preserve">
+    <value>تم تعديله بواسطة</value>
+  </data>
+  <data name="ModifiedOn" xml:space="preserve">
+    <value>تم التعديل في</value>
+  </data>
+  <data name="MoreFeatures" xml:space="preserve">
+    <value>المزيد من الميزات</value>
+  </data>
+  <data name="MoreUsefulFeaturesIn" xml:space="preserve">
+    <value>ميزات أكثر فائدة في</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>الملف الشخصي الخاص بي</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="NewArticle" xml:space="preserve">
+    <value>مقالة جديدة</value>
+  </data>
+  <data name="NewCategory" xml:space="preserve">
+    <value>فئة جديدة</value>
+  </data>
+  <data name="NewChat" xml:space="preserve">
+    <value>دردشة جديدة</value>
+  </data>
+  <data name="NewConfirmationEmailSent" xml:space="preserve">
+    <value>لقد تم إرسال رسالة تأكيد جديدة إلى صندوق البريد الخاص بك.</value>
+  </data>
+  <data name="NewCustomersByAutoDetectedCountry" xml:space="preserve">
+    <value>العملاء الجدد حسب البلد الذي تم اكتشافه تلقائيًا</value>
+  </data>
+  <data name="NewCustomersByAutoDetectedRegion" xml:space="preserve">
+    <value>العملاء الجدد حسب المنطقة التي تم اكتشافها تلقائيًا</value>
+  </data>
+  <data name="NewCustomersByAutoDetectedTimezone" xml:space="preserve">
+    <value>العملاء الجدد حسب المنطقة الزمنية التي تم اكتشافها تلقائيًا</value>
+  </data>
+  <data name="NewCustomersByMonth" xml:space="preserve">
+    <value>العملاء الجدد حسب الشهر</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>كلمة المرور الجديدة</value>
+  </data>
+  <data name="NewReply" xml:space="preserve">
+    <value>رد جديد</value>
+  </data>
+  <data name="NewTicket" xml:space="preserve">
+    <value>تذكرة جديدة</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>الصفحة التالية</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="NoChatHistoriesAreFound" xml:space="preserve">
+    <value>لم يتم العثور على سجلات الدردشة.</value>
+  </data>
+  <data name="NoDataAvailable" xml:space="preserve">
+    <value>لا توجد بيانات متاحة</value>
+  </data>
+  <data name="NoNotificationFound" xml:space="preserve">
+    <value>لم يتم العثور على إشعار</value>
+  </data>
+  <data name="NoteUsernameAndEmailAddressCannotBeChanged" xml:space="preserve">
+    <value>ملاحظة: لا يمكن تغيير اسم المستخدم وعنوان البريد الإلكتروني. يمكنك تسجيل حساب جديد إذا كنت ترغب في استخدام عنوان بريد إلكتروني آخر.</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>إشعار</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>إشعارات</value>
+  </data>
+  <data name="NotifitionLog" xml:space="preserve">
+    <value>سجل الإشعارات</value>
+  </data>
+  <data name="NumberOfActiveCustomers" xml:space="preserve">
+    <value>عدد العملاء النشطين</value>
+  </data>
+  <data name="NumberOfCustomers" xml:space="preserve">
+    <value>عدد العملاء</value>
+  </data>
+  <data name="NumberOfNewCustomers" xml:space="preserve">
+    <value>عدد العملاء الجدد</value>
+  </data>
+  <data name="NumberOfTickets" xml:space="preserve">
+    <value>عدد التذاكر</value>
+  </data>
+  <data name="OnceDeletedArticlesInThisCategoryWillNoLonger" xml:space="preserve">
+    <value>بمجرد حذف المقالات في هذه الفئة، لن يتم عرضها بعد الآن لأن الفئة ستصبح فارغة. ستحتاج إلى تعيين فئة جديدة لهذه المقالات. هل أنت متأكد من الاستمرار؟</value>
+  </data>
+  <data name="OnlyAdministratorsHaveAccessToThisSection" xml:space="preserve">
+    <value>لا يمكن الوصول إلى هذا القسم إلا من قبل المسؤولين، وهو مخصص لإدارة المقالات التي تفتقر إلى فئة بسبب حذف الفئة المرتبطة بها في الأصل. يمكن للمسؤول إعادة تحديد فئة أخرى للمقالات.</value>
+  </data>
+  <data name="OnlyImagesAreAllowed" xml:space="preserve">
+    <value>مسموح بالصور فقط.</value>
+  </data>
+  <data name="OopsTheActionCouldntBeCompletedDueToAnError" xml:space="preserve">
+    <value>عفواً! لم يتمكن من إكمال الإجراء بسبب خطأ. يُرجى المحاولة مرة أخرى أو الاتصال بالدعم إذا استمرت المشكلة.</value>
+  </data>
+  <data name="OopsYouDontHavePermissionToAccessThisPage" xml:space="preserve">
+    <value>عفواً! ليس لديك الإذن للوصول إلى هذه الصفحة.</value>
+  </data>
+  <data name="OpenStatusName" xml:space="preserve">
+    <value>اسم الحالة المفتوحة</value>
+  </data>
+  <data name="OpenTickets" xml:space="preserve">
+    <value>تذاكر مفتوحة</value>
+  </data>
+  <data name="OptionalFields" xml:space="preserve">
+    <value>الحقول الاختيارية</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>طلب</value>
+  </data>
+  <data name="OrderReference" xml:space="preserve">
+    <value>مرجع الطلب</value>
+  </data>
+  <data name="OtherProjects" xml:space="preserve">
+    <value>مشاريع أخرى</value>
+  </data>
+  <data name="OurCustomerSupportTeamIsAvailableFrom" xml:space="preserve">
+    <value>يتوفر فريق دعم العملاء لدينا من الاثنين إلى الجمعة، من الساعة 9:00 صباحًا حتى 6:00 مساءً بتوقيت المحيط الهادئ. سيتم الرد على أي تذاكر يتم استلامها خارج هذه الساعات، بما في ذلك تلك المقدمة يوم السبت أو الأحد، يوم الاثنين التالي خلال ساعات العمل العادية لدينا.</value>
+  </data>
+  <data name="OurSupportTeamCanAssistWithTechnicalIssues" xml:space="preserve">
+    <value>يمكن لفريق الدعم الخاص بنا تقديم المساعدة فيما يتعلق بالمشكلات الفنية والاستفسارات المتعلقة بالحساب واستكشاف الأخطاء وإصلاحها وأي أسئلة أخرى قد تكون لديك حول منتجاتنا أو خدماتنا.</value>
+  </data>
+  <data name="OurTeam" xml:space="preserve">
+    <value>فريقنا</value>
+  </data>
+  <data name="OverallSatisfaction" xml:space="preserve">
+    <value>الرضا العام</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>لم يتم العثور على الصفحة (404)</value>
+  </data>
+  <data name="PageNotFoundDescription" xml:space="preserve">
+    <value>عفواً! لم يتم العثور على الصفحة التي تبحث عنها. ربما تم نقلها أو إعادة تسميتها أو لم تعد موجودة. يرجى النقر فوق الزر أدناه للعودة إلى الصفحة الرئيسية.</value>
+  </data>
+  <data name="PageNotFoundEnsureUrlCorrect" xml:space="preserve">
+    <value>لم يتم العثور على الصفحة. يرجى التأكد من صحة عنوان URL.</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="PasswordChangedSuccessfully" xml:space="preserve">
+    <value>تم تغيير كلمة المرور بنجاح!</value>
+  </data>
+  <data name="PasswordNotMatchWithConfirmPasswordField" xml:space="preserve">
+    <value>كلمة المرور لا تتطابق مع حقل تأكيد كلمة المرور.</value>
+  </data>
+  <data name="PasswordRequirementTooltip" xml:space="preserve">
+    <value>يجب أن يحتوي على 6 أحرف على الأقل. ويتطلب حرفًا كبيرًا واحدًا على الأقل، وحرفًا صغيرًا واحدًا، ورقمًا واحدًا، ورمزًا واحدًا على الأقل.</value>
+  </data>
+  <data name="PermanentlyDeleteThisRecord" xml:space="preserve">
+    <value>حذف هذا السجل نهائيا؟</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>رقم التليفون</value>
+  </data>
+  <data name="PleaseCheckMailbox" xml:space="preserve">
+    <value>يرجى التحقق من صندوق البريد الخاص بك</value>
+  </data>
+  <data name="PleaseClick" xml:space="preserve">
+    <value>الرجاء الضغط</value>
+  </data>
+  <data name="PleaseConfirmYourEmailBeforeSigningIn" xml:space="preserve">
+    <value>يرجى تأكيد بريدك الإلكتروني قبل تسجيل الدخول.</value>
+  </data>
+  <data name="PleaseDownloadTheExcelFileBelowAnd" xml:space="preserve">
+    <value>يرجى تنزيل ملف Excel أدناه وملء الأعمدة. الأعمدة التي تحمل علامة النجمة (*) هي حقول مطلوبة. بعد تعديل ملف Excel، قم بتحميله في قسم التحميل أدناه.</value>
+  </data>
+  <data name="PleaseDownloadTheExcelFileBelowAndFillUpAllTheseColumns" xml:space="preserve">
+    <value>يرجى تنزيل ملف Excel أدناه وملء جميع هذه الأعمدة</value>
+  </data>
+  <data name="PleaseEnterATitleSoThatAICanUseIt" xml:space="preserve">
+    <value>الرجاء إدخال عنوان حتى تتمكن الذكاء الاصطناعي من استخدامه لتوليد</value>
+  </data>
+  <data name="PleaseSelectAnExcelFile" xml:space="preserve">
+    <value>الرجاء تحديد ملف Excel</value>
+  </data>
+  <data name="PortalName" xml:space="preserve">
+    <value>اسم البوابة</value>
+  </data>
+  <data name="PossibleReasonsYouReNotLoggedIn" xml:space="preserve">
+    <value>الأسباب المحتملة: لم تقم بتسجيل الدخول. أو ليس لديك مستوى الوصول المطلوب لهذا المورد.</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>رمز بريدي</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>الصفحة السابقة</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>مطبعة</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>أولوية</value>
+  </data>
+  <data name="ProductManager" xml:space="preserve">
+    <value>مدير المنتج</value>
+  </data>
+  <data name="ProfilePicture" xml:space="preserve">
+    <value>صورة الملف الشخصي</value>
+  </data>
+  <data name="ProvideSeamlessAndReliableSupport" xml:space="preserve">
+    <value>توفير دعم سلس وموثوق به لعملائك أينما كانوا. يضمن نظام مكتب المساعدة لدينا المساعدة في الوقت المناسب عبر مناطق زمنية ولغات وقنوات مختلفة، حتى تتمكن من بناء الثقة وتقديم خدمة استثنائية في جميع أنحاء العالم.</value>
+  </data>
+  <data name="PublishedArticles" xml:space="preserve">
+    <value>المقالات المنشورة</value>
+  </data>
+  <data name="PublishOrUnpublishAnArticle" xml:space="preserve">
+    <value>نشر أو إلغاء نشر مقالة.</value>
+  </data>
+  <data name="PublishToKnowledgeBase" xml:space="preserve">
+    <value>نشر في قاعدة المعرفة</value>
+  </data>
+  <data name="QueueingStatusName" xml:space="preserve">
+    <value>اسم حالة الانتظار</value>
+  </data>
+  <data name="QueueingTickets" xml:space="preserve">
+    <value>تذاكر الانتظار</value>
+  </data>
+  <data name="QueuingAndGetReply" xml:space="preserve">
+    <value>الانتظار والحصول على الرد</value>
+  </data>
+  <data name="RateThisSupportSession" xml:space="preserve">
+    <value>قم بتقييم جلسة الدعم هذه</value>
+  </data>
+  <data name="ReadAll" xml:space="preserve">
+    <value>اقرأ الكل</value>
+  </data>
+  <data name="ReadingKnowledgeBaseArticle" xml:space="preserve">
+    <value>قراءة مقالة قاعدة المعرفة</value>
+  </data>
+  <data name="RecipientsEmail" xml:space="preserve">
+    <value>البريد الإلكتروني للمستلم</value>
+  </data>
+  <data name="RecordNow" xml:space="preserve">
+    <value>سجل الآن</value>
+  </data>
+  <data name="Records" xml:space="preserve">
+    <value>السجلات</value>
+  </data>
+  <data name="RecordsImportedSuccessfully" xml:space="preserve">
+    <value>تم استيراد السجلات بنجاح</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>منطقة</value>
+  </data>
+  <data name="RegisterACustomerAccount" xml:space="preserve">
+    <value>تسجيل حساب عميل</value>
+  </data>
+  <data name="RegisterAnAdminAccount" xml:space="preserve">
+    <value>تسجيل حساب المشرف</value>
+  </data>
+  <data name="RegisterAnAgentAccount" xml:space="preserve">
+    <value>تسجيل حساب وكيل</value>
+  </data>
+  <data name="RegisteredOn" xml:space="preserve">
+    <value>مسجل في</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>تم التسجيل بنجاح!</value>
+  </data>
+  <data name="RegisterSuccessLoginNow" xml:space="preserve">
+    <value>تم التسجيل بنجاح! قم بتسجيل الدخول الآن.</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>يزيل</value>
+  </data>
+  <data name="RemoveSelectedFile" xml:space="preserve">
+    <value>إزالة الملف المحدد</value>
+  </data>
+  <data name="RequestType" xml:space="preserve">
+    <value>نوع الطلب</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>*حقل مطلوب</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+  </data>
+  <data name="ResetPasswordEmailSent" xml:space="preserve">
+    <value>تم إرسال بريد إلكتروني لإعادة تعيين كلمة المرور</value>
+  </data>
+  <data name="ResolvedAndClose" xml:space="preserve">
+    <value>تم الحل والإغلاق</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>دور</value>
+  </data>
+  <data name="SarahRodriguez" xml:space="preserve">
+    <value>سارة رودريجيز</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>يحفظ</value>
+  </data>
+  <data name="SavedReplies" xml:space="preserve">
+    <value>الردود المحفوظة</value>
+  </data>
+  <data name="SavedSuccessfully" xml:space="preserve">
+    <value>تم الحفظ بنجاح</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>يبحث</value>
+  </data>
+  <data name="SearchFor" xml:space="preserve">
+    <value>بحث عن</value>
+  </data>
+  <data name="SearchForAnArticle" xml:space="preserve">
+    <value>ابحث عن مقال</value>
+  </data>
+  <data name="SelectAnIcon" xml:space="preserve">
+    <value>حدد رمزًا</value>
+  </data>
+  <data name="SelectedIcon" xml:space="preserve">
+    <value>الرمز المحدد</value>
+  </data>
+  <data name="SendEmailToNotifyTheCustomer" xml:space="preserve">
+    <value>إرسال بريد إلكتروني لإعلام العميل؟</value>
+  </data>
+  <data name="SentSuccessfully" xml:space="preserve">
+    <value>تم الإرسال بنجاح</value>
+  </data>
+  <data name="Sequence" xml:space="preserve">
+    <value>تسلسل</value>
+  </data>
+  <data name="SetAnArticleAsTheDataUsedByTheAIChatbot" xml:space="preserve">
+    <value>قم بتعيين مقالة كبيانات يستخدمها روبوت الدردشة الذكاء الاصطناعي.</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>جلسة</value>
+  </data>
+  <data name="SetupTheArticlesURLSoThatItIsSEOFriendly" xml:space="preserve">
+    <value>قم بإعداد عنوان URL للمقالة بحيث يكون صديقًا لمحركات البحث.</value>
+  </data>
+  <data name="SetUpTheDefaultQuestionsShownOnTheAIChatbot" xml:space="preserve">
+    <value>قم بإعداد الأسئلة الافتراضية التي تظهر على برنامج المحادثة الآلي AI.</value>
+  </data>
+  <data name="SetUpTheTicketsDropDownListOptionsSuchAsPriorityUrgencyImpactAndMore" xml:space="preserve">
+    <value>قم بإعداد خيارات القائمة المنسدلة للتذكرة، مثل الأولوية والإلحاح والتأثير والمزيد.</value>
+  </data>
+  <data name="SetUpTheTicketStatusDisplayName" xml:space="preserve">
+    <value>إعداد اسم عرض حالة التذكرة.</value>
+  </data>
+  <data name="SetUpTheWebsiteNameAndLogoCanViewAllTheUsers" xml:space="preserve">
+    <value>قم بإعداد اسم الموقع والشعار. يمكنك عرض جميع المستخدمين.</value>
+  </data>
+  <data name="SetYourDesiredTextToAppearInTheURL" xml:space="preserve">
+    <value>قم بتعيين النص المطلوب ليظهر في عنوان URL من أجل تحسين محركات البحث.</value>
+  </data>
+  <data name="ShareAIChatbot" xml:space="preserve">
+    <value>شارك روبوت الدردشة AI</value>
+  </data>
+  <data name="ShareThisArticle" xml:space="preserve">
+    <value>شارك هذه المقالة</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>اشتراك</value>
+  </data>
+  <data name="SMTPHost" xml:space="preserve">
+    <value>مضيف SMTP</value>
+  </data>
+  <data name="SMTPPassword" xml:space="preserve">
+    <value>كلمة مرور SMTP</value>
+  </data>
+  <data name="SMTPPort" xml:space="preserve">
+    <value>منفذ SMTP</value>
+  </data>
+  <data name="SMTPUsername" xml:space="preserve">
+    <value>اسم مستخدم SMTP</value>
+  </data>
+  <data name="SomeRequiredFieldsAreEmpty" xml:space="preserve">
+    <value>بعض الحقول المطلوبة فارغة.</value>
+  </data>
+  <data name="SomethingIsWrongPleaseTryAgainLater" xml:space="preserve">
+    <value>هناك خطأ ما. يرجى المحاولة مرة أخرى لاحقًا.</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>الأسبانية</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>حالة</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>سجل الآن</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>موضوع</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>يُقدِّم</value>
+  </data>
+  <data name="SubmitReply" xml:space="preserve">
+    <value>إرسال الرد</value>
+  </data>
+  <data name="SubmitSupportTicketsFindAnswers" xml:space="preserve">
+    <value>قم بإرسال تذاكر الدعم، والعثور على إجابات من مقالة قاعدة المعرفة، والدردشة مع روبوت الدردشة الذكي، والمزيد.</value>
+  </data>
+  <data name="SubmittedSuccessfully" xml:space="preserve">
+    <value>تم الإرسال بنجاح!</value>
+  </data>
+  <data name="SubmittedTickets" xml:space="preserve">
+    <value>التذاكر المقدمة</value>
+  </data>
+  <data name="SubmitTheSupportTicketForm" xml:space="preserve">
+    <value>قم بإرسال نموذج تذكرة الدعم وانتظر ردنا لمساعدتك بشكل أكبر.</value>
+  </data>
+  <data name="SupportAroundTheWorld" xml:space="preserve">
+    <value>الدعم حول العالم</value>
+  </data>
+  <data name="SupportTickets" xml:space="preserve">
+    <value>تذاكر الدعم</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>العلامات</value>
+  </data>
+  <data name="TagsAreUpdated" xml:space="preserve">
+    <value>تم تحديث العلامات!</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>فريق</value>
+  </data>
+  <data name="ThankYouForConfirmingYourEmail" xml:space="preserve">
+    <value>شكرا لتأكيد بريدك الإلكتروني.</value>
+  </data>
+  <data name="TheAIChatbotCanReplyWithRelatedClickableLinks" xml:space="preserve">
+    <value>يمكن لروبوت المحادثة الذكاء الاصطناعي الرد بروابط قابلة للنقر ذات صلة.</value>
+  </data>
+  <data name="TheChatbotsQuestionOrderingAdheresToThisConfiguration" xml:space="preserve">
+    <value>يتوافق ترتيب الأسئلة في برنامج المحادثة الآلي مع هذا التكوين. يُرجى ترتيب الأسئلة بالترتيب الذي ترغب في ظهورها به.</value>
+  </data>
+  <data name="TheDefaultQuestionsForTheAIChatbotAreUpdated" xml:space="preserve">
+    <value>تم تحديث الأسئلة الافتراضية لبرنامج المحادثة AI!</value>
+  </data>
+  <data name="TheErrorsAreAsBelow" xml:space="preserve">
+    <value>الأخطاء هي كما يلي</value>
+  </data>
+  <data name="TheFieldMustBeAtMost100CharactersLong" xml:space="preserve">
+    <value>يجب أن يكون طول الحقل 100 حرفًا على الأكثر.</value>
+  </data>
+  <data name="TheFieldMustBeAtMost256CharactersLong" xml:space="preserve">
+    <value>يجب أن يكون طول الحقل 256 حرفًا على الأكثر.</value>
+  </data>
+  <data name="TheFieldMustMatchTheNewPassword" xml:space="preserve">
+    <value>يجب أن يتطابق الحقل مع كلمة المرور الجديدة.</value>
+  </data>
+  <data name="TheFieldMustMatchThePassword" xml:space="preserve">
+    <value>يجب أن يتطابق الحقل مع كلمة المرور.</value>
+  </data>
+  <data name="TheFollowingTicketsAreAwaitingYourAction" xml:space="preserve">
+    <value>التذاكر التالية تنتظر إجراءك لتعيينها للوكلاء.</value>
+  </data>
+  <data name="TheLayoutOfTicketConversationMakesItEasyToRead" xml:space="preserve">
+    <value>يجعل تخطيط محادثة التذكرة من السهل قراءتها.</value>
+  </data>
+  <data name="TheNumberOfActiveCustomersWhoWereLoggedInEachMonth" xml:space="preserve">
+    <value>عدد العملاء النشطين الذين قاموا بتسجيل الدخول كل شهر على مدار العام المحدد.</value>
+  </data>
+  <data name="TheNumberOfColumnsIsMismatchedWithTheTemplate" xml:space="preserve">
+    <value>عدد الأعمدة غير مطابق للقالب.</value>
+  </data>
+  <data name="TheNumberOfCustomersWhoAreNewlyRegisteredInEachMonth" xml:space="preserve">
+    <value>عدد العملاء المسجلين حديثًا في كل شهر طوال العام المحدد.</value>
+  </data>
+  <data name="ThenUploadTheExcelFileInTheUploadSectionBelow" xml:space="preserve">
+    <value>بعد ذلك، قم بتحميل ملف Excel في قسم التحميل أدناه.</value>
+  </data>
+  <data name="ThereIsNoRecordToArrange" xml:space="preserve">
+    <value>لا يوجد سجل للترتيب.</value>
+  </data>
+  <data name="TheSupportTicketsThatHaveYetToBeClosedAreListedHere" xml:space="preserve">
+    <value>يمكنك العثور هنا على تذاكر الدعم التي لم يتم إغلاقها بعد.</value>
+  </data>
+  <data name="TheTicket" xml:space="preserve">
+    <value>التذكرة</value>
+  </data>
+  <data name="TheUrlCanOnlyContain" xml:space="preserve">
+    <value>لا يمكن أن يحتوي عنوان URL إلا على أحرف وأرقام وشرطات، ولا يمكن أن يحتوي على مسافات فارغة.</value>
+  </data>
+  <data name="TheUsernameMustStartWithALetterAndCanOnly" xml:space="preserve">
+    <value>يجب أن يبدأ اسم المستخدم بحرف ويجب ألا يحتوي إلا على أحرف أو أرقام أو شرطات سفلية. ويجب أن يتراوح طوله بين 4 إلى 30 حرفًا.</value>
+  </data>
+  <data name="ThisCannotBeUndone" xml:space="preserve">
+    <value>لا يمكن التراجع عن هذا.</value>
+  </data>
+  <data name="ThisExistsTryWithAnother" xml:space="preserve">
+    <value>هذا موجود بالفعل. يرجى المحاولة باسم آخر.</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>هذا الشهر</value>
+  </data>
+  <data name="ThisTicketIsAlreadyClosed" xml:space="preserve">
+    <value>تم إغلاق هذه التذكرة بالفعل.</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>هذا العام</value>
+  </data>
+  <data name="TicketCategory" xml:space="preserve">
+    <value>فئة التذكرة</value>
+  </data>
+  <data name="TicketCode" xml:space="preserve">
+    <value>كود التذكرة</value>
+  </data>
+  <data name="TicketDetail" xml:space="preserve">
+    <value>تفاصيل التذكرة</value>
+  </data>
+  <data name="Tickets" xml:space="preserve">
+    <value>التذاكر</value>
+  </data>
+  <data name="TicketStatus" xml:space="preserve">
+    <value>حالة التذكرة</value>
+  </data>
+  <data name="TicketStatusListing" xml:space="preserve">
+    <value>قائمة حالة التذكرة</value>
+  </data>
+  <data name="TicketsThatCustomersHaveSubmittedAndAreStillAwaitingAResponse" xml:space="preserve">
+    <value>التذاكر التي قدمها العملاء ولا تزال تنتظر الرد.</value>
+  </data>
+  <data name="TicketsThatHaveBeenClosedByTheCustomersOrAgents" xml:space="preserve">
+    <value>التذاكر التي تم إغلاقها من قبل العملاء أو الوكلاء.</value>
+  </data>
+  <data name="TicketsThatHaveGottenRepliesFromTheAgentsButHaveNotYetClosed" xml:space="preserve">
+    <value>التذاكر التي حصلت على ردود من الوكلاء ولكن لم يتم إغلاقها بعد.</value>
+  </data>
+  <data name="TicketSubmittedInQueueNow" xml:space="preserve">
+    <value>تم تقديم تذكرة الدعم الخاصة بك. التذكرة في قائمة الانتظار الآن، وسوف تتلقى ردًا عندما يحين دورك. شكرًا لك!</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>المنطقة الزمنية</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="ToArticle" xml:space="preserve">
+    <value>إلى المقال</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>اليوم</value>
+  </data>
+  <data name="ToLogin" xml:space="preserve">
+    <value>لتسجيل الدخول.</value>
+  </data>
+  <data name="Top10" xml:space="preserve">
+    <value>أفضل 10</value>
+  </data>
+  <data name="Top15" xml:space="preserve">
+    <value>أفضل 15</value>
+  </data>
+  <data name="Top20" xml:space="preserve">
+    <value>أفضل 20</value>
+  </data>
+  <data name="Top25" xml:space="preserve">
+    <value>أفضل 25</value>
+  </data>
+  <data name="Top30" xml:space="preserve">
+    <value>أفضل 30</value>
+  </data>
+  <data name="TopAgentsByClosedTickets" xml:space="preserve">
+    <value>أفضل الوكلاء حسب التذاكر المغلقة</value>
+  </data>
+  <data name="ToResetYourPasswordYouCanVisitOurWebsite" xml:space="preserve">
+    <value>لإعادة تعيين كلمة المرور الخاصة بك، يمكنك زيارة موقعنا الإلكتروني والنقر على رابط "نسيت كلمة المرور" في صفحة تسجيل الدخول. اتبع التعليمات لإعادة تعيين كلمة المرور الخاصة بك.</value>
+  </data>
+  <data name="ToSelectAnIcon" xml:space="preserve">
+    <value>لتحديد أيقونة</value>
+  </data>
+  <data name="TotalAdmins" xml:space="preserve">
+    <value>مجموع المشرفين</value>
+  </data>
+  <data name="TotalAgents" xml:space="preserve">
+    <value>مجموع الوكلاء</value>
+  </data>
+  <data name="TotalAIChatbotsByUserRole" xml:space="preserve">
+    <value>إجمالي روبوتات الدردشة الذكية حسب دور المستخدم</value>
+  </data>
+  <data name="TotalClosedTickets" xml:space="preserve">
+    <value>مجموع التذاكر المغلقة</value>
+  </data>
+  <data name="TotalCustomers" xml:space="preserve">
+    <value>إجمالي العملاء</value>
+  </data>
+  <data name="TotalOpenTickets" xml:space="preserve">
+    <value>مجموع التذاكر المفتوحة</value>
+  </data>
+  <data name="TotalQueueingTickets" xml:space="preserve">
+    <value>مجموع تذاكر الانتظار</value>
+  </data>
+  <data name="TotalTickets" xml:space="preserve">
+    <value>مجموع التذاكر</value>
+  </data>
+  <data name="TotalTicketsByAgents" xml:space="preserve">
+    <value>إجمالي التذاكر حسب الوكلاء</value>
+  </data>
+  <data name="TotalTicketsByCustomers" xml:space="preserve">
+    <value>إجمالي التذاكر حسب العملاء</value>
+  </data>
+  <data name="TotalTicketsByStatus" xml:space="preserve">
+    <value>إجمالي التذاكر حسب الحالة</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>إجمالي المستخدمين</value>
+  </data>
+  <data name="Turkish" xml:space="preserve">
+    <value>اللغة التركية</value>
+  </data>
+  <data name="TutorialVideos" xml:space="preserve">
+    <value>فيديوهات تعليمية</value>
+  </data>
+  <data name="UnassignedTickets" xml:space="preserve">
+    <value>تذاكر غير مخصصة</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>تم التحديث</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>رفع</value>
+  </data>
+  <data name="UploadedImage" xml:space="preserve">
+    <value>الصورة المرفوعة</value>
+  </data>
+  <data name="UploadExcel" xml:space="preserve">
+    <value>تحميل إكسل</value>
+  </data>
+  <data name="Urgency" xml:space="preserve">
+    <value>الاستعجال</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>عنوان URL</value>
+  </data>
+  <data name="UrlTaken" xml:space="preserve">
+    <value>لقد تم أخذ عنوان URL بالفعل.</value>
+  </data>
+  <data name="UsefulLinks" xml:space="preserve">
+    <value>روابط مفيدة</value>
+  </data>
+  <data name="UseInAIChatbot" xml:space="preserve">
+    <value>الاستخدام في روبوت المحادثة بالذكاء الاصطناعي</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>مستخدم</value>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>إدارة المستخدمين</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="UsernameHasBeenTaken" xml:space="preserve">
+    <value>لقد تم أخذ اسم المستخدم.</value>
+  </data>
+  <data name="UsernameOrEmail" xml:space="preserve">
+    <value>اسم المستخدم أو البريد الإلكتروني</value>
+  </data>
+  <data name="UsernameOrEmailHasBeenTaken" xml:space="preserve">
+    <value>لقد تم إدخال اسم المستخدم أو عنوان البريد الإلكتروني.</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>الملف الشخصي للمستخدم</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>المستخدمون</value>
+  </data>
+  <data name="ViewArticle" xml:space="preserve">
+    <value>عرض المقال</value>
+  </data>
+  <data name="WeAimToRespondToAllInquiriesWithin25BusinessDays" xml:space="preserve">
+    <value>هدفنا هو الرد على جميع الاستفسارات خلال 2-5 أيام عمل، ولكن قد تختلف أوقات الاستجابة اعتمادًا على حجم الاستفسارات.</value>
+  </data>
+  <data name="WeDiscoveredThatTheSystemHasNoUsersAsOfNow" xml:space="preserve">
+    <value>لقد اكتشفنا أن النظام لا يحتوي على أي مستخدمين حتى الآن. يرجى ملاحظة أن أول مستخدم يقوم بالتسجيل الآن سيتم تعيينه تلقائيًا بدور المسؤول. نفترض أن المسؤول هو أول مستخدم لديه حق الوصول إلى هذا النظام.</value>
+  </data>
+  <data name="WelcomeToHelpDeskSystem" xml:space="preserve">
+    <value>مرحبًا بكم في نظام مركز المساعدة {0}!</value>
+  </data>
+  <data name="WelcomeToOurDedicatedHelpAndSupportSystem" xml:space="preserve">
+    <value>مرحبًا بك في نظام المساعدة والدعم المخصص لدينا، والذي تم تصميمه لمساعدتك في كل خطوة على الطريق. سواء كانت لديك أسئلة حول منتجاتنا، أو كنت بحاجة إلى مساعدة فنية، أو تريد إرشادات حول كيفية تحقيق أقصى استفادة من خدماتنا، فنحن هنا لمساعدتك.</value>
+  </data>
+  <data name="WereSorryButItSeemsLikeYouReTryingToAccess" xml:space="preserve">
+    <value>نحن نأسف، ولكن يبدو أنك تحاول الوصول إلى صفحة أو مورد ليس لديك الإذن به.</value>
+  </data>
+  <data name="WeveSentAPasswordResetLink" xml:space="preserve">
+    <value>لقد أرسلنا رابط إعادة تعيين كلمة المرور إلى عنوان بريدك الإلكتروني المسجل. يرجى النقر فوق الرابط الموجود في البريد الإلكتروني لإعادة تعيين كلمة المرور. إذا لم تجد الرابط في صندوق الوارد الخاص بك، فتأكد من التحقق من مجلد البريد العشوائي وإضافة عنوان بريدنا الإلكتروني إلى قائمة المرسلين الآمنين.</value>
+  </data>
+  <data name="WhatAreTheFeaturesIn" xml:space="preserve">
+    <value>ما هي الميزات الموجودة في {0}؟</value>
+  </data>
+  <data name="WhatAreYourOperatingHoursForCustomerSupport" xml:space="preserve">
+    <value>ما هي ساعات العمل الخاصة بدعم العملاء؟</value>
+  </data>
+  <data name="WhatCanYouDoLoginWithTheCorrectCredentials" xml:space="preserve">
+    <value>ماذا يمكنك أن تفعل؟ قم بتسجيل الدخول باستخدام بيانات الاعتماد الصحيحة للحصول على حق الوصول. أو اتصل بالدعم أو مسؤول هذا الموقع الإلكتروني لمنحك حق الوصول.</value>
+  </data>
+  <data name="WhatShouldIDoIfIEncounterAnErrorMessage" xml:space="preserve">
+    <value>ماذا يجب أن أفعل إذا واجهت رسالة خطأ أثناء استخدام خدمتكم؟</value>
+  </data>
+  <data name="WhatShouldIDoIfImNotSatisfiedWithTheResolution" xml:space="preserve">
+    <value>ماذا يجب أن أفعل إذا لم أكن راضيًا عن الحل الذي قدمه فريق الدعم الخاص بك؟</value>
+  </data>
+  <data name="WhatTypesOfIssuesCanYourSupportTeamAssistWith" xml:space="preserve">
+    <value>ما هي أنواع المشكلات التي يمكن لفريق الدعم الخاص بك المساعدة فيها؟</value>
+  </data>
+  <data name="WhileWaitingForTheAgentsResponse" xml:space="preserve">
+    <value>أثناء انتظار رد الوكيل، يمكن للعملاء إغلاق التذكرة إذا تمكنوا من حل المشكلة بأنفسهم.</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="YesCloseNow" xml:space="preserve">
+    <value>نعم، أغلق الآن</value>
+  </data>
+  <data name="YesDeleteIt" xml:space="preserve">
+    <value>نعم، احذفه</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>أمس</value>
+  </data>
+  <data name="YesWeHaveKnowledgeBaseArticlesThatHelpYou" xml:space="preserve">
+    <value>نعم، لدينا مقالات قاعدة المعرفة التي تساعدك في العثور على إجابات للأسئلة الشائعة ونصائح استكشاف الأخطاء وإصلاحها.</value>
+  </data>
+  <data name="YesYouCanTrackTheStatusOfYourSupportTicket" xml:space="preserve">
+    <value>نعم، يمكنك متابعة حالة تذكرة الدعم الخاصة بك عن طريق تسجيل الدخول إلى حسابك على موقعنا الإلكتروني والوصول إلى بوابة تذكرة الدعم.</value>
+  </data>
+  <data name="YouAreNotPermittedToViewTheTicketConversation" xml:space="preserve">
+    <value>لا يُسمح لك بمشاهدة محادثة التذكرة. لا يمكن رؤيتها إلا من قِبل مُنشئ التذكرة والمسؤول والشخص المسؤول (الوكيل الحالي).</value>
+  </data>
+  <data name="YouAreUnableToReopenAClosedTicket" xml:space="preserve">
+    <value>لن تتمكن من إعادة فتح التذكرة المغلقة بعد إغلاقها. هل أنت متأكد من الاستمرار؟</value>
+  </data>
+  <data name="YouMayOnlyAttachOneFileIfYouWouldLike" xml:space="preserve">
+    <value>لا يجوز لك إرفاق أكثر من ملف واحد. إذا كنت ترغب في تحميل ملفات متعددة، يرجى دمجها في ملف مضغوط وتحميل ملف zip.</value>
+  </data>
+  <data name="YourPasswordResetSuccessfully" xml:space="preserve">
+    <value>تم إعادة تعيين كلمة المرور الخاصة بك بنجاح!</value>
+  </data>
+  <data name="YourTicket" xml:space="preserve">
+    <value>تذكرتك</value>
+  </data>
+  <data name="YouveBeenAssignedANewTicket" xml:space="preserve">
+    <value>لقد تم تخصيص تذكرة جديدة لك</value>
+  </data>
+  <data name="YouVeGotARatingFor" xml:space="preserve">
+    <value>لقد حصلت على تحديث التقييم لـ {0} من {1}!</value>
+  </data>
+</root>
