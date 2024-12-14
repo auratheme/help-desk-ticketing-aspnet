@@ -14,6 +14,19 @@ A complete Help Desk Ticketing System with a Knowledge Base built using ASP.NET 
 - Close ticket
 - Delete ticket
 
+# How to Run the Project Locally
+Follow these steps to set up and run the project on your local machine:
+1. Download the Project
+2. Configure the Connection String
+    - Open the appsettings.json file located in the root of the project.
+    - Replace the DefaultConnection value in the ConnectionStrings section with your SQL Server connection string.
+3. Create the Database
+   - In Visual Studio, click Tools > NuGet Package Manager > Package Manager Console.
+   - Run the following command:
+        - Update-Database
+4. Run the Project
+   - Press CTRL + F5 to run the project. Click the sign-up button at the top right corner. Register the first admin account.
+
 # Premium Version Features:
 - Live demo: http://auratheme-001-site8.ntempurl.com/
 - Video demo: https://www.youtube.com/watch?v=NDcW633SVeQ
