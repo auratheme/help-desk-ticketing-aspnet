@@ -1,0 +1,39 @@
+﻿@model List<LoginHistoryViewModel>
+@{
+    ViewBag.Title = Resource.LoginHistory;
+    ViewBag.TableId = "LoginHistory" + "TableContainer";
+}
+
+<h4 class="fs-25 text-capitalize mb-sm-0 fw600">@ViewBag.Title</h4>
+<section class="bg-white p-3 p-lg-4 mt-2">
+    <div class="table-scrollbar overflow-x-auto overflow-y-auto pt-2 nonprintable">
+        <div class="table-responsive overflow-x-visible overflow-y-visible">
+            <table class="table table-hover align-middle mb-0 noscrollbar">
+                <thead class="table-light">
+                    <tr class="d-none d-lg-table-row">
+                        <th class="border-0">@Resource.Username</th>
+                        <th class="border-0">@Resource.FullName</th>
+                        <th class="border-0">@Resource.LoginDateAndTime</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr class="border-bottom lh-sm">
+                                <td>@item.Username</td>
+                                <td>@item.FullName</td>
+                                <td class="datetimetext">@item.IsoUtcLoginDateTime</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr><td class="text-center" colspan="3">@Resource.NoDataAvailable</td></tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

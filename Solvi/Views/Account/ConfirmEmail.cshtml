@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = Resource.ConfirmEmail;
+}
+
+<section class="pt-10 px-3 px-sm-5">
+    <div class="container">
+        <h1 class="fs-56 fw600 text-center pb-4 lh-1">@Resource.ConfirmedEmail</h1>
+        <div class="row justify-content-center align-items-center gx-0 gx-sm-4">
+            <div class="col-lg-7 order-0 order-lg-1">
+                <div class="bg-white p-5 shadow">
+                    <h2 class="pb-2 text-capitalize fs-24">@Resource.ThankYouForConfirmingYourEmail</h2>
+                    <div class="pb-3 fs-18">
+                        @Resource.PleaseClick <a class="color-primarycolor fw600" asp-controller="account" asp-action="login">@Resource.Here</a> @Resource.ToLogin
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

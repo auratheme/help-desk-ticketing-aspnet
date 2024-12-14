@@ -1,0 +1,58 @@
+﻿@model List<UserProfileViewModel>
+@{
+    ViewBag.Title = Resource.UserManagement;
+    ViewBag.TableId = "user" + "TableContainer";
+}
+
+<h4 class="fs-25 text-capitalize mb-sm-0 fw600">@ViewBag.Title</h4>
+<section class="bg-white p-3 p-lg-4 mt-2">
+    <div class="pb-2 nonprintable">
+        <div class="dropdown d-inline-block">
+            <button class="btn form-btn btn-primary me-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Add a user
+            </button>
+            <ul class="dropdown-menu py-4">
+                <li><a class="dropdown-item" asp-controller="account" asp-action="registeradmin">@Resource.Admin</a></li>
+                <li><a class="dropdown-item" asp-controller="account" asp-action="register">@Resource.Customer</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="table-scrollbar overflow-x-auto overflow-y-auto pt-2 nonprintable">
+        <div class="table-responsive overflow-x-visible overflow-y-visible">
+            <table class="table table-hover align-middle mb-0 noscrollbar">
+                <thead class="table-light">
+                    <tr class="d-none d-lg-table-row">
+                        <th class="border-0">@Resource.Username</th>
+                        <th class="border-0">@Resource.EmailAddress</th>
+                        <th class="border-0">@Resource.FullName</th>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <th class="border-0">@Resource.Role</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr class="border-bottom lh-sm">
+                                <td><a class="fw600 color-primarycolor" asp-controller="account" asp-action="myprofile" asp-route-id="@item.Id">@item.Username</a></td>
+                                <td>@item.EmailAddress</td>
+                                <td>@item.FullName</td>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <td>@item.UserRoleName</td>
+                                }
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr><td class="text-center" colspan="@(User.IsInRole("Admin")?"4":"3")">@Resource.NoDataAvailable</td></tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

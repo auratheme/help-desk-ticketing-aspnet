@@ -1,0 +1,27 @@
+﻿@{
+    string controller = ViewContext.RouteData.Values["controller"]?.ToString()?.ToLower() ?? "";
+    string action = ViewContext.RouteData.Values["action"]?.ToString()?.ToLower() ?? "";
+}
+
+<ul class="navbar-nav text-center">
+    <li class="nav-item">
+        <a class="nav-link cursor-pointer fs-14 rounded-lg color-body hover-color-primarycolor dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">@Resource.SupportTickets</a>
+        <ul class="dropdown-menu dropdown-menu-end py-4 rounded-lg" style="right:auto">
+            <li><a class="dropdown-item px-4 @(controller=="ticket"&&action=="index"?"color-primarycolor text-decoration-underline":"")" asp-controller="ticket" asp-action="index">@Resource.SupportTickets</a></li>
+            <li><a class="dropdown-item px-4 @(controller=="ticket"&&action=="Edit"?"color-primarycolor text-decoration-underline":"")" asp-controller="ticket" asp-action="Edit">@Resource.NewTicket</a></li>
+        </ul>
+    </li>
+    @if (User.Identity != null && User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        <li class="nav-item">
+            <a class="nav-link cursor-pointer fs-14 rounded-lg color-body hover-color-primarycolor dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                @Resource.Admin
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end py-4 rounded-lg" style="right:auto">
+                <li><a class="dropdown-item px-4 @(controller=="user" || (controller=="account" &&(action=="register"||action=="registeradmin"||action=="myprofile"))?"color-primarycolor text-decoration-underline":"")" asp-controller="user" asp-action="index">@Resource.UserManagement</a></li>
+                <li><a class="dropdown-item px-4 @(controller=="setting"&&action =="index" ?"color-primarycolor text-decoration-underline":"")" asp-controller="setting" asp-action="index">@Resource.GeneralSetting</a></li>
+                <li><a class="dropdown-item px-4 @(controller=="setting"&&action=="ticketstatus"?"color-primarycolor text-decoration-underline":"")" asp-controller="setting" asp-action="TicketStatus">@Resource.TicketStatus</a></li>
+            </ul>
+        </li>
+    }
+</ul>

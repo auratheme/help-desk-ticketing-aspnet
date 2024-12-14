@@ -1,0 +1,49 @@
+﻿@model Solvi.Models.RegisterViewModel
+
+<input asp-for="CountryCode" type="hidden" />
+<input asp-for="RegionCode" type="hidden" />
+<input asp-for="TimezoneOffset" type="hidden" />
+@Html.AntiForgeryToken()
+<div class="mb-3 text-break">
+    <div class="form-group">
+        <label asp-for="UserName" class="form-label required fw600 fs-15"></label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="invalid-message"></span>
+    </div>
+</div>
+
+<div class="mb-3 text-break">
+    <div class="form-group">
+        <label asp-for="FullName" class="form-label required fw600 fs-15"></label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="invalid-message"></span>
+    </div>
+</div>
+
+<div class="mb-3 text-break">
+    <div class="form-group">
+        <label asp-for="Email" class="form-label required fw600 fs-15"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="invalid-message"></span>
+    </div>
+</div>
+
+<div class="mb-3 text-break">
+    <div class="form-group">
+        <label asp-for="Password" class="form-label required fw600 fs-15"></label>
+        <i class="bi bi-info-circle fw600 verticle-middle color-primarycolor" data-bs-toggle="tooltip" data-bs-placement="right"
+           title="@Resource.PasswordRequirementTooltip"></i>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="invalid-message"></span>
+    </div>
+</div>
+
+<div class="mb-3 text-break">
+    <div class="form-group">
+        <label asp-for="ConfirmPassword" class="form-label required fw600 fs-15"></label>
+        <input asp-for="ConfirmPassword" type="password" class="form-control" id="ConfirmPassword" />
+        <span asp-validation-for="ConfirmPassword" class="invalid-message"></span>
+    </div>
+</div>
+
+<button type="submit" class="btn form-btn btn-primary hover-moveup">@Resource.SignUp</button>

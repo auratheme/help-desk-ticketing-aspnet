@@ -1,0 +1,57 @@
+﻿@model Solvi.Models.TicketViewModel
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    if (string.IsNullOrEmpty(Model.Id))
+    {
+        ViewBag.Title = Resource.CreateNewTicket;
+    }
+    else
+    {
+        ViewBag.Title = Resource.EditATicket;
+    }
+}
+<h4 class="fs-25 text-capitalize mb-sm-0 fw600">@ViewBag.Title</h4>
+<div class="mb-2">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item fs-14 text-capitalize"><a class="color-primarycolor hover-color-primarycolor hover-textdeco-underline fw500" asp-controller="ticket" asp-action="index">@Resource.Tickets</a></li>
+            @if (string.IsNullOrEmpty(Model.Id))
+            {
+                <li class="breadcrumb-item fs-14 text-muted text-capitalize" aria-current="page">@Resource.NewTicket</li>
+            }
+            else
+            {
+                <li class="breadcrumb-item fs-14 text-muted text-capitalize" aria-current="page">@Resource.TicketDetail</li>
+            }
+        </ol>
+    </nav>
+</div>
+<form method="post" asp-action="Edit" enctype="multipart/form-data">
+    <input asp-for="Id" hidden />
+    <div class="bg-white claymorphism p-3 p-lg-4 p-xl-5 shadow mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group text-break">
+                    <label class="form-label required fw600" asp-for="Title"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span class="invalid-message d-block" asp-validation-for="Title"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <div class="form-group text-break">
+                    <label class="form-label required fw600" asp-for="Message"></label>
+                    <textarea asp-for="Message" class="form-control" rows="5"></textarea>
+                    <span class="invalid-message d-block" asp-validation-for="Message"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <button type="submit" id="savebtn" class="btn form-btn btn-primary me-1">@Resource.Submit</button>
+                <a type="button" class="btn form-btn btn-secondary me-1" asp-action="index" asp-controller="ticket">@Resource.Back</a>
+            </div>
+        </div>
+    </div>
+</form>

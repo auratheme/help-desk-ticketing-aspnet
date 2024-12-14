@@ -1,0 +1,18 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section id="home" class="pt-10">
+    <div class="container px-3 px-md-0 pt-2">
+        <div class="row align-items-center gx-5">
+            <div class="col-lg-8">
+                <div class="fs-56 fw700 lh-1">@Resource.WelcomeToHelpDeskSystem.Replace("{0}", ViewBag.PortalName) (Free Version)</div>
+                <div class="pt-4 fs-21">Submit support tickets, keep the conversation between admin and customer, and close the ticket when the issue is resolved.</div>
+            </div>
+            <div class="col-lg-4 text-end">
+                <img src="~/assets/heroimage.png" class="img-fluid w-100 ps-2" />
+            </div>
+        </div>
+    </div>
+</section>

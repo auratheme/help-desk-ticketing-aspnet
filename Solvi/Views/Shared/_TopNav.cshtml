@@ -1,0 +1,89 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    string controller = ViewContext.RouteData.Values["controller"]?.ToString()?.ToLower() ?? "";
+    string action = ViewContext.RouteData.Values["action"]?.ToString()?.ToLower() ?? "";
+}
+
+<header class="fixed-top @(User.Identity!=null&&User.Identity.IsAuthenticated?"bg-white shadow border-bottom":"bg-body")">
+    <nav id="top-navigation" class="navbar navbar-expand-lg navbar-toggleable-lg box-shadow py-2">
+        <div class="@(User.Identity!=null&&User.Identity.IsAuthenticated? "container-fluid px-3 px-md-4":"container px-3 px-md-0")">
+            <div class="row w-100 justify-content-between align-items-center g-0 p-0 @(User.Identity!=null&&User.Identity.IsAuthenticated? "":"pt-2")">
+                <div class="col-3">
+                    <div class="d-flex justify-content-start align-items-center">
+                        <a class="color-body hover-color-primarycolor fw500 fs-24" asp-area="" asp-controller="Home" asp-action="Index">
+                            @if (ViewBag.LogoUrl != null && ViewBag.LogoUrl != "")
+                            {
+                                <img src="@ViewBag.LogoUrl" class="img-fluid" width="27" height="27" />
+                                <i> </i>
+                            }
+                            @ViewBag.PortalName
+                        </a>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex col-lg-6">
+                    @if (User.Identity == null || (User.Identity != null && !User.Identity.IsAuthenticated))
+                    {
+                        <div class=" navbar-collapse collapse d-lg-inline-flex justify-content-center align-items-center text-center">
+                            <ul class="navbar-nav text-center">
+                                @* <li class="nav-item">
+                                    <a class="nav-link pe-3 fs-16 fw500 hover-color-primarycolor hover-textdeco-underline" asp-controller="home" asp-action="index">
+                                        @Resource.Home
+                                    </a>
+                                </li> *@
+                                <li class="nav-item">
+                                    <a class="nav-link px-0 fs-15 fw500 hover-color-primarycolor hover-textdeco-underline"
+                                       href="https://auratheme.gumroad.com/l/solvi-ticket-helpdesk-asp-net-mvc" target="_blank">
+                                        Premium product page
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-5 fs-15 fw500 hover-color-primarycolor hover-textdeco-underline"
+                                       href="http://auratheme-001-site8.ntempurl.com/" target="_blank">
+                                        Premium live demo
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0 fs-15 fw500 hover-color-primarycolor hover-textdeco-underline"
+                                       href="https://www.youtube.com/watch?v=NDcW633SVeQ" target="_blank">
+                                        Premium video demo
+                                    </a>
+                                </li>
+                                @* <li class="nav-item">
+                                    <a class="nav-link px-3 fs-16 fw500 hover-color-primarycolor hover-textdeco-underline @(controller.Contains("ticket") && (action.Contains("index") || action.Contains("article") || action.Contains("category")|| action.Contains("search"))?"color-primarycolor":"")" asp-controller="KnowledgeBase" asp-action="index">@Resource.KnowledgeBase</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pe-3 fs-16 fw500 hover-color-primarycolor hover-textdeco-underline @(controller.Contains("aichatbot")?"color-primarycolor":"")" asp-controller="aichatbot" asp-action="index" asp-route-id="">@Resource.AIChatbot</a>
+                                </li> *@
+                            </ul>
+                        </div>
+                    }
+                </div>
+                <div class="col-8 col-lg-3 text-end d-flex justify-content-end align-items-center">
+                    <partial name="_LoginPartial" />
+                    <button class="navbar-toggler fs-26 ms-2 p-0 bg-transparent border-0 color-body" type="button" data-bs-toggle="offcanvas" href="#mobileMenu" role="button" aria-controls="mobileMenu">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header d-flex justify-content-between bg-white">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">
+            <a class="color-body hover-color-primarycolor fw500 fs-24" asp-area="" asp-controller="Home" asp-action="Index">
+                @if (ViewBag.LogoUrl != null && ViewBag.LogoUrl != "")
+                {
+                    <img src="@ViewBag.LogoUrl" class="img-fluid" width="27" height="27" />
+                    <i> </i>
+                }
+                @ViewBag.PortalName
+            </a>
+        </h5>
+        <a class="fs-20 cursor-pointer color-body" data-bs-dismiss="offcanvas" aria-label="Close">X</a>
+    </div>
+    <div class="offcanvas-body bg-white">
+        <partial name="_TopNavCenter" />
+    </div>
+</div>

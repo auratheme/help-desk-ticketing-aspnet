@@ -1,0 +1,35 @@
+﻿@{
+    bool isAuthenticated = User.Identity != null && User.Identity.IsAuthenticated;
+    string year = DateTime.UtcNow.Year > 2024 ? "2024 - " + DateTime.UtcNow.Year : "2024";
+}
+<!-- ================= Footer Section ================= -->
+<div class="nonprintable @(isAuthenticated? "pt-5":"bg-body pt-10")"></div>
+<footer class="@(isAuthenticated? "bg-body":"bg-primarycolor") py-9">
+    <div class="@(isAuthenticated? "container-fluid px-3 px-md-4 px-lg-5":"container px-5")">
+        <div class="row">
+            <div class="col-lg-5 col-xl-6">
+                <h4 class="pb-2 fs-32 fw600">AuraTheme</h4>
+                <div><strong>@Resource.Email</strong>: auratheme@outlook.com<br></div>
+                <div class="pt-2 fs-15">&copy; @Resource.Copyright @year AuraTheme. @Resource.AllRightsReserved</div>
+            </div>
+            <div class="col-lg-4 col-xl-3 pt-5 pt-lg-0">
+                <h4 class="fs-22 pb-2">@Resource.UsefulLinks</h4>
+                <ul class="list-style-none ps-0 pb-0 mb-0">
+                    <li class="pb-1"><a class="hover-textdeco-underline text-white hover-bold" href="https://auratheme.gumroad.com/" target="_blank">@Resource.DownloadRecentProjects <i class="bi bi-arrow-up-right"></i></a></li>
+                    <li class="pb-1"><a class="hover-textdeco-underline text-white hover-bold" href="https://www.youtube.com/@@auratheme" target="_blank">@Resource.TutorialVideos <i class="bi bi-arrow-up-right"></i></a></li>
+                    <li class="pb-1"><a class="hover-textdeco-underline text-white hover-bold" href="https://www.instagram.com/aurathemedesign/" target="_blank">@Resource.FunAndUsefulTips <i class="bi bi-arrow-up-right"></i></a></li>
+                    <li class="pb-1"><a class="hover-textdeco-underline text-white hover-bold" href="https://1.envato.market/7mjd3g" target="_blank">@Resource.OtherProjects <i class="bi bi-arrow-up-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="d-none d-xl-block col-xl-1"></div>
+            <div class="col-lg-3 col-xl-2 pt-5 pt-lg-0">
+                <h4 class="fs-22 pb-2">@Resource.FollowUs</h4>
+                <div class="d-flex">
+                    <a class="rounded-circle cursor-pointer bg-secondarycolor hover-bg-tertiarycolor hover-border hover-border-white text-center d-flex justify-content-center align-items-center fs-20 me-1" href="https://www.instagram.com/aurathemedesign/" rel="noreferrer noopener nofollow" target="_blank" style="width:55px; height:55px;"><i class="bi bi-instagram"></i></a>
+                    <a class="rounded-circle cursor-pointer bg-secondarycolor hover-bg-tertiarycolor hover-border hover-border-white text-center d-flex justify-content-center align-items-center fs-20 me-1" href="https://www.youtube.com/@@auratheme" rel="noreferrer noopener nofollow" target="_blank" style="width:55px; height:55px;"><i class="bi bi-youtube"></i></a>
+                    <a class="rounded-circle cursor-pointer bg-secondarycolor hover-bg-tertiarycolor hover-border hover-border-white text-center d-flex justify-content-center align-items-center fs-20" href="https://auratheme.gumroad.com/" rel="noreferrer noopener nofollow" target="_blank" style="width:55px; height:55px;"><i class="bi bi-globe"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

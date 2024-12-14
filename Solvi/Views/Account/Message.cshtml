@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = Resource.Message;
+    ViewBag.MessageType = ProjectEnum.MessageType.ConfirmEmailSent.ToString();
+}
+
+<section class="pt-10 px-3 px-sm-5">
+    <div class="container">
+        <div class="row justify-content-center align-items-center gx-0 gx-sm-4">
+            <div class="col-lg-7 order-0 order-lg-1">
+                <div class="bg-white p-5 shadow">
+                    @if (ViewBag.MessageType == ProjectEnum.MessageType.SuccessfullyConfirmedEmail.ToString())
+                    {
+                        <h2 class="pb-2 text-capitalize fs-24">@Resource.ThankYouForConfirmingYourEmail</h2>
+                        <div class="pb-3 fs-18">
+                            @Resource.PleaseClick <a class="color-primarycolor fw600" asp-controller="account" asp-action="login">@Resource.Here</a> @Resource.ToLogin
+                        </div>
+                    }
+                    else if (ViewBag.MessageType == ProjectEnum.MessageType.ConfirmEmailSent.ToString())
+                    {
+                        <h2 class="pb-2 text-capitalize fs-24">@Resource.EmailConfirmationRequired</h2>
+                        <div class="pb-3 fs-18">@Resource.AnEmailSentPleaseClickLinkToConfirmYourEmail</div>
+                    }
+                    else if (ViewBag.MessageType == ProjectEnum.MessageType.FailedToConfirmEmail.ToString())
+                    {
+                        <h2 class="pb-2 text-capitalize fs-24">@Resource.NewConfirmationEmailSent</h2>
+                        <div class="pb-3 fs-18">@Resource.EmailConfirmationTokenExpired</div>
+                    }
+                    else if (ViewBag.MessageType == ProjectEnum.MessageType.ForgotPasswordEmailSent.ToString())
+                    {
+                        <h2 class="pb-2 text-capitalize fs-24">@Resource.ResetPasswordEmailSent</h2>
+                        <div class="pb-3 fs-18">@Resource.WeveSentAPasswordResetLink</div>
+                    }
+                    else
+                    {
+                        <h2 class="pb-2 text-capitalize fs-24">@Resource.PageNotFound</h2>
+                        <div class="pb-3 fs-18">@Resource.PageNotFoundDescription</div>
+                        <div class="mt-3"><a asp-controller="home" asp-action="index" class="btn form-btn btn-primary hover-moveup">@Resource.Home</a></div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

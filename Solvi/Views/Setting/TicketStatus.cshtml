@@ -1,0 +1,35 @@
+﻿@model SystemSettingViewModel
+@{
+    ViewBag.Title = Resource.TicketStatus;
+}
+
+<h4 class="fs-25 text-capitalize mb-sm-0 fw600">@ViewBag.Title</h4>
+<div class="bg-white p-3 p-lg-4 mt-2">
+    <div class="pb-3">@Resource.EnterYourPreferredTicketStatusName</div>
+    <form method="post" asp-action="ticketstatus" enctype="multipart/form-data">
+        <div class="row mb-3">
+            <div class="col-lg-6">
+                <label asp-for="QueueingDisplayName" class="form-label required fw600"></label> <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="@Resource.TicketsThatCustomersHaveSubmittedAndAreStillAwaitingAResponse"></i>
+                <input asp-for="QueueingDisplayName" class="form-control" />
+                <span asp-validation-for="QueueingDisplayName" class="invalid-message d-block"></span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-lg-6">
+                <label asp-for="OpenDisplayName" class="form-label required fw600"></label> <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="@Resource.TicketsThatHaveGottenRepliesFromTheAgentsButHaveNotYetClosed"></i>
+                <input asp-for="OpenDisplayName" class="form-control" />
+                <span asp-validation-for="OpenDisplayName" class="invalid-message d-block"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label asp-for="ClosedDisplayName" class="form-label required fw600"></label> <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="@Resource.TicketsThatHaveBeenClosedByTheCustomersOrAgents"></i>
+                <input asp-for="ClosedDisplayName" class="form-control" />
+                <span asp-validation-for="ClosedDisplayName" class="invalid-message d-block"></span>
+            </div>
+        </div>
+        <div class="mt-4">
+            <button id="submitbtn" type="submit" class="btn form-btn btn-primary me-1">@Resource.Save</button>
+        </div>
+    </form>
+</div>

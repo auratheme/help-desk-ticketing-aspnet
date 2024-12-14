@@ -1,0 +1,72 @@
+﻿@model Solvi.Models.LoginViewModel
+@{
+    ViewBag.Title = Resource.Login;
+}
+
+<section class="pt-10 px-3 px-sm-5">
+    <div class="container">
+        <h1 class="fs-56 fw600 text-center pb-4 lh-1">@Resource.LoginTo @ViewBag.PortalName</h1>
+        <div class="row justify-content-center align-items-center gx-0 gx-sm-4">
+            <div class="col-lg-7 order-0 order-lg-1">
+                <div class="bg-white p-5 shadow">
+                    @if (Model.DemoAccount == true)
+                    {
+                        <div class="mb-2 text-edit border border-dash rounded-lg p-2 fs-12">
+                            <div>Admin Demo: <span class="fw600">admin</span>, Password: <span class="fw600">Admin@123</span>&nbsp;&nbsp;<i id="copyAdminDemoBtn" class="ps-1 fs-15 bi bi-clipboard cursor-pointer lh-0 verticle-middle hover-color-primarycolor"></i></div>
+                            <div>Customer Demo: <span class="fw600">user1</span>, Password: <span class="fw600">User@123</span>&nbsp;&nbsp;<i id="copyNormalUserDemoBtn" class="ps-1 fs-15 bi bi-clipboard cursor-pointer lh-0 verticle-middle hover-color-primarycolor"></i></div>
+                        </div>
+                    }
+                    @Html.ValidationSummary("", new { @class = "invalid-message" })
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, null, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        <input asp-for="DemoAccount" hidden />
+                        @Html.AntiForgeryToken()
+                        <div class="mb-3 text-break">
+                            <div class="form-group">
+                                <label class="form-label required fw600 fs-15">@Resource.UsernameOrEmail</label>
+                                @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "invalid-message" })
+                            </div>
+                        </div>
+                        <div class="mb-3 text-break">
+                            <div class="form-group">
+                                <label class="form-label required fw600 fs-15">@Resource.Password</label>
+                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @type = "password" } })
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "invalid-message" })
+                            </div>
+                        </div>
+                        <div class="row gx-0 mb-4">
+                            <div class="col-md-6 text-start">
+                                <a class="small fw500 color-primarycolor hover-color-primarycolor" asp-action="ForgotPassword">@Resource.ForgotYourPassword</a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn form-btn btn-primary hover-moveup">@Resource.Submit</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        let btn = document.querySelector("#copyAdminDemoBtn");
+        if (btn) {
+            btn.addEventListener("click", function () {
+                let inputusername = document.querySelector("input#UserName");
+                inputusername.value = "admin";
+                let inputpw = document.querySelector("input#Password");
+                inputpw.value = "Admin@123";
+            });
+        }
+        let btn1 = document.querySelector("#copyNormalUserDemoBtn");
+        if (btn1) {
+            btn1.addEventListener("click", function () {
+                let inputusername = document.querySelector("input#UserName");
+                inputusername.value = "user1";
+                let inputpw = document.querySelector("input#Password");
+                inputpw.value = "User@123";
+            });
+        } 
+    </script>
+}

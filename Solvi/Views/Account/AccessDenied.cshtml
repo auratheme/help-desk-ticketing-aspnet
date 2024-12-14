@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = Resource.AccessDenied;
+}
+<h4 class="fs-25 text-capitalize mb-sm-0 fw600 pb-1">@ViewBag.Title</h4>
+<div class="bg-white p-3 p-lg-4 mt-2">
+    <div class="fs-20 fw600">@Resource.OopsYouDontHavePermissionToAccessThisPage</div>
+    <div class="pt-3">@Resource.WereSorryButItSeemsLikeYouReTryingToAccess</div>
+    <div class="pt-3">@Resource.PossibleReasonsYouReNotLoggedIn</div>
+    <div class="pt-3">@Resource.WhatCanYouDoLoginWithTheCorrectCredentials</div>
+    <div class="pt-4">
+        <a class="btn form-btn btn-secondary" asp-controller="ticket" asp-action="index">@Resource.Back</a>
+    </div>
+</div>

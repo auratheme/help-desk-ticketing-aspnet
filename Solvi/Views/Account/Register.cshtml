@@ -1,0 +1,81 @@
+﻿@model Solvi.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = Model.NoUserYet ? Resource.RegisterAnAdminAccount : Resource.RegisterACustomerAccount;
+}
+<div id="currenturl" class="d-none">https://@ViewContext.HttpContext.Request.Host.Value/account/register</div>
+<section class="@(User.Identity!=null&&User.Identity.IsAuthenticated?"":"pt-10")">
+    @if (User.Identity != null && User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        <div class="row justify-content-center align-items-center gx-0 gx-sm-4">
+            <div class="col-lg-8">
+                <div class="mb-2">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item fs-14 text-capitalize"><a class="color-primarycolor hover-color-primarycolor hover-textdeco-underline fw500" asp-controller="user" asp-action="index">@Resource.Users</a></li>
+                            <li class="breadcrumb-item fs-14 text-muted text-capitalize" aria-current="page">@ViewBag.Title</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    }
+    @if (User.Identity == null || (User.Identity != null && !User.Identity.IsAuthenticated))
+    {
+        <h1 class="fs-52 fw600 text-center pb-4 lh-1">@ViewBag.Title</h1>
+    }
+    <div class="row justify-content-center align-items-center gx-0 gx-sm-4">
+        <div class="col-lg-8">
+            <div class="bg-white p-5 shadow">
+                <div class="d-flex justify-content-between align-items-center pb-3">
+                    @if (User.Identity != null && User.Identity.IsAuthenticated)
+                    {
+                        <h1 class="fw600 pb-2 fs-28">@ViewBag.Title</h1>
+                    }
+                    else
+                    {
+                        <h1 class="fw500 pb-2 fs-22">@Resource.FillInTheFollowingToRegister</h1>
+                    }
+                    <a class="fs-22 color-primarycolor hover-color-primarycolor cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="@Resource.ClickToCopyTheRegistrationLinkAndShareWithCustomer" onclick="copyText(document.getElementById('currenturl'))"><i class="bi bi-share"></i></a>
+                </div>
+                @if (Model.NoUserYet)
+                {
+                    <div class="alert alert-info fs-14 mb-3"><span class="fw600">@Resource.ImportantNote: </span>@Resource.WeDiscoveredThatTheSystemHasNoUsersAsOfNow</div>
+                }
+                <form asp-controller="account" asp-action="register" asp-route-returnurl="@ViewBag.ReturnUrl" method="post">
+                    <partial name="_RegistrationForm" model="Model"></partial>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@section scripts {
+    <script>
+        // Get the current date and time
+        var now = new Date();
+        // Get the timezone offset in minutes
+        var timezoneOffset = now.getTimezoneOffset();
+        // Convert the offset to hours and minutes
+        var hours = Math.floor(Math.abs(timezoneOffset) / 60);
+        var minutes = Math.abs(timezoneOffset) % 60;
+        // Determine the sign of the offset (+ or -)
+        var sign = timezoneOffset > 0 ? "-" : "+";
+        // Format the offset as a string (e.g., +05:30 or -03:00)
+        var offsetString = sign + padZero(hours) + ":" + padZero(minutes);
+        // Helper function to pad a number with leading zeros
+        function padZero(number) {
+            return (number < 10 ? "0" : "") + number;
+        }
+        $(document).ready(function () {
+            document.getElementById("TimezoneOffset").value = offsetString;
+            $.get('https://www.cloudflare.com/cdn-cgi/trace', function (data) {
+                data = data.trim().split('\n').reduce(function (obj, pair) {
+                    pair = pair.split('=');
+                    return obj[pair[0]] = pair[1], obj;
+                }, {});
+                document.getElementById("CountryCode").value = data.loc;
+                document.getElementById("RegionCode").value = data.colo;
+            });
+        });
+    </script>
+}

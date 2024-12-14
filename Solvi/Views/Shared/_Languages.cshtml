@@ -1,0 +1,63 @@
+﻿@{
+    string culture = Thread.CurrentThread.CurrentCulture.ToString();
+}
+<div class="btn-group">
+    <button type="button" class="color-body hover-color-primarycolor bg-transparent border-0 dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
+        @if (culture == "en")
+        {
+            <span>@Resource.English</span>
+        }
+        else if (culture == "ar")
+        {
+            <span>@Resource.Arabic</span>
+        }
+        else if (culture == "zh")
+        {
+            <span>@Resource.ChineseSimplified</span>
+        }
+        else if (culture == "zh-Hant")
+        {
+            <span>@Resource.ChineseTraditional</span>
+        }
+        else if (culture == "fr")
+        {
+            <span>@Resource.French</span>
+        }
+        else if (culture == "de")
+        {
+            <span>@Resource.German</span>
+        }
+        else if (culture == "hi")
+        {
+            <span>@Resource.Hindi</span>
+        }
+        else if (culture == "ms")
+        {
+            <span>@Resource.Malay</span>
+        }
+        else if (culture == "es")
+        {
+            <span>@Resource.Spanish</span>
+        }
+        else if (culture == "tr")
+        {
+            <span>@Resource.Turkish</span>
+        }
+        else
+        {
+            <span>@Resource.English</span>
+        }
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end py-4 rounded-lg position-absolute">
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="ar"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="ar">@Resource.Arabic (RTL)</a></li>
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="zh"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="zh">@Resource.ChineseSimplified</a></li>
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="zh-Hant"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="zh-Hant">@Resource.ChineseTraditional</a></li>
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="en"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="en">@Resource.English</a></li>
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="fr"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="fr">@Resource.French</a></li>
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="de"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="de">@Resource.German</a></li>
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="hi"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="hi">@Resource.Hindi</a></li>
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="ms"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="ms">@Resource.Malay</a></li>
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="es"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="es">@Resource.Spanish</a></li>
+        <li><a class="dropdown-item fs-16 px-4 @(culture=="tr"?"bg-commongray":"")" asp-controller="home" asp-action="changelanguage" asp-route-lang="tr">@Resource.Turkish</a></li>
+    </ul>
+</div>

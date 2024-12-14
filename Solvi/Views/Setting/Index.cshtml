@@ -1,0 +1,64 @@
+﻿@model SystemSettingViewModel
+@{
+    ViewBag.Title = Resource.GeneralSetting;
+}
+<h4 class="fs-25 text-capitalize mb-sm-0 fw600">@ViewBag.Title</h4>
+<div class="bg-white p-3 p-lg-4 mt-2">
+    @if (Model.DemoAccount == true)
+    {
+        <div class="pb-2 fs-14 invalid-message">The values in the general setting will not be displayed in the demo. You will see the values in your own copy of the project after purchasing it.</div>
+    }
+    <form method="post" asp-action="index" enctype="multipart/form-data">
+        <input asp-for="Id" hidden />
+        <input asp-for="DemoAccount" hidden />
+        <div class="row">
+            <div class="col-lg-6">
+                <label asp-for="PortalName" class="form-label required fw600"></label>
+                <input asp-for="PortalName" class="form-control" />
+                <span asp-validation-for="PortalName" class="invalid-message d-block"></span>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label asp-for="SmtpUserName" class="form-label required fw600"></label>
+                <input asp-for="SmtpUserName" class="form-control" placeholder="example@yourdomain.com" />
+                <span asp-validation-for="SmtpUserName" class="invalid-message d-block"></span>
+            </div>
+            <div class="col-lg-6">
+                <label asp-for="SmtpPassword" class="form-label required fw600"></label>
+                <input asp-for="SmtpPassword" class="form-control" />
+                <span asp-validation-for="SmtpPassword" class="invalid-message d-block"></span>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label asp-for="SmtpHost" class="form-label required fw600"></label>
+                <input asp-for="SmtpHost" class="form-control" placeholder="smtp@gmail.com" />
+                <span asp-validation-for="SmtpHost" class="invalid-message d-block"></span>
+            </div>
+            <div class="col-lg-6">
+                <label asp-for="SmtpPort" class="form-label required fw600"></label>
+                <input asp-for="SmtpPort" type="number" class="form-control" placeholder="587" />
+                <span asp-validation-for="SmtpPort" class="invalid-message d-block"></span>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label asp-for="TimeZone" class="form-label required fw600"></label>
+                @GeneralHelper.CustomDropDown("TimeZone", ViewData["TimeZoneList"] as List<SelectListItem>)
+                <span asp-validation-for="TimeZone" class="invalid-message d-block"></span>
+            </div>
+        </div>
+        <div class="mt-4">
+            @if (Model.DemoAccount == true)
+            {
+                <button id="disabledbtn" type="button" class="btn form-btn btn-primary me-1 opacity-40" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="General Setting can't be changed in the demo. You can change it in your own copy of the project after purchasing it.">@Resource.Save</button>
+            }
+            else
+            {
+                <button id="submitbtn" type="submit" class="btn form-btn btn-primary me-1">@Resource.Save</button>
+            }
+        </div>
+    </form>
+
+</div>

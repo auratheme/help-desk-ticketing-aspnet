@@ -1,0 +1,70 @@
+﻿@model List<TicketViewModel>
+@{
+    ViewBag.Title = Resource.SupportTickets;
+    ViewBag.TableId = "Ticket" + "TableContainer";
+}
+
+<h4 class="fs-25 text-capitalize mb-sm-0 fw600">@ViewBag.Title</h4>
+<div class="bg-white p-3 p-lg-4 mt-2">
+    <div class="pb-2 nonprintable">
+        <a class="btn form-btn btn-primary" asp-action="Edit"><i class="bi bi-plus-lg"></i> @Resource.New</a>
+    </div>
+    <div class="table-scrollbar overflow-x-auto overflow-y-auto pt-2 nonprintable">
+        <div class="table-responsive overflow-x-visible overflow-y-visible">
+            <table class="table table-hover align-middle mb-0 noscrollbar">
+                <thead class="table-light">
+                    <tr class="d-none d-lg-table-row">
+                        <th class="border-0">@Resource.TicketCode</th>
+                        <th class="border-0">@Resource.Title</th>
+                        <th class="border-0">@Resource.Status</th>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <th class="border-0">@Resource.CreatedBy</th>
+                        }
+                        <th class="border-0 notexport">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr class="border-bottom lh-sm">
+                                <td><a class="fw600 color-primarycolor hover-color-primarycolor" asp-controller="ticket" asp-action="ticketreply" asp-route-id="@item.Id">@item.Code</a></td>
+                                <td>@item.Title</td>
+                                <td>
+                                    @if (item.StatusCode == ProjectEnum.TicketStatus.Queueing.ToString())
+                                    {
+                                        <span class="queueingticket">@item.StatusName</span>
+                                    }
+                                    else if (item.StatusCode == ProjectEnum.TicketStatus.Open.ToString())
+                                    {
+                                        <span class="openticket">@item.StatusName</span>
+                                    }
+                                    else if (item.StatusCode == ProjectEnum.TicketStatus.Closed.ToString())
+                                    {
+                                        <span class="closedticket">@item.StatusName</span>
+                                    }
+                                </td>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <td>@item.CreatedByName</td>
+                                }
+                                <td>
+                                    <a class="color-primarycolor" asp-controller="ticket" asp-action="DeleteTicket" asp-route-id="@item.Id"
+                                       onclick="return confirm('Are you sure you want to delete this ticket?');">
+                                        @Resource.Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr><td class="text-center" colspan="@(User.IsInRole("Admin")?"5":"4")">@Resource.NoDataAvailable</td></tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

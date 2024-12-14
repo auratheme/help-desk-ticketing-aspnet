@@ -1,0 +1,155 @@
+﻿@using System.Web
+@model TicketViewModel
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    ViewBag.Title = Model.Title;
+    bool isAdmin = User.IsInRole("Admin");
+}
+
+<div class="row">
+    <div class="col-md-10">
+        <h4 class="fs-25 text-capitalize fw600 mb-1 lh-sm text-break">
+            @ViewBag.Title
+        </h4>
+        <nav aria-label="breadcrumb" class="nonprintable">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item fs-14 text-capitalize"><a class="color-primarycolor hover-color-primarycolor hover-textdeco-underline fw500" asp-controller="ticket" asp-action="index">@Resource.SupportTickets</a></li>
+                <li class="breadcrumb-item fs-14 text-muted text-capitalize" aria-current="page">@ViewBag.Title</li>
+            </ol>
+        </nav>
+        <div class="pt-2 pb-4 lh-sm nonprintable">
+            <span class="fs-13 px-3 py-2 bg-white shadow rounded">#@Model.Code</span>&nbsp;
+            <span class="fs-13 px-3 py-2 bg-white shadow rounded">
+                @if (Model.StatusCode == ProjectEnum.TicketStatus.Queueing.ToString())
+                {
+                    <span class="queueingticket fw500">@Model.StatusName</span>
+                }
+                else if (Model.StatusCode == ProjectEnum.TicketStatus.Open.ToString())
+                {
+                    <span class="openticket fw500">@Model.StatusName</span>
+                }
+                else if (Model.StatusCode == ProjectEnum.TicketStatus.Closed.ToString())
+                {
+                    <span class="closedticket fw500" data-bs-toggle="tooltip" data-bs-title="By: @Model.ClosedBy">@Model.StatusName</span>
+                }
+            </span>
+            @if (Model.StatusCode == ProjectEnum.TicketStatus.Closed.ToString())
+            {
+                <i>&nbsp;</i>
+                <span class="fs-13 px-3 py-2 bg-white shadow rounded">Closed On: <span class="datetimetext">@Model.IsoUtcClosedOn</span></span>
+            }
+        </div>
+        @if (Model.CanAccess)
+        {
+            <div id="replyform" class="bg-white p-4 mb-3 shadow d-none">
+                <form method="post" asp-action="Edit" enctype="multipart/form-data">
+                    <input asp-for="Title" hidden />
+                    <input asp-for="Code" hidden />
+                    <input asp-for="Id" hidden />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3 text-break">
+                                <div class="form-group">
+                                    <label class="form-label required fw600" asp-for="Message"></label>
+                                    <textarea asp-for="Message" class="form-control" rows="5"></textarea>
+                                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "invalid-message" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @if (isAdmin)
+                    {
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3 text-break">
+                                    <div class="form-group">
+                                        <input class="form-check-input" type="checkbox" asp-for="SendEmail">
+                                        &nbsp;
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            @Resource.SendEmailToNotifyTheCustomer
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <button type="submit" id="savebtn" class="btn form-btn btn-primary me-1">@Resource.SubmitReply</button>
+                            <button type="button" onclick="showhideReplyForm()" class="btn form-btn btn-secondary">@Resource.Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="fs-22 text-capitalize fw600 mb-1 lh-sm text-break mt-3 printonly">@Resource.Conversation</div>
+            <table class="table align-middle">
+                <tbody class="fs-15">
+                    @foreach (var item in Model.TicketReplies)
+                    {
+                        <tr>
+                            <td style="min-width:170px">
+                                <div>@item.SenderName</div>
+                                <div class="fs-12 opacity-70 datetimetext">@item.IsoUtcCreatedOn</div>
+                            </td>
+                            <td>@Html.Raw(item.Message?.Replace("&lt;", "<").Replace("&gt;", ">").Replace("&quot;", "\"").Replace("\r\t", "<br>").Replace("\n", "<br>"))</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div class="bg-white p-4 shadow">@Resource.YouAreNotPermittedToViewTheTicketConversation</div>
+        }
+    </div>
+    <div class="col-md-2">
+        @if (Model.CanAccess)
+        {
+            if (Model.StatusCode != ProjectEnum.TicketStatus.Closed.ToString())
+            {
+                <a class="btn form-btn btn-primary cursor-pointer" asp-controller="ticket" asp-action="CloseTicket" asp-route-id="@Model.Id"
+                   title="@Resource.IfYouveFoundASolutionYouCanCloseThisTicket"
+                   onclick="return confirm('@HttpUtility.JavaScriptStringEncode(Resource.AreYouSureToCloseTheTicket +" "+ Resource.YouAreUnableToReopenAClosedTicket)');">
+                    @Resource.ResolvedAndClose
+                </a>
+                <button id="newreplybtn" type="button" class="btn form-btn btn-primary mt-1" onclick="showhideReplyForm()">@Resource.NewReply</button>
+            }
+            else
+            {
+                <a class="btn form-btn btn-primary @(isAdmin?"mt-1":"") opacity-50 cursor-notallowed" title="@Resource.ThisTicketIsAlreadyClosed">
+                    @Resource.ResolvedAndClose
+                </a>
+                <a class="btn form-btn btn-primary mt-1 opacity-50 cursor-notallowed" title="@Resource.ThisTicketIsAlreadyClosed">
+                    @Resource.NewReply
+                </a>
+            }
+            <div class="mt-1">
+                <a asp-action="index" class="btn form-btn btn-secondary "><i class="bi bi-arrow-left"></i></a>
+            </div>
+        }
+    </div>
+</div>
+
+
+<div id="CancelNewReply" class="d-none">@Resource.CancelNewReply</div>
+<div id="NewReply" class="d-none">@Resource.NewReply</div>
+
+@section Scripts {
+    <script>
+        function showhideReplyForm(ele) {
+            var replyForm = document.getElementById('replyform');
+            var newreplybtn = document.getElementById('newreplybtn');
+            // Check if the div has the class 'd-none'
+            if (replyForm.classList.contains('d-none')) {
+                // If it has the class, remove it
+                replyForm.classList.remove('d-none');
+                var text = document.getElementById("CancelNewReply").innerText;
+                newreplybtn.innerText = text;
+            } else {
+                // If it doesn't have the class, add it
+                replyForm.classList.add('d-none');
+                newreplybtn.innerText = document.getElementById("NewReply").innerText;
+            }
+        }
+    </script>
+}

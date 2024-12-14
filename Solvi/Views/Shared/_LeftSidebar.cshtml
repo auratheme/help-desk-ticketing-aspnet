@@ -1,0 +1,89 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    string controller = ViewContext.RouteData.Values["controller"]?.ToString()?.ToLower() ?? "";
+    string action = ViewContext.RouteData.Values["action"]?.ToString()?.ToLower() ?? "";
+    bool IgnoreCaseEqual(string str1, string str2)
+    {
+        return string.Equals(str1, str2, StringComparison.OrdinalIgnoreCase);
+    }
+    List<SidebarItem> sidebarItems = new List<SidebarItem>();
+    sidebarItems.Add(new SidebarItem
+            {
+                Title = Resource.SupportTickets,
+                Controller = "ticket",
+                Action = "index",
+                Icon = "bi bi-ticket-perforated",
+                IsActive = IgnoreCaseEqual(controller, "ticket")
+            });
+    sidebarItems.Add(new SidebarItem
+            {
+                Title = Resource.LoginHistory,
+                Controller = "LoginHistory",
+                Action = "index",
+                Icon = "bi bi-box-arrow-in-right",
+                IsActive = IgnoreCaseEqual(controller, "loginhistory")
+            });
+    List<SidebarItem> sidebarItemsAdmin = new List<SidebarItem>();
+    sidebarItemsAdmin.Add(new SidebarItem
+            {
+                Title = Resource.UserManagement,
+                Controller = "user",
+                Action = "index",
+                Icon = "bi bi-people",
+                IsActive = IgnoreCaseEqual(controller, "user") ||
+                                (IgnoreCaseEqual(controller, "account") &&
+                                (IgnoreCaseEqual(action, "register") ||
+                                IgnoreCaseEqual(action, "registeradmin") ||
+                                IgnoreCaseEqual(action, "myprofile")))
+            });
+
+    sidebarItemsAdmin.Add(new SidebarItem
+            {
+                Title = Resource.GeneralSetting,
+                Controller = "setting",
+                Action = "index",
+                Icon = "bi bi-gear",
+                IsActive = IgnoreCaseEqual(controller, "setting") && IgnoreCaseEqual(action, "index")
+            });
+    sidebarItemsAdmin.Add(new SidebarItem
+            {
+                Title = Resource.TicketStatus,
+                Controller = "setting",
+                Action = "TicketStatus",
+                Icon = "bi bi-bookmark-star",
+                IsActive = IgnoreCaseEqual(controller, "setting") && IgnoreCaseEqual(action, "ticketstatus")
+            });
+}
+
+<aside id="sidebar-default" class="sidebar bg-white d-lg-block border-end" tabindex="-1" style="width:233px">
+    <ul class="sidebar-nav text-capitalize" id="sidebar-nav">
+        @foreach (SidebarItem item in sidebarItems)
+        {
+            if (item.CanAccess)
+            {
+                <li class="nav-item hover-color-primarycolor rounded cursor-pointer lh-1 py-1 @(item.IsActive==true?"color-primarycolor":"")">
+                    <a class="nav-link" asp-controller="@item.Controller" asp-action="@item.Action" asp-route-id="">
+                        <i class="@item.Icon"></i>
+                        <span class="sidebartext">&nbsp; @item.Title</span>
+                    </a>
+                </li>
+            }
+        }
+        @if (User.Identity != null && User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+        {
+            <li class="nav-item fw600 text-muted fs-13 noticon">
+                <a class="nav-link fw600 hover-text-muted pt-1 pb-0 border-bottom rounded-0">Admin</a>
+            </li>
+            @foreach (SidebarItem item in sidebarItemsAdmin)
+            {
+                <li class="nav-item hover-color-primarycolor rounded cursor-pointer lh-1 py-1 @(item.IsActive==true?"color-primarycolor":"")">
+                    <a class="nav-link" asp-controller="@item.Controller" asp-action="@item.Action" asp-route-id="">
+                        <i class="@item.Icon"></i>
+                        <span class="sidebartext">&nbsp; @item.Title</span>
+                    </a>
+                </li>
+            }
+        }
+    </ul>
+</aside>
